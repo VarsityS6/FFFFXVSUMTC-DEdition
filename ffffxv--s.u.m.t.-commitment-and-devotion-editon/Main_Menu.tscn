@@ -7,6 +7,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = -9.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_m625n")
@@ -25,3 +29,18 @@ offset_bottom = 29.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Start"
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -118.5
+offset_top = -195.0
+offset_right = 118.5
+offset_bottom = -138.0
+grow_horizontal = 2
+disabled = true
+text = "Fight Fighting Fight Fighters XV Super Ultra Mega Turbo Commitment and Devotion edition"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
