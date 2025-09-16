@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctcvpvfuxemp6"]
+
+[ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://visual_novel.gd" id="1_46vvo"]
+[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="1_hp7jo"]
+[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="3_2xt31"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://CharacterSprites/PlayerTalk.png" id="3_hknpb"]
+
+[node name="VisualNovel" type="Node2D"]
+script = ExtResource("1_46vvo")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1943.0
+offset_bottom = 1088.0
+texture = ExtResource("1_hp7jo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Character" type="TextureRect" parent="."]
+offset_left = 501.0
+offset_top = 20.0
+offset_right = 1397.0
+offset_bottom = 895.0
+texture = ExtResource("3_hknpb")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="UIDialougeBox" type="TextureRect" parent="."]
+offset_left = 352.0
+offset_top = 625.0
+offset_right = 1555.0
+offset_bottom = 1194.0
+texture = ExtResource("3_2xt31")
+expand_mode = 1
+
+[node name="DialogueBox" type="Panel" parent="."]
+visible = false
+offset_left = 581.0
+offset_top = 819.0
+offset_right = 1334.0
+offset_bottom = 1009.0
+
+[node name="NameLabel" type="Label" parent="."]
+modulate = Color(0.168627, 0.054902, 0.0431373, 1)
+offset_left = 592.0
+offset_top = 771.0
+offset_right = 655.0
+offset_bottom = 794.0
+scale = Vector2(2.01498, 2.06673)
+horizontal_alignment = 1
+
+[node name="TextLabel" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 587.0
+offset_top = 823.0
+offset_right = 1210.0
+offset_bottom = 918.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.68)
+text = " l;;l'l;';l'll;'kl;"
+fit_content = true
+tab_size = 15
+shortcut_keys_enabled = false
+
+[node name="Choices" type="VBoxContainer" parent="."]
+offset_left = 805.0
+offset_top = 942.0
+offset_right = 845.0
+offset_bottom = 982.0

@@ -26,6 +26,10 @@ directories/dtl_directory={
 "timeline1": "res://Timelines/timeline1.dtl"
 }
 
+[display]
+
+window/size/mode=3
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
