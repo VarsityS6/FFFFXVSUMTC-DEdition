@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv67i2ijubhec"
-path="res://.godot/imported/PlayerTalk.png-3c36bf13ab88a7891e33947679a1d945.ctex"
+uid="uid://crffrjul0x07o"
+path="res://.godot/imported/CTalk.png-91b6fac1412d2cbc1dfced24d477b627.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterSprites/PlayerTalk.png"
-dest_files=["res://.godot/imported/PlayerTalk.png-3c36bf13ab88a7891e33947679a1d945.ctex"]
+source_file="res://Portraits/CTalk.png"
+dest_files=["res://.godot/imported/CTalk.png-91b6fac1412d2cbc1dfced24d477b627.ctex"]
 
 [params]
 

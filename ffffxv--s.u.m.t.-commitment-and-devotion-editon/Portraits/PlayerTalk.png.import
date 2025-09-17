@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfq8a7qyg3s05"
-path="res://.godot/imported/PlayerTriumphant.png-00f3db91a905b63075738365260c4f6a.ctex"
+uid="uid://bv67i2ijubhec"
+path="res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterSprites/PlayerTriumphant.png"
-dest_files=["res://.godot/imported/PlayerTriumphant.png-00f3db91a905b63075738365260c4f6a.ctex"]
+source_file="res://Portraits/PlayerTalk.png"
+dest_files=["res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"]
 
 [params]
 

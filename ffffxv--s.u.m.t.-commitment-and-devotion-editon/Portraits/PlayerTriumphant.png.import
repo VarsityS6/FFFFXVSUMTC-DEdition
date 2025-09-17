@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5wwidxrd3k3o"
-path="res://.godot/imported/CConfused.png-17f121409a812e1c960136c2cd78eb12.ctex"
+uid="uid://cfq8a7qyg3s05"
+path="res://.godot/imported/PlayerTriumphant.png-8b7be326302426943fb78b1862d5f809.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterSprites/CConfused.png"
-dest_files=["res://.godot/imported/CConfused.png-17f121409a812e1c960136c2cd78eb12.ctex"]
+source_file="res://Portraits/PlayerTriumphant.png"
+dest_files=["res://.godot/imported/PlayerTriumphant.png-8b7be326302426943fb78b1862d5f809.ctex"]
 
 [params]
 
