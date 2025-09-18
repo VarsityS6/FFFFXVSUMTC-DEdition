@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://dt5u8duohltl7" path="res://restart.gd" id="6_akqky"]
 
 [node name="CheckIn" type="Node2D"]
-scale = Vector2(1.72132, 1.73923)
+scale = Vector2(1.0051688, 1.0030315)
 script = ExtResource("1_tydtb")
 
 [node name="Background" type="TextureRect" parent="."]
@@ -35,6 +35,7 @@ offset_bottom = 649.0
 texture = ExtResource("4_b1iji")
 expand_mode = 1
 stretch_mode = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="UIDialougeBox" type="TextureRect" parent="."]
 offset_left = 258.0
@@ -48,6 +49,7 @@ metadata/_edit_use_anchors_ = true
 [node name="RichTextLabel" type="RichTextLabel" parent="UIDialougeBox"]
 visible = false
 modulate = Color(0, 0, 0, 1)
+layout_mode = 0
 offset_left = 116.0
 offset_top = 159.0
 offset_right = 319.0

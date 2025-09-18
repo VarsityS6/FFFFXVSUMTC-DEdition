@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_hknpb"]
 
 [node name="VisualNovel" type="Node2D"]
-scale = Vector2(1.3225983, 1.3430938)
+scale = Vector2(0.592895, 0.5956488)
 script = ExtResource("1_46vvo")
 
 [node name="Background" type="TextureRect" parent="."]
@@ -32,6 +32,7 @@ offset_left = 352.0
 offset_top = 589.0
 offset_right = 1555.0
 offset_bottom = 1194.0
+scale = Vector2(0.98118794, 1)
 texture = ExtResource("3_2xt31")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true

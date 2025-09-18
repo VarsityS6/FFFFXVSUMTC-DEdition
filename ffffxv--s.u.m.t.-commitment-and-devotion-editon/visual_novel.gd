@@ -1,5 +1,6 @@
 extends Node2D
 
+
 var dialogue = []
 var index = 0
 
