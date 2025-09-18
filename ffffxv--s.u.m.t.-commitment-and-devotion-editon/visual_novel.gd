@@ -5,7 +5,7 @@ var dialogue = []
 var index = 0
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue.json")
+	dialogue = load_dialogue("res://Dialouge/FirstScene.json")
 	show_line()
 
 func load_dialogue(path: String) -> Array:
