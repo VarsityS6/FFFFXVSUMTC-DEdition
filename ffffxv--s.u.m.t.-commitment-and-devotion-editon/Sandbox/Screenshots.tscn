@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://k4qawrb8uptt"]
+[gd_scene load_steps=6 format=3 uid="uid://k4qawrb8uptt"]
 
-[ext_resource type="Script" uid="uid://pcwutf2fc7ad" path="res://check_in.gd" id="1_k7n82"]
+[ext_resource type="Script" uid="uid://pcwutf2fc7ad" path="res://Main Game/check_in.gd" id="1_k7n82"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="2_j0v8w"]
 [ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://Portraits/PlayerTriumphant.png" id="3_qqx3f"]
 [ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://Portraits/CTalk.png" id="4_tvbsc"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="5_kf2ss"]
-[ext_resource type="Script" uid="uid://dt5u8duohltl7" path="res://restart.gd" id="6_6aqg7"]
 
 [node name="CheckIn" type="Node2D"]
 scale = Vector2(1.0051688, 1.0030315)
@@ -56,12 +55,3 @@ offset_right = 319.0
 offset_bottom = 191.0
 scale = Vector2(2.16, 2.76)
 text = "THANK YOU FOR TESTING!"
-
-[node name="Restart" type="Button" parent="."]
-offset_left = 408.0
-offset_top = 429.0
-offset_right = 741.0
-offset_bottom = 544.0
-text = "THANK YOU FOR TESTING!!"
-script = ExtResource("6_6aqg7")
-metadata/_edit_use_anchors_ = true

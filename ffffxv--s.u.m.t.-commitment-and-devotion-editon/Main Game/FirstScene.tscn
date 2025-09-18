@@ -1,18 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctcvpvfuxemp6"]
 
-[ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://visual_novel.gd" id="1_46vvo"]
-[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="1_hp7jo"]
-[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="3_2xt31"]
-[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_hknpb"]
+[ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://Main Game/FirstScene.gd" id="1_bsj0a"]
+[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="2_bq4c1"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_srqll"]
+[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="4_iol2w"]
 
 [node name="VisualNovel" type="Node2D"]
 scale = Vector2(0.592895, 0.5956488)
-script = ExtResource("1_46vvo")
+script = ExtResource("1_bsj0a")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1943.0
 offset_bottom = 1088.0
-texture = ExtResource("1_hp7jo")
+texture = ExtResource("2_bq4c1")
 expand_mode = 1
 stretch_mode = 6
 metadata/_edit_use_anchors_ = true
@@ -22,7 +22,7 @@ offset_left = 501.0
 offset_top = 20.0
 offset_right = 1397.0
 offset_bottom = 895.0
-texture = ExtResource("3_hknpb")
+texture = ExtResource("3_srqll")
 expand_mode = 1
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
@@ -33,7 +33,7 @@ offset_top = 589.0
 offset_right = 1555.0
 offset_bottom = 1194.0
 scale = Vector2(0.98118794, 1)
-texture = ExtResource("3_2xt31")
+texture = ExtResource("4_iol2w")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 

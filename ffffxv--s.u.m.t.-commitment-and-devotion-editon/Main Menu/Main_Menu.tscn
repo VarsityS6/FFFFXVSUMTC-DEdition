@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bvn1kk8i7k0wm"]
 
-[ext_resource type="Script" uid="uid://dbbnjx0b0lt8v" path="res://control.gd" id="1_m625n"]
+[ext_resource type="Script" uid="uid://dbbnjx0b0lt8v" path="res://Main Menu/control.gd" id="1_7b88o"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,9 +13,9 @@ offset_right = 3.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_m625n")
+script = ExtResource("1_7b88o")
 
-[node name="Button" type="Button" parent="."]
+[node name="Start Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -30,17 +30,17 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Start"
 
-[node name="Button" type="Button" parent="Button"]
+[node name="Title" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -353.5
-offset_top = -151.0
-offset_right = 353.5
-offset_bottom = -94.0
+offset_left = -355.0
+offset_top = 145.0
+offset_right = 352.0
+offset_bottom = 202.0
 grow_horizontal = 2
 disabled = true
 text = "Fight Fighting Fight Fighters XV Super Ultra Mega Turbo Commitment and Devotion edition"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Start Button" to="." method="_on_button_pressed"]
