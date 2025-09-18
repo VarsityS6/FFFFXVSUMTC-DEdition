@@ -63,3 +63,9 @@ scale = Vector2(1.2, 1.68)
 fit_content = true
 tab_size = 15
 shortcut_keys_enabled = false
+
+[node name="Choices" type="VBoxContainer" parent="."]
+offset_left = 662.0
+offset_top = 927.0
+offset_right = 1198.0
+offset_bottom = 1013.0
