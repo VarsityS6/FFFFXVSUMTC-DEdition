@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://Main Game/FirstScene.gd" id="1_bsj0a"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="2_bq4c1"]
-[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_srqll"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://portraits/PlayerTalk.png" id="3_srqll"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="4_iol2w"]
 
 [node name="VisualNovel" type="Node2D"]

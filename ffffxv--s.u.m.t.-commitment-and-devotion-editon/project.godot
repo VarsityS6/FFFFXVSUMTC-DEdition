@@ -15,10 +15,6 @@ run/main_scene="uid://bvn1kk8i7k0wm"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-
 [dialogic]
 
 directories/dch_directory={}
@@ -56,6 +52,18 @@ window/stretch/mode="canvas_items"
 [editor_plugins]
 
 enabled=PackedStringArray()
+
+[file_customization]
+
+folder_colors={
+"res://Builds/": "pink",
+"res://Dialogue/": "yellow",
+"res://Main Game/": "teal",
+"res://Main Menu/": "teal",
+"res://Sandbox/": "gray",
+"res://UIAssets/": "purple",
+"res://portraits/": "purple"
+}
 
 [input]
 

@@ -1,16 +1,30 @@
 extends Node2D
 
-
 var dialogue = []
 var index = 0
 
+# ✅ Preload portraits so they are guaranteed to be bundled in the export
+var preload_portraits = {
+	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
+	"PlayerSurprise.png": preload("res://portraits/PlayerSurprise.png"),
+	"PlayerTriumphant.png": preload("res://portraits/PlayerTriumphant.png"),
+	"CConfused.png": preload("res://portraits/CConfused.png"),
+	"CTalk.png": preload("res://portraits/CTalk.png"),
+	"CHair.png": preload("res://portraits/CHair.png")
+	
+}
+
 func _ready():
-	dialogue = load_dialogue("res://Dialouge/FirstScene.json")
+	dialogue = load_dialogue("res://Dialogue/FirstScene.json")
 	show_line()
 
 func load_dialogue(path: String) -> Array:
 	var file = FileAccess.open(path, FileAccess.READ)
 	return JSON.parse_string(file.get_as_text())
+	
+	if not FileAccess.file_exists(path):
+		push_error("Dialogue file not found: " + path)
+		return JSON.parse_string(file.get_as_text())
 
 func show_line():
 	if index >= dialogue.size():
@@ -28,17 +42,16 @@ func show_line():
 	$NameLabel.text = line.get("speaker", "")
 	$TextLabel.text = line.get("text", "")
 
-	# Set portrait or hide it
+	# ✅ Swap portrait loading to use preloaded dictionary
 	if line.has("portrait") and line["portrait"] != "":
-		var path = "res://portraits/" + line["portrait"]
-		if ResourceLoader.exists(path):
-			$Portrait.texture = load(path)
+		if preload_portraits.has(line["portrait"]):
+			$Portrait.texture = preload_portraits[line["portrait"]]
 		else:
+			print("Portrait missing from preload: ", line["portrait"])
 			$Portrait.texture = null
 	else:
 		$Portrait.texture = null 
 
-	# Show choices if they exist
 	if line.has("choices"):
 		show_choices(line["choices"])
 	else:
@@ -61,7 +74,7 @@ func clear_choices():
 
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
-		if index < dialogue.size() and not dialogue[index].has("choices"):
+		if not dialogue[index].has("choices"):
 			index += 1
 			show_line()
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpj2gdbw6j2w5"
-path="res://.godot/imported/CHair.png-0ef9c17607b5cd267b4375b1fbd469e1.ctex"
+path="res://.godot/imported/CHair.png-7da160959f5974755915f2a88d50ff5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Portraits/CHair.png"
-dest_files=["res://.godot/imported/CHair.png-0ef9c17607b5cd267b4375b1fbd469e1.ctex"]
+source_file="res://portraits/CHair.png"
+dest_files=["res://.godot/imported/CHair.png-7da160959f5974755915f2a88d50ff5a.ctex"]
 
 [params]
 

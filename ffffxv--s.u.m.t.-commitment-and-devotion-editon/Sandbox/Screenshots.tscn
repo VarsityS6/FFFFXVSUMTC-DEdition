@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://pcwutf2fc7ad" path="res://Main Game/check_in.gd" id="1_k7n82"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="2_j0v8w"]
-[ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://Portraits/PlayerTriumphant.png" id="3_qqx3f"]
-[ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://Portraits/CTalk.png" id="4_tvbsc"]
+[ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://portraits/PlayerTriumphant.png" id="3_qqx3f"]
+[ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://portraits/CTalk.png" id="4_tvbsc"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://UIAssets/MenuUI.png" id="5_kf2ss"]
 
 [node name="CheckIn" type="Node2D"]
