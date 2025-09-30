@@ -21,10 +21,6 @@ func _ready():
 func load_dialogue(path: String) -> Array:
 	var file = FileAccess.open(path, FileAccess.READ)
 	return JSON.parse_string(file.get_as_text())
-	
-	if not FileAccess.file_exists(path):
-		push_error("Dialogue file not found: " + path)
-		return JSON.parse_string(file.get_as_text())
 
 func show_line():
 	if index >= dialogue.size():
