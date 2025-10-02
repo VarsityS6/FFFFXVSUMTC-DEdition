@@ -12,6 +12,8 @@ position = Vector2(577.12494, 324)
 scale = Vector2(2.1561928, 1.8277777)
 texture = ExtResource("1_nxkri")
 
+[node name="HairStage" type="Sprite2D" parent="."]
+
 [node name="CharraxComb" parent="." instance=ExtResource("1_yon80")]
 position = Vector2(575.00006, 297.00003)
 rotation = 0.7592182
@@ -25,6 +27,12 @@ offset_left = -112.09444
 offset_top = -210.11513
 offset_right = 123.72307
 offset_bottom = 206.12212
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Feedback" type="Node2D" parent="."]
 
 [connection signal="button_down" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_down"]
 [connection signal="button_up" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_up"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv67i2ijubhec"
-path="res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"
+uid="uid://d2gacllahgkhr"
+path="res://.godot/imported/killtastic.png-783b24a540b4dc726fbf7e0ffea0dd4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Portraits/PlayerTalk.png"
-dest_files=["res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"]
+source_file="res://Assets/MinigameAssets/killtastic.png"
+dest_files=["res://.godot/imported/killtastic.png-783b24a540b4dc726fbf7e0ffea0dd4d.ctex"]
 
 [params]
 
