@@ -1,8 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://bca6s1678h7rh"]
+[gd_scene load_steps=5 format=3 uid="uid://bca6s1678h7rh"]
 
+[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="1_nxkri"]
 [ext_resource type="PackedScene" uid="uid://fan5feryw8vu" path="res://Main Game/Minigames/dragable_sprite.tscn" id="1_yon80"]
+[ext_resource type="Texture2D" uid="uid://cxc8ypirb88er" path="res://Assets/MinigameAssets/CharaxxPlaceholderComb.png" id="2_0w6hq"]
+[ext_resource type="Script" uid="uid://bfxmv3prn5li4" path="res://Main Game/Minigames/CharraxComb.gd" id="3_fdeek"]
 
 [node name="BrushMinigame" type="Node2D"]
 
-[node name="DragableSprite" parent="." instance=ExtResource("1_yon80")]
-position = Vector2(555, 306)
+[node name="Placeholder" type="Sprite2D" parent="."]
+position = Vector2(577.12494, 324)
+scale = Vector2(2.1561928, 1.8277777)
+texture = ExtResource("1_nxkri")
+
+[node name="HairStage" type="Sprite2D" parent="."]
+
+[node name="CharraxComb" parent="." instance=ExtResource("1_yon80")]
+position = Vector2(575.00006, 297.00003)
+rotation = 0.7592182
+scale = Vector2(0.42011136, 0.42011136)
+texture = ExtResource("2_0w6hq")
+script = ExtResource("3_fdeek")
+
+[node name="Button" type="Button" parent="CharraxComb"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -112.09444
+offset_top = -210.11513
+offset_right = 123.72307
+offset_bottom = 206.12212
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Feedback" type="Node2D" parent="."]
+
+[connection signal="button_down" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_down"]
+[connection signal="button_up" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_up"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv67i2ijubhec"
-path="res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"
+uid="uid://bnndf5ajd5ex0"
+path="res://.godot/imported/MenuUI.png-87683baac87ebdfa2c7f8c136e65181c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Portraits/PlayerTalk.png"
-dest_files=["res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"]
+source_file="res://Assets/MenuUI.png"
+dest_files=["res://.godot/imported/MenuUI.png-87683baac87ebdfa2c7f8c136e65181c.ctex"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://cpeeye6h3tu2e"]
 
-[ext_resource type="Script" uid="uid://pcwutf2fc7ad" path="res://Main Game/check_in.gd" id="1_4orav"]
-[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://UIAssets/Background/placeholder.jpg" id="2_qxl27"]
-[ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://portraits/PlayerTriumphant.png" id="3_8o152"]
-[ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://portraits/CTalk.png" id="4_sdm5b"]
-[ext_resource type="Texture2D" uid="uid://ckan4fh3cu0e6" path="res://UIAssets/ThankYou4Playing.png" id="5_4orav"]
+[ext_resource type="Script" uid="uid://pcwutf2fc7ad" path="res://Main Game/Scenes/check_in.gd" id="1_4orav"]
+[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="2_qxl27"]
+[ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://Portraits/PlayerTriumphant.png" id="3_8o152"]
+[ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://Portraits/CTalk.png" id="4_sdm5b"]
+[ext_resource type="Texture2D" uid="uid://ckan4fh3cu0e6" path="res://Assets/ThankYou4Playing.png" id="5_4orav"]
 
 [node name="CheckIn" type="Node2D"]
 scale = Vector2(1.0051688, 1.0030315)

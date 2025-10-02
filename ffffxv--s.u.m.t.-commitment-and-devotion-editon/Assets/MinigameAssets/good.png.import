@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv67i2ijubhec"
-path="res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"
+uid="uid://cxlq373bpsjuo"
+path="res://.godot/imported/good.png-594cca3b46febb626e6a65e6b83f0959.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Portraits/PlayerTalk.png"
-dest_files=["res://.godot/imported/PlayerTalk.png-fc9189aa59d3160f1f929740d62b708f.ctex"]
+source_file="res://Assets/MinigameAssets/good.png"
+dest_files=["res://.godot/imported/good.png-594cca3b46febb626e6a65e6b83f0959.ctex"]
 
 [params]
 
