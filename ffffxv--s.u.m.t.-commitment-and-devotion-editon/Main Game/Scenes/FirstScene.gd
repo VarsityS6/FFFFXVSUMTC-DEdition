@@ -80,4 +80,4 @@ func end_dialogue():
 	$Portrait.texture = null
 	clear_choices()
 	print("Dialogue ended")
-	get_tree().change_scene_to_file("res://Main Game/CheckIn.tscn") 
+	get_tree().change_scene_to_file("res://Main Game/Scenes/CheckIn.tscn") 
