@@ -39,6 +39,7 @@
 	] },
 
 	{ "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "You mean no one else here knows you have this luscious, gorgeous, magnificent head of hair??" },
+	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "Oh, thank you so much for noticing." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "Yeah, it’d get in my way while I’m fighting." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "Besides, the other guys would make fun of me for it." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "They think I’m only into tearing the limbs off of my enemies. But, truth be told: I spend 45 minutes every day brushing out my illustrious hair." },
@@ -50,27 +51,59 @@
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That sounds really difficult"  },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "I wish just once someone else would brush my hair so all of these knots would stop bothering me" },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What should I say?", "choices": [
-	  { "text": "Brush Hair", "next": 71 },
-	  { "text": "Move On", "next": 45 }
+	  { "text": "Offer To Brush Hair", "next": 89 },
+	  { "text": "Move On", "next": 58 }
 	] },
 	
   
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Speaking of everyone else on the island, where’s everybody else?" },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was hoping to interview them for this documentary I’m making about this Fight Fighting Fight Fighters Tournament coming up." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "You’re not going to say anything nice about my hair?" },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What should I say?", "choices": [
+	  { "text": "Compliment Hair", "next": 41 },
+	  { "text": "Keep Ignoring Hair", "next": 67 }
+	] },
+
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "No, I wasn’t planning on it." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "Oh" },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "Yeah, that’s fine." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "That’s totally fine." },
+	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "You're really not going to say anything nice about my hair?" },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What should I say?", "choices": [
+	  { "text": "COMPLIMENT HAIR", "next": 41 },
+	  { "text": "Sell your soul to the devil, you spineless worm.", "next": 76 }
+	] },
 	{ "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "Are you crying?" },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "NO! Fight Fighters don’t cry. This is sweat… from my eyes." },
-	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "I have to go. Check in at the Blood Temple up the road." },
+	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "YOU MADE CHARRAX SWEAT FROM HIS EYES!" },
+
+	{ "speaker": " ", "portrait": "", "text": "Charrax runs off, sobbi- oops... I mean... sweating his eyes out." },
+	{ "speaker": " ", "portrait": "", "text": "You are a bad person." },
+	{ "speaker": " ", "portrait": "", "text": "Everyone thinks so." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was weird. I feel like he really wanted me to compliment his hair." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "And I feel like the narrator is mad at me now." },
 	{ "speaker": "Nina", "portrait": "PlayerTriumphant.png", "text": "Whatever, I’m sure that won’t have long-lasting consequences that impact the game further down the line." }
+	{ "speaker": " ", "portrait": "", "text": "Charrax was going to tell you that there are two more fighters down the road." },
+	{ "speaker": " ", "portrait": "", "text": "Before you shattered his still-beating heart into a billion and one pieces." },
+	{ "speaker": " ", "portrait": "", "text": "You can go to either Johnny F at the Blood Temple, or Taz at the Acid Lake." },
+		{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
+	  { "text": "Taz.", "next": 103 },
+	  { "text": "Johnny F.", "next": 104 }
+
+
 
  	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I could brush your hair Charrax." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I'm a girl you know, and all girl's know everything about hair. It's a simple fact of life." },
 	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "You’d really do that without making fun of me even a little bit?" },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "maybe just a little bit. Let's get to brushing" },
   ]
-  
+
+
+  { "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Haha, yeah. Anyways." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was hoping to meet some of the other guys. Do you know where I can find them?" },
+	{ "speaker": "Charrax", "portrait": "CHair.png", "text": "I think I saw Taz sulking off to the Acid Lake, and I want to say Johnny F is training in the Blood Temple " },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Thanks Charrax, I'll go introduce myself to them." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
+	  { "text": "Taz.", "next": 103 },
+	  { "text": "Johnny F.", "next": 104 }
+
