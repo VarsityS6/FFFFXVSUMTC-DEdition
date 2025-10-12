@@ -5,12 +5,14 @@
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Kind of a mouthful." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "The toughest Fighting Fighters in the world come to clash at this tournament." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "And then there’s me." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Nina Beckner - amateur documentary filmmaker. Out to change the world with nothing but a camera and a microphone." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "and an SD card and a couple batteries." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "and several lengths of cables." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I don’t even know what most of these cables do." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "And that’s not because I’m a bad filmmaker. That’s an industry standard. Nobody knows what these cables do." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I set out to tell a story no one has ever told before. A story of pain and loss." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Nina Beckner - amateur documentary filmmaker. Out to change the world with nothing but a microphone and a dream." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "My stomach is mostly butterflies right now and not just because I ate a bunch of cocoons earlier." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe I should turn back. It's not too late." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Should I turn back before I start?", "choices": [
+	  { "text": "No way Jose!", "next": 15 },
+	  { "text": "Leave Fight Island", "next": 58 }
+	] },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "My dream is too important to give up on! I set out to tell a story no one has ever told before. A story of pain and loss." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That's not metaphorical either. It’s a story of pain from being punched really hard and loss of limb from spinning saw blades or laser swords." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I think everyone deserves to know:" },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who are the Fight Fighting Fight Fighters?" },
@@ -106,4 +108,12 @@
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
 	  { "text": "Taz.", "next": 103 },
 	  { "text": "Johnny F.", "next": 104 }
+
+
+
+	  { "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Well, there's no shame in giving up like a coward." },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Guess I'll never find out about the lives of the Fight Fighting Fight Fighters" },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "The whole premise of this game sort of relied on me doing that. " },
+	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Soooooo...uh...Thanks for playing I guess." },
+	{ "speaker": " ", "portrait": "", "text": "You Lose." },
 
