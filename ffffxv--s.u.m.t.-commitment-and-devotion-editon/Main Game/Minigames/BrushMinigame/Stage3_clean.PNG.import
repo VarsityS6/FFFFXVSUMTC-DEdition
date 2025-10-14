@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2f1njbnf4m8k"
-path="res://.godot/imported/brushalicious.png-eefdcb29fae2944e92378866c11db086.ctex"
+uid="uid://c1ynb0880l365"
+path="res://.godot/imported/Stage3_clean.PNG-79aa123a8bbf42d26abd1eccfbd922c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MinigameAssets/brushalicious.png"
-dest_files=["res://.godot/imported/brushalicious.png-eefdcb29fae2944e92378866c11db086.ctex"]
+source_file="res://Main Game/Minigames/BrushMinigame/Stage3_clean.PNG"
+dest_files=["res://.godot/imported/Stage3_clean.PNG-79aa123a8bbf42d26abd1eccfbd922c7.ctex"]
 
 [params]
 

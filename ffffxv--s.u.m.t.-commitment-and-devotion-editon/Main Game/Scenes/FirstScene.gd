@@ -3,7 +3,7 @@ extends Node2D
 var dialogue = []
 var index = 0
 
-# ✅ Preload portraits so they are guaranteed to be bundled in the export
+# Preload portraits so they are guaranteed to be bundled in the export
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"PlayerSurprise.png": preload("res://portraits/PlayerSurprise.png"),
