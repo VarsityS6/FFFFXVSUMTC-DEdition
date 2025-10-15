@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crb25k1p1ysav"
-path="res://.godot/imported/Stage1_clean.PNG-79595018b3f5562b5cef6bd311f1a44e.ctex"
+uid="uid://c1ynb0880l365"
+path="res://.godot/imported/Stage3_clean.PNG-96483bdec35aa36207df8f8582926167.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main Game/Minigames/BrushMinigame/Stage1_clean.PNG"
-dest_files=["res://.godot/imported/Stage1_clean.PNG-79595018b3f5562b5cef6bd311f1a44e.ctex"]
+source_file="res://Assets/MinigameAssets/BrushMini/Stage3_clean.PNG"
+dest_files=["res://.godot/imported/Stage3_clean.PNG-96483bdec35aa36207df8f8582926167.ctex"]
 
 [params]
 

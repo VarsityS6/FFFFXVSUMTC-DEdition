@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brkkhos731qd8"
-path="res://.godot/imported/Stage2_messy.PNG-f87a79c265d65db048cf7633a0bcc09a.ctex"
+uid="uid://cmu6kgmmo20hk"
+path="res://.godot/imported/PointPlaceholder.png-1be91dd974c40d7ee6e4cf30a022c8e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main Game/Minigames/BrushMinigame/Stage2_messy.PNG"
-dest_files=["res://.godot/imported/Stage2_messy.PNG-f87a79c265d65db048cf7633a0bcc09a.ctex"]
+source_file="res://Assets/MinigameAssets/BrushMini/PointPlaceholder.png"
+dest_files=["res://.godot/imported/PointPlaceholder.png-1be91dd974c40d7ee6e4cf30a022c8e1.ctex"]
 
 [params]
 

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://8tel8vgjls58" path="res://Main Game/Minigames/BrushMinigame/BrushMinigame.gd" id="1_wcs30"]
 [ext_resource type="PackedScene" uid="uid://fan5feryw8vu" path="res://Main Game/Minigames/BrushMinigame/dragable_sprite.tscn" id="1_yon80"]
 [ext_resource type="Texture2D" uid="uid://cxc8ypirb88er" path="res://Assets/MinigameAssets/BrushMini/CharaxxPlaceholderComb.png" id="2_0w6hq"]
-[ext_resource type="Texture2D" uid="uid://dt4c35eekun16" path="res://Main Game/Minigames/BrushMinigame/Stage1_messy.PNG" id="2_32m4m"]
+[ext_resource type="Texture2D" uid="uid://dt4c35eekun16" path="res://Assets/MinigameAssets/BrushMini/Stage1_messy.PNG" id="2_32m4m"]
 [ext_resource type="Script" uid="uid://bfxmv3prn5li4" path="res://Main Game/Minigames/BrushMinigame/CharraxComb.gd" id="3_fdeek"]
 
 [node name="BrushMinigame" type="Node2D"]
@@ -35,6 +35,8 @@ offset_right = 125.13975
 offset_bottom = 206.2417
 
 [node name="WordContainer" type="Node2D" parent="."]
+
+[node name="Points" type="Sprite2D" parent="."]
 
 [connection signal="button_down" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_down"]
 [connection signal="button_up" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_up"]

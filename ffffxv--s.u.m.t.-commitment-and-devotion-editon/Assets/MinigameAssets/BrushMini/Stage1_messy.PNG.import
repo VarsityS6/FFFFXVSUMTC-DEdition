@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5wwidxrd3k3o"
-path="res://.godot/imported/CConfused.png-78ae775d4dde00409be5e9b30892c0ba.ctex"
+uid="uid://dt4c35eekun16"
+path="res://.godot/imported/Stage1_messy.PNG-2fedeb8b74990f67b67a1ed7b59b935a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://portraits/CConfused.png"
-dest_files=["res://.godot/imported/CConfused.png-78ae775d4dde00409be5e9b30892c0ba.ctex"]
+source_file="res://Assets/MinigameAssets/BrushMini/Stage1_messy.PNG"
+dest_files=["res://.godot/imported/Stage1_messy.PNG-2fedeb8b74990f67b67a1ed7b59b935a.ctex"]
 
 [params]
 
