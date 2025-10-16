@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://Main Game/Scenes/FirstScene.gd" id="1_bsj0a"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="2_bq4c1"]
-[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_srqll"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://portraits/PlayerTalk.png" id="3_srqll"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_iol2w"]
 
 [node name="VisualNovel" type="Node2D"]
@@ -10,70 +10,63 @@ scale = Vector2(0.592895, 0.5956488)
 script = ExtResource("1_bsj0a")
 
 [node name="Background" type="TextureRect" parent="."]
-offset_right = 1943.0
-offset_bottom = 1088.0
+offset_right = 1943.0085
+offset_bottom = 1087.8893
 texture = ExtResource("2_bq4c1")
 expand_mode = 1
 stretch_mode = 6
-metadata/_edit_use_anchors_ = true
 
 [node name="Portrait" type="TextureRect" parent="."]
-offset_left = 501.0
-offset_top = 20.0
-offset_right = 1397.0
-offset_bottom = 895.0
+offset_left = 431.77966
+offset_right = 1524.7219
+offset_bottom = 1087.8893
 texture = ExtResource("3_srqll")
 expand_mode = 1
 stretch_mode = 4
-metadata/_edit_use_anchors_ = true
 
-[node name="UIDialougeBox" type="TextureRect" parent="."]
-offset_left = 352.0
-offset_top = 589.0
-offset_right = 1555.0
-offset_bottom = 1194.0
+[node name="UIDialogueBox" type="TextureRect" parent="."]
+offset_left = 391.30032
+offset_top = 577.5215
+offset_right = 1594.3003
+offset_bottom = 1182.5215
 scale = Vector2(0.98118794, 1)
 texture = ExtResource("4_iol2w")
 expand_mode = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="DialogueBox" type="Panel" parent="."]
 visible = false
-offset_left = 581.0
-offset_top = 819.0
-offset_right = 1334.0
-offset_bottom = 1009.0
+offset_left = 607.1902
+offset_top = 792.4132
+offset_right = 1360.1902
+offset_bottom = 982.4132
 
 [node name="NameLabel" type="Label" parent="."]
 modulate = Color(0.168627, 0.054902, 0.0431373, 1)
-offset_left = 596.0
-offset_top = 743.0
-offset_right = 659.0
-offset_bottom = 766.0
+offset_left = 620.6833
+offset_top = 738.6903
+offset_right = 683.6833
+offset_bottom = 761.6903
 scale = Vector2(2.01498, 2.06673)
 horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="TextLabel" type="RichTextLabel" parent="."]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 596.0
-offset_top = 809.0
-offset_right = 1239.0
-offset_bottom = 918.0
+offset_left = 627.4299
+offset_top = 790.7344
+offset_right = 1257.1086
+offset_bottom = 902.6571
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.2, 1.68)
 fit_content = true
 tab_size = 15
 shortcut_keys_enabled = false
-metadata/_edit_use_anchors_ = true
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 662.0
-offset_top = 911.0
-offset_right = 1266.0
-offset_bottom = 1013.0
-metadata/_edit_use_anchors_ = true
+offset_left = 661.1626
+offset_top = 866.2823
+offset_right = 1265.1626
+offset_bottom = 968.2823

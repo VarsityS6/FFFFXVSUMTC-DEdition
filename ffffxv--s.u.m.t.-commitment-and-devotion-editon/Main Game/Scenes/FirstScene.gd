@@ -75,12 +75,17 @@ func show_choices(choices: Array):
 	for choice in choices:
 		var btn = Button.new()
 		btn.text = choice["text"]
-		var scene_id = choice["scene"] # capture safely
+		# Handle normal line jump vs. scene change
 		btn.pressed.connect(func():
-			get_line_by_id(scene_id)
-			show_line()
+			if choice.has("scene_change"):
+				get_tree().change_scene_to_file(choice["scene_change"])
+			else:
+				var scene_id = choice["scene"]
+				get_line_by_id(scene_id)
+				show_line()
 		)
 		$Choices.add_child(btn)
+
 
 func clear_choices():
 	for child in $Choices.get_children():
@@ -101,4 +106,4 @@ func end_dialogue():
 	$Portrait.texture = null
 	clear_choices()
 	print("Dialogue ended")
-	get_tree().change_scene_to_file("res://Main Game/Scenes/CheckIn.tscn")
+	get_tree().change_scene_to_file("res://Sandbox/Screenshots.tscn")
