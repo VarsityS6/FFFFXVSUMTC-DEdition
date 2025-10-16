@@ -16,7 +16,12 @@ var preload_portraits = {
 
 func _ready():
 	dialogue = load_dialogue("res://Dialogue/CHARRAXscene1.json")
-	show_line()
+
+#Check if we beat Brush minigame
+	if Global.resume_after_minigame:
+		Global.resume_after_minigame = false
+		get_line_by_id(Global.resume_line_id)
+		show_line()
 
 func load_dialogue(path: String) -> Array:
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -37,18 +42,16 @@ func get_line_by_id(line_id: String) -> Dictionary:
 	return {}
 
 func show_line():
+	# Skip all consecutive comments first without recursion
+	while index < dialogue.size() and dialogue[index].has("type") and dialogue[index]["type"] == "comment":
+		index += 1
+	
 	if index >= dialogue.size():
 		end_dialogue()
 		return
 
 	var line = dialogue[index]
-
-	# Skip comments automatically
-	if line.has("type") and line["type"] == "comment":
-		index += 1
-		show_line()
-		return
-
+	
 	# Set speaker name and text
 	$NameLabel.text = line.get("speaker", "")
 	$TextLabel.text = line.get("text", "")
@@ -64,10 +67,9 @@ func show_line():
 		show_choices(line["choices"])
 	else:
 		clear_choices()
-
-	# Trigger mini-game if this line has it
 	if line.has("minigame"):
-		resume_line_id = line.get("resume_id", "")  # save where to resume
+		resume_line_id = line.get("resume_id", "")
+		Global.resume_line_id = resume_line_id  # Store globally for resuming
 		get_tree().change_scene_to_file(line["minigame"])
 
 func show_choices(choices: Array):
@@ -95,7 +97,7 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		if not dialogue[index].has("choices"):
 			index += 1
-			# Skip comment lines automatically
+			# Skip comment lines automatically without recursion
 			while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 				index += 1
 			show_line()

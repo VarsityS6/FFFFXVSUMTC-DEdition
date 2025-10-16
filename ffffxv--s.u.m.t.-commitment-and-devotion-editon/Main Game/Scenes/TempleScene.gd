@@ -2,7 +2,10 @@ extends Node2D
 
 var dialogue = []
 var index = 0
+var scene_transitioning = false
+# REMOVED: static var scene_loaded_once = false  # This was causing the issue!
 
+# Preload portraits
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"PlayerSurprise.png": preload("res://portraits/PlayerSurprise.png"),
@@ -15,17 +18,19 @@ var preload_portraits = {
 @onready var portrait = $Portrait
 @onready var choices_container = $Choices
 
+
 func _ready():
-	print("TempleScene loaded successfully!")
-	print("Root node:", get_name())
+	print("TempleScene loaded successfully")
 
 	dialogue = load_dialogue("res://Dialogue/JIMMYscene2.json")
+
 	if dialogue.size() == 0:
 		push_error("⚠️ Dialogue file empty or not found!")
 	else:
 		print("Loaded dialogue lines:", dialogue.size())
 
 	show_line()
+
 
 func load_dialogue(path: String) -> Array:
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -39,6 +44,7 @@ func load_dialogue(path: String) -> Array:
 		return []
 	return result
 
+
 func get_line_by_id(line_id: String) -> Dictionary:
 	for i in range(dialogue.size()):
 		if dialogue[i].has("id") and dialogue[i]["id"] == line_id:
@@ -46,37 +52,26 @@ func get_line_by_id(line_id: String) -> Dictionary:
 			return dialogue[i]
 	return {}
 
+
 func show_line():
+	# Skip all consecutive comments first without recursion
+	while index < dialogue.size() and dialogue[index].has("type") and dialogue[index]["type"] == "comment":
+		index += 1
+	
 	if index >= dialogue.size():
 		end_dialogue()
 		return
 
 	var line = dialogue[index]
 
-	if line.has("type") and line["type"] == "comment":
-		index += 1
-		show_line()
-		return
+	name_label.text = line.get("speaker", "")
+	text_label.text = line.get("text", "")
 
-	# Safely set speaker + text
-	if name_label:
-		name_label.text = line.get("speaker", "")
+	# Handle portrait
+	if line.has("portrait") and line["portrait"] != " ":
+		portrait.texture = preload_portraits.get(line["portrait"], null)
 	else:
-		print("⚠️ NameLabel not found!")
-
-	if text_label:
-		text_label.text = line.get("text", "")
-	else:
-		print("⚠️ TextLabel not found!")
-
-	# Portrait handling
-	if portrait:
-		if line.has("portrait") and line["portrait"] != "":
-			portrait.texture = preload_portraits.get(line["portrait"], null)
-		else:
-			portrait.texture = null
-	else:
-		print("⚠️ Portrait node not found!")
+		portrait.texture = null
 
 	# Handle choices
 	if line.has("choices"):
@@ -84,40 +79,91 @@ func show_line():
 	else:
 		clear_choices()
 
+
+	# Skip comments
+	if line.has("type") and line["type"] == "comment":
+		index += 1
+		show_line()
+		return
+
+	name_label.text = line.get("speaker", "")
+	text_label.text = line.get("text", "")
+
+	# Handle portrait
+	if line.has("portrait") and line["portrait"] != " ":
+		portrait.texture = preload_portraits.get(line["portrait"], null)
+	else:
+		portrait.texture = null
+
+	# Handle choices
+	if line.has("choices"):
+		show_choices(line["choices"])
+	else:
+		clear_choices()
+
+
 func show_choices(choices: Array):
 	clear_choices()
-	if not choices_container:
-		print("⚠️ Choices container not found!")
-		return
-
 	for choice in choices:
 		var btn = Button.new()
-		btn.text = choice.get("text", "???")
-		var scene_id = choice.get("scene", "")
+		btn.text = choice["text"]
+
 		btn.pressed.connect(func():
-			get_line_by_id(scene_id)
-			show_line()
+			if scene_transitioning:
+				return
+			scene_transitioning = true
+
+			if choice.has("scene_change"):
+				var target = choice["scene_change"]
+
+				# ✅ Prevent reloading the same scene accidentally
+				if target == get_tree().current_scene.scene_file_path:
+					print("⚠️ Ignoring self-reload request for:", target)
+					scene_transitioning = false
+					return
+
+				print("Changing to new scene:", target)
+				get_tree().change_scene_to_file(target)
+
+			elif choice.has("scene"):
+				var scene_id = choice["scene"]
+				get_line_by_id(scene_id)
+				show_line()
+				scene_transitioning = false
+
+			else:
+				push_error("Choice missing 'scene' or 'scene_change' key: " + str(choice))
 		)
+
 		choices_container.add_child(btn)
 
+
 func clear_choices():
-	if not choices_container:
-		return
 	for child in choices_container.get_children():
 		child.queue_free()
 
 func _input(event):
+	if scene_transitioning:
+		return
 	if event.is_action_pressed("ui_accept"):
+		# Make sure dialogue exists and index is valid
+		if dialogue.is_empty() or index >= dialogue.size():
+			return
+
 		if not dialogue[index].has("choices"):
 			index += 1
+
+			# Skip comment lines safely without recursion
 			while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 				index += 1
+
 			show_line()
 
+
 func end_dialogue():
-	$NameLabel.text = ""
-	$TextLabel.text = ""
-	$Portrait.texture = null
+	name_label.text = ""
+	text_label.text = ""
+	portrait.texture = null
 	clear_choices()
 	print("Dialogue ended")
 	get_tree().change_scene_to_file("res://Sandbox/Screenshots.tscn")

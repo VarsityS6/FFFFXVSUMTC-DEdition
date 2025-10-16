@@ -202,11 +202,6 @@ func _show_win_button():
 	tween.tween_property(button, "modulate:a", 1.0, 0.5)
 
 func _on_win_button_pressed():
-	# Remove previous dialogue scene
-	get_tree().current_scene.queue_free()
-
-	# Load the dialogue scene anew
-	var dialogue_scene = load("res://Main Game/Scenes/FirstScene.tscn").instantiate()
-	get_tree().root.add_child(dialogue_scene)
-	dialogue_scene.get_line_by_id("next_fighters")
-	dialogue_scene.show_line()
+	Global.resume_after_minigame = true
+	Global.resume_line_id = "next_fighters"
+	get_tree().change_scene_to_file("res://Main Game/Scenes/FirstScene.tscn")
