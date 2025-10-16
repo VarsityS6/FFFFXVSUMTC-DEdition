@@ -37,7 +37,6 @@ func _ready():
 	randomize()
 	_set_hair_texture()
 	previous_comb_y = comb.global_position.y
-
 # ----------------------------------------------------
 # Handle floating/fading points each frame
 # ----------------------------------------------------
@@ -191,6 +190,7 @@ func _show_win_button():
 	var button := Button.new()
 	button.text = "Brushalicious! His hair looks amazing!"
 	button.scale = Vector2(2, 2)
+	button.position = get_viewport_rect().size / 2 - Vector2(300, 50)
 	button.set_anchors_preset(Control.PRESET_CENTER)
 
 	add_child(button)
@@ -202,7 +202,11 @@ func _show_win_button():
 	tween.tween_property(button, "modulate:a", 1.0, 0.5)
 
 func _on_win_button_pressed():
-	print("Continue the dialogue or switch scenes here!")
-	get_tree().paused = false
-	# Example: emit_signal("minigame_completed")
-	# or get_tree().change_scene_to_file("res://NextScene.tscn")
+	# Remove previous dialogue scene
+	get_tree().current_scene.queue_free()
+
+	# Load the dialogue scene anew
+	var dialogue_scene = load("res://Main Game/Scenes/FirstScene.tscn").instantiate()
+	get_tree().root.add_child(dialogue_scene)
+	dialogue_scene.get_line_by_id("next_fighters")
+	dialogue_scene.show_line()

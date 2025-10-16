@@ -7,8 +7,8 @@
 
 	{ "speaker": " ", "portrait": " ", "text": "A man suddenly drops from the sky, somehow making a crater in the shape of a fist on the floor beneath him" },
 
-	{ "speaker": "???", "portrait": " ", "text": "Ah ha! A small dainty woman with a microphone!"
-	{ "speaker": "???", "portrait": " ", "text": "What brings you here?"
+	{ "speaker": "???", "portrait": " ", "text": "Ah ha! A small dainty woman with a microphone!" },
+	{ "speaker": "???", "portrait": " ", "text": "What brings you here?" },
 	{ "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "Goodness, that looked like a long fall!" },
 	{ "speaker": "???", "portrait": "", "text": "It was!" },
 	{ "speaker": "???", "portrait": "", "text": "I broke every bone in my body!" },
@@ -32,13 +32,13 @@
 	{ "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "Such..." },
 	{ "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "Big strong hands..." },
 	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Yes, big strong hands are good at punching things!" },
-	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Now, hit that bag as hard as you can tiny lady!"
+	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Now, hit that bag as hard as you can tiny lady!"},
 
 	{ "speaker": " ", "portrait": " ", "text": "You wind up your fist and strike the bag as hard as you can." },
 	{ "speaker": " ", "portrait": " ", "text": "It barely moves an inch." },
 
-	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Wow..."
-	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "That was..."
+	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Wow..."},
+	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "That was..."},
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Ha ha yeah..." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I bet your grandma can hit harder then that." },
 	{ "speaker": "Jimmy Fistenyorfeyce", "portrait": " ", "text": "Of course, my grandma can hit harder then me!"},
