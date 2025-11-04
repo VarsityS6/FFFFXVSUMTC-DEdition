@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4kvplrdwt56r"]
+
+[ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_3uaiq"]
+
+[node name="CoffeeMinigame" type="Node2D"]
+script = ExtResource("1_3uaiq")

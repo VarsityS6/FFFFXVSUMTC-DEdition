@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqmq1vtky1owk"
-path="res://.godot/imported/TazSulking.PNG-ff6e86e2f957cb6fbcf840ece2217234.ctex"
+path="res://.godot/imported/TazSulking.PNG-1a9a83aea8befec2aaa0f6e41b4c3ce6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://portraits/TazSulking.PNG"
-dest_files=["res://.godot/imported/TazSulking.PNG-ff6e86e2f957cb6fbcf840ece2217234.ctex"]
+source_file="res://Portraits/TazSulking.PNG"
+dest_files=["res://.godot/imported/TazSulking.PNG-1a9a83aea8befec2aaa0f6e41b4c3ce6.ctex"]
 
 [params]
 
