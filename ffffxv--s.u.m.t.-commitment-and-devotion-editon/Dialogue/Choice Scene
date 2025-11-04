@@ -31,7 +31,7 @@
    { "id": "Choice_intro_29", "speaker": "", "portrait": "PlayerTalk.png", "text": "The game developers don't have time to make another scene so you should probably marry one of them right now." },
   { "id": "Choice_intro_30", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "You guys even got the narrator in on this!" },
   { "id": "Choice_intro_31", "speaker": "", "portrait": "PlayerTalk.png", "text": "What? I love to see love blossom." },
-{ "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":} [
+{ "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
 	  { "text": "Taz the Dragonborn", "scene": "Choice_Taz1" },
 	  { "text": "Charrax the Fleshripper", "scene": "Choice_Charrax1" },
 	  { "text": "Jimmy Fistenyorfeyce", "scene": "Choice_Jimmy1" },
@@ -48,6 +48,54 @@
    { "id": "Choice_Taz8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
   { "id": "Choice_Taz9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
   { "id": "Choice_Taz10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
+  { "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
+	  { "text": "Yes!", "scene": "TazEnding1" },
+	  { "text": "No", "scene": "Choice_intro32" },
+
+           { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
+  { "id": "Choice_Charrax2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
+  { "id": "Choice_Charrax3", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
+  { "id": "Choice_Charrax4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Really!" },
+  { "id": "Choice_Charrax5", "speaker": "", "portrait": "PlayerTalk.png", "text": "Damn, really?." },
+  { "id": "Choice_Charrax6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him." },
+  { "id": "Choice_Charrax7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
+   { "id": "Choice_Charrax8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
+  { "id": "Choice_Charrax9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
+  { "id": "Choice_Charrax10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
+  { "id": "Choice_Charrax11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
+	  { "text": "Yes!", "scene": "TazEnding1" },
+	  { "text": "No", "scene": "Choice_intro32" },
+
+    
+           { "id": "Choice_Jimmy1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Jimmy." },
+  { "id": "Choice_Jimmy2", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "YEEEEEEEEEEEEEEEEEEEEEEEEEEEESS!!!!" },
+  { "id": "Choice_Jimmy3", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I KNEW SHE'D PICK ME!!" },
+  { "id": "Choice_Jimmy4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "SUCK IT NERDS!" },
+  { "id": "Choice_Jimmy5", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Damn, she picked Jimmy." },
+  { "id": "Choice_Jimmy6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Jimmy! I really like your energy and your excitement." },
+  { "id": "Choice_Jimmy7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I can't wait to be Nina Fistenyorfeyce." },
+   { "id": "Choice_Jimmy8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Jimmy ." },
+  { "id": "Choice_Jimmy9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
+  { "id": "Choice_Jimmy10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
+  { "id": "Choice_Jimmy11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
+	  { "text": "Yes!", "scene": "TazEnding1" },
+	  { "text": "No", "scene": "Choice_intro32" },
+
+    
+           { "id": "Choice_None1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
+  { "id": "Choice_None2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
+  { "id": "Choice_None3", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
+  { "id": "Choice_None4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Really!" },
+  { "id": "Choice_None5", "speaker": "", "portrait": "PlayerTalk.png", "text": "Damn, really?." },
+  { "id": "Choice_None6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him." },
+  { "id": "Choice_None7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
+   { "id": "Choice_None8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
+  { "id": "Choice_None9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
+  { "id": "Choice_None10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
+  { "id": "Choice_None11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
+	  { "text": "Yes!", "scene": "TazEnding1" },
+	  { "text": "No", "scene": "Choice_intro32" },
+	
 
 
 
