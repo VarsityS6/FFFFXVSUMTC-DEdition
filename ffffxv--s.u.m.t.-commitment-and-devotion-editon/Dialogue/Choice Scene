@@ -1,3 +1,4 @@
+
  { "id": "Choice_intro_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Well, I finally made it to the Perpetually Stormy Climactic Field." }
   { "id": "Choice_intro_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Aptly named." },
   { "id": "Choice_intro_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe something climactic will happen here:" },
@@ -30,7 +31,7 @@
    { "id": "Choice_intro_29", "speaker": "", "portrait": "PlayerTalk.png", "text": "The game developers don't have time to make another scene so you should probably marry one of them right now." },
   { "id": "Choice_intro_30", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "You guys even got the narrator in on this!" },
   { "id": "Choice_intro_31", "speaker": "", "portrait": "PlayerTalk.png", "text": "What? I love to see love blossom." },
-{ "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices": [
+{ "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":} [
 	  { "text": "Taz the Dragonborn", "scene": "Choice_Taz1" },
 	  { "text": "Charrax the Fleshripper", "scene": "Choice_Charrax1" },
 	  { "text": "Jimmy Fistenyorfeyce", "scene": "Choice_Jimmy1" },
@@ -38,19 +39,15 @@
 
 
        { "id": "Choice_Taz1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
-  { "id": "Choice_Taz", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
-  { "id": "Choice_Taz", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
-  { "id": "Choice_Taz", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Really!" },
-  { "id": "Choice_Taz", "speaker": "", "portrait": "PlayerTalk.png", "text": "Damn, really?." },
-  { "id": "Choice_Taz", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him." },
-  { "id": "Choice_Taz", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
-   { "id": "Choice_Taz", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Because the hill is really steep." },
-  { "id": "Choice_Taz", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Hey! We're getting distracted!." },
-  { "id": "Choice_Taz", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "We need to figure out who Nina is going to marry! And whether or not it's me!" },
-  { "id": "Choice_Taz", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "This is crazy! This seems really soon to talk about marrying any of you." },
-  { "id": "Choice_Taz", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Of course she doesn't want to marry us. No one could ever love me. Not even my dad who is a dragon." },
-  { "id": "Choice_Taz", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Enough about your dad already." },
-  { "id": "Choice_Taz", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "We are SO sick of hearing about it." },
-   { "id": "Choice_Taz", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Come on guys play nice." },
-  { "id": "Choice_Taz", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Thank you Nina." },
+  { "id": "Choice_Taz2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
+  { "id": "Choice_Taz3", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
+  { "id": "Choice_Taz4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Really!" },
+  { "id": "Choice_Taz5", "speaker": "", "portrait": "PlayerTalk.png", "text": "Damn, really?." },
+  { "id": "Choice_Taz6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him." },
+  { "id": "Choice_Taz7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
+   { "id": "Choice_Taz8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
+  { "id": "Choice_Taz9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
+  { "id": "Choice_Taz10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
+
+
 
