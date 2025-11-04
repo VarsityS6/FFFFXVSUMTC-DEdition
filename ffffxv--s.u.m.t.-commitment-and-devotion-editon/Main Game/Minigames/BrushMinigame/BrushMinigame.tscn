@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://8tel8vgjls58" path="res://Main Game/Minigames/BrushMinigame/BrushMinigame.gd" id="1_wcs30"]
 [ext_resource type="PackedScene" uid="uid://fan5feryw8vu" path="res://Main Game/Minigames/BrushMinigame/dragable_sprite.tscn" id="1_yon80"]
 [ext_resource type="Texture2D" uid="uid://cxc8ypirb88er" path="res://Assets/MinigameAssets/BrushMini/CharaxxPlaceholderComb.png" id="2_0w6hq"]
-[ext_resource type="Texture2D" uid="uid://dt4c35eekun16" path="res://Assets/MinigameAssets/BrushMini/Stage1_messy.PNG" id="2_32m4m"]
 [ext_resource type="Script" uid="uid://bfxmv3prn5li4" path="res://Main Game/Minigames/BrushMinigame/CharraxComb.gd" id="3_fdeek"]
+[ext_resource type="Texture2D" uid="uid://bocnwq0s27oro" path="res://Assets/MinigameAssets/BrushMini/CharraxLeftMessy.png" id="3_wcs30"]
 
 [node name="BrushMinigame" type="Node2D"]
 script = ExtResource("1_wcs30")
@@ -18,7 +18,7 @@ texture = ExtResource("1_nxkri")
 [node name="Hair" type="Sprite2D" parent="."]
 position = Vector2(588, 324)
 scale = Vector2(0.14072502, 0.130925)
-texture = ExtResource("2_32m4m")
+texture = ExtResource("3_wcs30")
 
 [node name="CharraxComb" parent="." instance=ExtResource("1_yon80")]
 position = Vector2(131, 275.00003)

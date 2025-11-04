@@ -5,12 +5,12 @@ extends Node2D
 @onready var word_container = $WordContainer
 
 # --- Hair stage textures ---
-var stage1_messy = load("res://Assets/MinigameAssets/BrushMini/Stage1_messy.PNG")
-var stage1_clean = load("res://Assets/MinigameAssets/BrushMini/Stage1_clean.PNG")
-var stage2_messy = load("res://Assets/MinigameAssets/BrushMini/Stage2_messy.PNG")
-var stage2_clean = load("res://Assets/MinigameAssets/BrushMini/Stage2_clean.PNG")
-var stage3_messy = load("res://Assets/MinigameAssets/BrushMini/Stage3_messy.PNG")
-var stage3_clean = load("res://Assets/MinigameAssets/BrushMini/Stage3_clean.PNG")
+var stage1_messy = load("res://Assets/MinigameAssets/BrushMini/CharraxLeftMessy.png")
+var stage1_clean = load("res://Assets/MinigameAssets/BrushMini/CharraxLeftNeat.png")
+var stage2_messy = load("res://Assets/MinigameAssets/BrushMini/CharraxBackMessy.png")
+var stage2_clean = load("res://Assets/MinigameAssets/BrushMini/CharraxBackNeat.png")
+var stage3_messy = load("res://Assets/MinigameAssets/BrushMini/CharraxRighMessy.png")
+var stage3_clean = load("res://Assets/MinigameAssets/BrushMini/CharraxRightNeat.png")
 
 # --- Word PNGs ---
 var word_textures = [
