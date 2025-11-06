@@ -47,12 +47,12 @@
   { "id": "Choice_Taz7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
    { "id": "Choice_Taz8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
   { "id": "Choice_Taz9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
-  { "id": "Choice_Taz10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
-  { "id": "Choice_intro_32", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
+  { "id": "Choice_Taz10", "speaker": "", "portrait": "PlayerTalk.png", "text": "Taz lifts up his shirt and unclips his belly button ring. He then drops to one knee and offers it to you." },
+  { "id": "Choice_intro_32", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Nina Beckner, you provide light into the dark abyss that is my soul. Will you marry me?", "choices":},
 	  { "text": "Yes!", "scene": "TazEnding1" },
-	  { "text": "No", "scene": "Choice_intro32" },
+	  { "text": "Actually...", "scene": "Choice_intro32" },
 
-           { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
+           { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Charrax." },
   { "id": "Choice_Charrax2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
   { "id": "Choice_Charrax3", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
   { "id": "Choice_Charrax4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Really!" },
@@ -63,8 +63,8 @@
   { "id": "Choice_Charrax9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
   { "id": "Choice_Charrax10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
   { "id": "Choice_Charrax11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
-	  { "text": "Yes!", "scene": "TazEnding1" },
-	  { "text": "No", "scene": "Choice_intro32" },
+	  { "text": "Yes!", "scene": "CharraxEnding1" },
+	  { "text": "Actually...", "scene": "Choice_intro32" },
 
     
            { "id": "Choice_Jimmy1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Jimmy." },
@@ -78,8 +78,8 @@
   { "id": "Choice_Jimmy9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
   { "id": "Choice_Jimmy10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
   { "id": "Choice_Jimmy11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
-	  { "text": "Yes!", "scene": "TazEnding1" },
-	  { "text": "No", "scene": "Choice_intro32" },
+	  { "text": "Yes!", "scene": "JimmyEnding1" },
+	  { "text": "Actually...", "scene": "Choice_intro32" },
 
     
            { "id": "Choice_None1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
@@ -93,8 +93,8 @@
   { "id": "Choice_None9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
   { "id": "Choice_None10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
   { "id": "Choice_None11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
-	  { "text": "Yes!", "scene": "TazEnding1" },
-	  { "text": "No", "scene": "Choice_intro32" },
+	  { "text": "Yes!", "scene": "NoneEnding1" },
+	  { "text": "Actually...", "scene": "Choice_intro32" },
 	
 
 
