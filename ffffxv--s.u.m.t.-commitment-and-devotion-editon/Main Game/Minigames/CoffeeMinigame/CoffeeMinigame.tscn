@@ -4,3 +4,55 @@
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
+
+[node name="Table" type="Sprite2D" parent="."]
+
+[node name="Note" type="Sprite2D" parent="."]
+
+[node name="NoteLabel" type="Label" parent="Note"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Cup" type="Sprite2D" parent="."]
+
+[node name="CoffeePot" type="Sprite2D" parent="."]
+
+[node name="Spoon" type="Sprite2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Ingredients" type="Node2D" parent="."]
+
+[node name="CoconutMilk" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CaramelSyrup" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Nutmeg" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GrandulatedSugar" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Milk" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VanillaSyrup" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChocolateSyrup" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Honey" type="TextureRect" parent="Ingredients"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SlashAnimation" type="AnimatedSprite2D" parent="."]
