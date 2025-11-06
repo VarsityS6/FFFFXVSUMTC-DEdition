@@ -52,6 +52,7 @@
 	  { "text": "Yes!", "scene": "TazEnding1" },
 	  { "text": "Actually...", "scene": "Choice_intro32" },
 
+
            { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Charrax." },
   { "id": "Choice_Charrax2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Really?" },
   { "id": "Choice_Charrax3", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Really??" },
@@ -74,7 +75,7 @@
   { "id": "Choice_Jimmy5", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Damn, she picked Jimmy." },
   { "id": "Choice_Jimmy6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Jimmy! I really like your energy and your excitement." },
   { "id": "Choice_Jimmy7", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "I can't wait to be Nina Fistenyorfeyce." },
-   { "id": "Choice_Jimmy8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Jimmy ." },
+   { "id": "Choice_Jimmy8", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "." },
   { "id": "Choice_Jimmy9", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "I just gagged in my mouth several times!" },
   { "id": "Choice_Jimmy10", "speaker": "Charrax", "portrait": "PlayerTalk.png", "text": "Nina Beckner, ameteur documentary film maker. Will you marry me?" },
   { "id": "Choice_Jimmy11", "speaker": "", "portrait": "PlayerTalk.png", "text": "So which guy are you going to pick?", "choices":},
