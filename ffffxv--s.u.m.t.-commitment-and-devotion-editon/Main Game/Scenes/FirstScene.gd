@@ -7,10 +7,10 @@ var resume_line_id = ""
 # Preload portraits so they are bundled in the export
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"PlayerSurprise.png": preload("res://portraits/PlayerSurprise.png"),
-	"PlayerTriumphant.png": preload("res://portraits/PlayerTriumphant.png"),
+	"NinaSurprise.png": preload("res://Portraits/NinaSurprised.png"),
+	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
 	"CConfused.png": preload("res://portraits/CConfused.png"),
-	"CTalk.png": preload("res://portraits/CTalk.png"),
+	"Charrax01.png": preload("res://Portraits/Charrax01.png"),
 	"CHair.png": preload("res://portraits/CHair.png")
 }
 

@@ -25,15 +25,15 @@
   
 { "id": "scene_charrax_comment", "type": "comment", "text": "=== Scene 2: Charrax Introduction ===" },
   { "id": "charrax_intro", "speaker": " ", "portrait": "", "text": "A tall figure exits a nearby building." },
-  { "id": "charrax_intro_2", "speaker": "???", "portrait": "CConfused.png", "text": "Mhhmmmmhm mmhm" },
-  { "id": "charrax_intro_3", "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "I’m sorry?" },
-  { "id": "charrax_intro_4", "speaker": "???", "portrait": "CConfused.png", "text": "Mhhhhm Mhhm mhhhhhmmm" },
+  { "id": "charrax_intro_2", "speaker": "???", "portrait": "Charrax01.png", "text": "Mhhmmmmhm mmhm" },
+  { "id": "charrax_intro_3", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "I’m sorry?" },
+  { "id": "charrax_intro_4", "speaker": "???", "portrait": "Charrax01.png", "text": "Mhhhhm Mhhm mhhhhhmmm" },
   { "id": "charrax_intro_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I can’t understand you." },
   { "id": "charrax_intro_6", "speaker": "???", "portrait": "CConfused.png", "text": "Mhhm mm" },
   { "id": "charrax_intro_7", "speaker": "Charrax", "portrait": "CHair.png", "text": "Sorry about that. It’s hard for people to hear me through my helmet. I said 'I am Charrax the Fleshripper, Conquerer of Realms, Scourge of Babies, Twelve-time Rock Paper Scissors Champion.'" },
-  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "I…howsa.. Yurrr…" },
+  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "I…howsa.. Yurrr…" },
   { "id": "charrax_intro_9", "speaker": "Charrax", "portrait": "CHair.png", "text": "Huh? It’s hard to understand you even without my helmet." },
-  { "id": "charrax_intro_10", "speaker": "Nina", "portrait": "PlayerTriumphant.png", "text": "HAHAHAHAHA!" },
+  { "id": "charrax_intro_10", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "HAHAHAHAHA!" },
   { "id": "charrax_intro_11", "speaker": "Charrax", "portrait": "CHair.png", "text": "You’re funny lady." },
   { "id": "charrax_intro_12", "speaker": "Charrax", "portrait": "CHair.png", "text": "I’ve never taken off my helmet in front of anyone else on this island." },
 
@@ -42,7 +42,7 @@
 	  { "text": "Ignore Hair", "scene": "hair_ignore" }
  ] },
 
-	{"id": "hair_compliment", "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "You mean no one else here knows you have this luscious, gorgeous, magnificent head of hair??" },
+	{"id": "hair_compliment", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "You mean no one else here knows you have this luscious, gorgeous, magnificent head of hair??" },
 	{"id": "hair_compliment_2", "speaker": "Charrax", "portrait": "CHair.png", "text": "Oh, thank you so much for noticing." },
 	{"id": "hair_compliment_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "Yeah, it’d get in my way while I’m fighting." },
 	{"id": "hair_compliment_4", "speaker": "Charrax", "portrait": "CHair.png", "text": "Besides, the other guys would make fun of me for it." },
@@ -77,7 +77,7 @@
 	  { "text": "COMPLIMENT HAIR", "scene": "hair_compliment" },
 	  { "text": "Sell your soul to the devil, you spineless worm.", "scene": "lose_end" }
   ] },
-	{"id": "lose_end", "speaker": "Nina", "portrait": "PlayerSurprise.png", "text": "Are you crying?" },
+	{"id": "lose_end", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "Are you crying?" },
 	{"id": "lose_end_2", "speaker": "Charrax", "portrait": "CHair.png", "text": "NO! Fight Fighters don’t cry. This is sweat… from my eyes." },
 	{"id": "lose_end_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "YOU MADE CHARRAX SWEAT FROM HIS EYES!" },
 
@@ -86,7 +86,7 @@
 	{"id": "lose_end_6", "speaker": " ", "portrait": "", "text": "Everyone thinks so." },
 	{"id": "lose_end_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was weird. I feel like he really wanted me to compliment his hair." },
 	{"id": "lose_end_8", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "And I feel like the narrator is mad at me now." },
-	{"id": "lose_end_9", "speaker": "Nina", "portrait": "PlayerTriumphant.png", "text": "Whatever, I’m sure that won’t have long-lasting consequences that impact the game further down the line." },
+	{"id": "lose_end_9", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Whatever, I’m sure that won’t have long-lasting consequences that impact the game further down the line." },
 	
 	{"id": "lose_end_10", "speaker": " ", "portrait": "", "text": "Charrax was going to tell you that there are two more fighters down the road." },
 	{"id": "lose_end_11", "speaker": " ", "portrait": "", "text": "Before you shattered his still-beating heart into a billion and one pieces." },
