@@ -15,7 +15,7 @@ var preload_portraits = {
 }
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/CHARRAXscene1.json")
+	dialogue = load_dialogue("res://Dialogue/Choice Scene.json")
 
 #Check if we beat Brush minigame
 	if Global.resume_after_minigame:
