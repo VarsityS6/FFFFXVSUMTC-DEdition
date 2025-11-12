@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5wwidxrd3k3o"
-path="res://.godot/imported/CConfused.png-6d02e72ca420c62018d81673ae33903a.ctex"
+path="res://.godot/imported/CConfused.png-78ae775d4dde00409be5e9b30892c0ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Portraits/CConfused.png"
-dest_files=["res://.godot/imported/CConfused.png-6d02e72ca420c62018d81673ae33903a.ctex"]
+source_file="res://portraits/CConfused.png"
+dest_files=["res://.godot/imported/CConfused.png-78ae775d4dde00409be5e9b30892c0ba.ctex"]
 
 [params]
 

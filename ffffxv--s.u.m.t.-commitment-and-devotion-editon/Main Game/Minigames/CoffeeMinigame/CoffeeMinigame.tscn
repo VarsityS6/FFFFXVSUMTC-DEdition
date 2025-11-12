@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://b4kvplrdwt56r"]
+[gd_scene load_steps=16 format=3 uid="uid://b4kvplrdwt56r"]
 
 [ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_3uaiq"]
 [ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="2_aujes"]
+[ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_vrkjd"]
 [ext_resource type="Texture2D" uid="uid://bvqahm632fj0e" path="res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png" id="3_vrkjd"]
 [ext_resource type="Texture2D" uid="uid://rc3xe2q2lq57" path="res://Assets/MinigameAssets/CoffeeMini/Spoon.png" id="4_06uck"]
 [ext_resource type="Texture2D" uid="uid://c00fkadrvh3bm" path="res://Assets/MinigameAssets/CoffeeMini/CoconutMilk.png" id="5_85m5v"]
@@ -18,8 +19,16 @@
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
 
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -8.0
+offset_top = -3.0
+offset_right = 1158.0
+offset_bottom = 659.0
+texture = ExtResource("2_vrkjd")
+
 [node name="Table" type="Sprite2D" parent="."]
-position = Vector2(549, 665)
+position = Vector2(579, 305)
+scale = Vector2(0.39, 0.32333332)
 texture = ExtResource("2_aujes")
 
 [node name="Note" type="Sprite2D" parent="."]
@@ -37,9 +46,9 @@ texture = ExtResource("3_vrkjd")
 [node name="CoffeePot" type="Sprite2D" parent="."]
 
 [node name="Spoon" type="Sprite2D" parent="."]
-position = Vector2(416, 438.99997)
+position = Vector2(-584.8684, 396.35883)
 rotation = 0.77267045
-scale = Vector2(0.48200992, 0.44947454)
+scale = Vector2(0.1382508, 0.12891896)
 texture = ExtResource("4_06uck")
 
 [node name="Timer" type="Timer" parent="."]
@@ -47,11 +56,11 @@ texture = ExtResource("4_06uck")
 [node name="Ingredients" type="Node2D" parent="."]
 
 [node name="CoconutMilk" type="TextureRect" parent="Ingredients"]
-offset_left = 133.0
-offset_top = 185.0
-offset_right = 3133.0
-offset_bottom = 3185.0
-scale = Vector2(0.0502284, 0.047651388)
+offset_left = 85.0
+offset_top = 225.0
+offset_right = 3085.0
+offset_bottom = 3225.0
+scale = Vector2(0.07652597, 0.07259974)
 texture = ExtResource("5_85m5v")
 script = ExtResource("6_2eyor")
 metadata/_edit_use_anchors_ = true
@@ -67,57 +76,55 @@ script = ExtResource("8_x8qau")
 metadata/_edit_use_anchors_ = true
 
 [node name="Nutmeg" type="TextureRect" parent="Ingredients"]
-offset_left = 28.000015
-offset_top = 349.99997
-offset_right = 378.0
-offset_bottom = 700.0
+offset_left = -2417.9998
+offset_top = -988.9999
+offset_right = 582.00024
+offset_bottom = 2011.0001
 scale = Vector2(0.3700965, 0.3700965)
 texture = ExtResource("9_fr2yx")
 metadata/_edit_use_anchors_ = true
 
 [node name="GrandulatedSugar" type="TextureRect" parent="Ingredients"]
-offset_left = 835.0
-offset_top = 211.0
-offset_right = 1080.0
-offset_bottom = 561.0
+offset_left = 1915.0
+offset_top = -1460.0
+offset_right = 4915.0
+offset_bottom = 1540.0
 scale = Vector2(0.6150079, 0.6150079)
 texture = ExtResource("10_1e628")
 metadata/_edit_use_anchors_ = true
 
 [node name="Milk" type="TextureRect" parent="Ingredients"]
-offset_left = 87.0
-offset_top = 216.0
-offset_right = 3087.0
-offset_bottom = 3216.0
-scale = Vector2(0.04737437, 0.04737437)
+offset_left = 7.0
+offset_top = 286.0
+offset_right = 3007.0
+offset_bottom = 3286.0
+scale = Vector2(0.07439159, 0.07558817)
 texture = ExtResource("11_7a0e1")
 metadata/_edit_use_anchors_ = true
 
 [node name="VanillaSyrup" type="TextureRect" parent="Ingredients"]
-offset_left = 416.0
-offset_top = 161.0
-offset_right = 1116.0
-offset_bottom = 1241.0
+offset_left = 520.0
+offset_top = 183.0
+offset_right = 3520.0
+offset_bottom = 3183.0
 scale = Vector2(0.1326842, 0.1326842)
 texture = ExtResource("12_13uyx")
 metadata/_edit_use_anchors_ = true
 
 [node name="ChocolateSyrup" type="TextureRect" parent="Ingredients"]
-offset_left = 343.00003
-offset_top = 171.0
-offset_right = 1043.0
-offset_bottom = 1251.0
+offset_left = 685.0
+offset_top = 155.0
+offset_right = 3685.0
+offset_bottom = 3155.0
 scale = Vector2(0.12232663, 0.12232663)
 texture = ExtResource("13_popno")
 metadata/_edit_use_anchors_ = true
 
 [node name="Honey" type="TextureRect" parent="Ingredients"]
-offset_left = 690.99994
-offset_top = 153.0
-offset_right = 1971.0
-offset_bottom = 1360.0
-scale = Vector2(0.17057496, 0.15312997)
+offset_left = 780.99994
+offset_top = 115.999985
+offset_right = 3781.0
+offset_bottom = 3116.0
+scale = Vector2(0.1197944, 0.12197065)
 texture = ExtResource("14_io87a")
 metadata/_edit_use_anchors_ = true
-
-[node name="SlashAnimation" type="AnimatedSprite2D" parent="."]

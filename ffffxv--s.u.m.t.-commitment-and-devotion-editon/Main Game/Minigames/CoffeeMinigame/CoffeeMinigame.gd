@@ -17,19 +17,17 @@ var time_limit := 15.0
 @onready var cup = $Cup
 @onready var timer = $Timer
 @onready var note_label = $Note/NoteLabel
-@onready var slash_anim = $SlashAnimation
 
 func _ready():
 	timer.wait_time = time_limit
 	timer.start()
 	
-	# Display recipe on the note
+	# Display the recipe on the note
 	note_label.text = "Recipe:\n1. Coconut Milk\n2. Caramel Syrup\n3. Nutmeg\n4. Granulated Sugar\n5. Pour Coffee\n6. Stir"
 	
-	# Connect timer timeout
 	timer.timeout.connect(_on_time_up)
 	
-	# Make ingredients draggable
+	# Connect all ingredient drop signals
 	for ingredient in $Ingredients.get_children():
 		ingredient.connect("dropped_into_cup", _on_ingredient_dropped)
 	
@@ -40,7 +38,6 @@ func _ready():
 func _on_ingredient_dropped(name: String):
 	added_ingredients.append(name)
 	
-	# Check progress
 	if added_ingredients.size() == CORRECT_ORDER.size():
 		if added_ingredients == CORRECT_ORDER:
 			_on_success()
@@ -54,8 +51,7 @@ func _on_time_up():
 
 func _on_fail():
 	timer.stop()
-	slash_anim.play("slash")  # your animation to destroy the cup
-	await slash_anim.animation_finished
+	print("❌ Wrong order or time up! Resetting...")
 	reset_game()
 
 
@@ -63,12 +59,18 @@ func _on_success():
 	timer.stop()
 	print("✅ Coffee made correctly!")
 	emit_signal("minigame_completed") # optional for main game
-	# You could also play a success animation or sound
 
 
 func reset_game():
 	added_ingredients.clear()
 	timer.start()
-	print("Resetting for new attempt")
-	# Replace cup with a new one (instantiate or reset texture)
-	# Optionally reset ingredient positions
+	print("New attempt started.")
+	
+	# Reset the cup (you can replace this with an animation if you want)
+	if cup:
+		cup.modulate = Color.WHITE  # visually reset (if you were tinting/filling it)
+	
+	# Optionally reset ingredient positions if you want them to return to original spots
+	for ingredient in $Ingredients.get_children():
+		if ingredient.has_method("reset_position"):
+			ingredient.reset_position()
