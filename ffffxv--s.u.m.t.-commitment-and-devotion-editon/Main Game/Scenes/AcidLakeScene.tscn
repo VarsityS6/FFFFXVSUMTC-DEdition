@@ -56,9 +56,9 @@ scale = Vector2(1.0140924, 1.0130446)
 metadata/_edit_use_anchors_ = true
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 409.0
-offset_top = 529.0
-offset_right = 715.0
-offset_bottom = 581.0
+offset_left = 416.0
+offset_top = 519.99994
+offset_right = 722.0
+offset_bottom = 571.99994
 scale = Vector2(1.0140924, 1.0130446)
 metadata/_edit_use_anchors_ = true

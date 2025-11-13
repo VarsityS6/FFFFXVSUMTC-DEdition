@@ -1,14 +1,16 @@
 [
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What kind of guy hangs around an acid lake?" },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "You can't even go swimming because the acid is all acidic and stuff." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Sitting on a nearby rock, you see a brooding shadow skipping stones across the acid lake." },
+	{ "speaker": "", "portrait": " ", "text": "Sitting on a nearby rock, you see a brooding shadow skipping stones across the acid lake." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "uhm...Hey there." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Oh sorry... I was thinking about... my past." },
+	{ "speaker": "Nina", "portrait": "TazSulking.png", "text": "Oh sorry... I was thinking about... my past." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That's awfully " },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Nina Beckner - amateur documentary filmmaker. Out to change the world with nothing but a microphone and a dream." },
-	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "My stomach is mostly butterflies right now and not just because I ate a bunch of cocoons earlier." },
+	{ "speaker": "Nina", "portrait": "TazTalk.png", "text": "My stomach is mostly butterflies right now and not just because I ate a bunch of cocoons earlier." },
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe I should turn back. It's not too late." },
+	
 	{ "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Should I turn back before I start?", "choices": [
-	  { "text": "No way Jose!", "next": 15 },
-	  { "text": "Leave Fight Island", "next": 58 }
-	] },
+			{ "text": "No way Jose!", "next": 15 },
+			{ "text": "Leave Fight Island", "next": 58 }
+		]}
+]

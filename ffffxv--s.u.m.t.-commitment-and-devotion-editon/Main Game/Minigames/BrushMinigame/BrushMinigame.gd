@@ -188,9 +188,9 @@ func _spawn_points_follow():
 func _show_win_button():
 
 	var button := Button.new()
-	button.text = "Brushalicious! His hair looks amazing!"
-	button.scale = Vector2(2, 2)
-	button.position = get_viewport_rect().size / 2 - Vector2(300, 50)
+	button.text = "Brushalicious! His hair looks amazing! Press here to continue...or keep brushing his hair."
+	button.scale = Vector2(1, 1)
+	button.position = get_viewport_rect().size / 2 - Vector2(350, 50)
 	button.set_anchors_preset(Control.PRESET_CENTER)
 
 	add_child(button)

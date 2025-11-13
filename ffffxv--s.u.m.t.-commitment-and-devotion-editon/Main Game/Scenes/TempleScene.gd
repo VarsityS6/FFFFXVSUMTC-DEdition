@@ -20,16 +20,14 @@ var preload_portraits = {
 
 
 func _ready():
-	print("TempleScene loaded successfully")
-
 	dialogue = load_dialogue("res://Dialogue/JIMMYscene2.json")
 
-	if dialogue.size() == 0:
-		push_error("⚠️ Dialogue file empty or not found!")
+	if Global.resume_after_minigame:
+		Global.resume_after_minigame = false
+		get_line_by_id(Global.resume_line_id)
+		show_line()
 	else:
-		print("Loaded dialogue lines:", dialogue.size())
-
-	show_line()
+		show_line()
 
 
 func load_dialogue(path: String) -> Array:

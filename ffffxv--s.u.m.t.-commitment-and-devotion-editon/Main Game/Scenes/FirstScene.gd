@@ -15,12 +15,13 @@ var preload_portraits = {
 }
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/Choice Scene.json")
+	dialogue = load_dialogue("res://Dialogue/CHARRAXscene1.json")
 
-#Check if we beat Brush minigame
 	if Global.resume_after_minigame:
 		Global.resume_after_minigame = false
 		get_line_by_id(Global.resume_line_id)
+		show_line()
+	else:
 		show_line()
 
 func load_dialogue(path: String) -> Array:
@@ -31,7 +32,7 @@ func load_dialogue(path: String) -> Array:
 func get_line_by_id(line_id: String) -> Dictionary:
 	# Special cases first
 	if line_id == "hair_minigame":
-		get_tree().change_scene_to_file("res://MiniGames/BrushHair.tscn")
+		get_tree().change_scene_to_file("res://Main Game/Minigames/BrushMinigame/BrushMinigame.tscn")
 		return {}
 
 	for i in range(dialogue.size()):

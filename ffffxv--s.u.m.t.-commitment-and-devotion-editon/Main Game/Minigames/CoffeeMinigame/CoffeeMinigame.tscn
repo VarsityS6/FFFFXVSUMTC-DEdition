@@ -1,20 +1,36 @@
-[gd_scene load_steps=16 format=3 uid="uid://b4kvplrdwt56r"]
+[gd_scene load_steps=28 format=3 uid="uid://b4kvplrdwt56r"]
 
 [ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_3uaiq"]
 [ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="2_aujes"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_vrkjd"]
 [ext_resource type="Texture2D" uid="uid://bvqahm632fj0e" path="res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png" id="3_vrkjd"]
+[ext_resource type="Texture2D" uid="uid://pcha6fvs8k8t" path="res://Assets/MinigameAssets/CoffeeMini/CoffeePot.png" id="4_2eyor"]
 [ext_resource type="Texture2D" uid="uid://rc3xe2q2lq57" path="res://Assets/MinigameAssets/CoffeeMini/Spoon.png" id="4_06uck"]
+[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_85m5v"]
 [ext_resource type="Texture2D" uid="uid://c00fkadrvh3bm" path="res://Assets/MinigameAssets/CoffeeMini/CoconutMilk.png" id="5_85m5v"]
+[ext_resource type="Script" uid="uid://dgp6ajttiajk7" path="res://Main Game/Minigames/CoffeeMinigame/coffee_pot.gd" id="5_popno"]
 [ext_resource type="Script" uid="uid://uelop8trtcy6" path="res://Main Game/Minigames/CoffeeMinigame/coconut_milk.gd" id="6_2eyor"]
 [ext_resource type="Texture2D" uid="uid://iyc0ht62uibd" path="res://Assets/MinigameAssets/CoffeeMini/CaramelSyrup.png" id="7_33n6o"]
+[ext_resource type="Script" uid="uid://bxtt61pyi53ns" path="res://Main Game/Minigames/CoffeeMinigame/milk.gd" id="8_7a0e1"]
+[ext_resource type="Script" uid="uid://vox1c1akq2b7" path="res://Main Game/Minigames/CoffeeMinigame/spoon.gd" id="8_io87a"]
 [ext_resource type="Script" uid="uid://c3uj0yw5y6s5w" path="res://Main Game/Minigames/CoffeeMinigame/caramel_syrup.gd" id="8_x8qau"]
 [ext_resource type="Texture2D" uid="uid://gin4x16s1lp1" path="res://Assets/MinigameAssets/CoffeeMini/Nutmeg.png" id="9_fr2yx"]
 [ext_resource type="Texture2D" uid="uid://djji17ykaqyif" path="res://Assets/MinigameAssets/CoffeeMini/Sugar.png" id="10_1e628"]
 [ext_resource type="Texture2D" uid="uid://dpqafnq258mrb" path="res://Assets/MinigameAssets/CoffeeMini/Milk.png" id="11_7a0e1"]
 [ext_resource type="Texture2D" uid="uid://cayu4532k472r" path="res://Assets/MinigameAssets/CoffeeMini/VanillaSyrup.png" id="12_13uyx"]
+[ext_resource type="Script" uid="uid://dt8dh2t7tyfqs" path="res://Main Game/Minigames/CoffeeMinigame/nutmeg.gd" id="12_popno"]
 [ext_resource type="Texture2D" uid="uid://jdqbac775kek" path="res://Assets/MinigameAssets/CoffeeMini/ChocolateSyrup.png" id="13_popno"]
 [ext_resource type="Texture2D" uid="uid://d3ullrbqsq752" path="res://Assets/MinigameAssets/CoffeeMini/Honey.png" id="14_io87a"]
+[ext_resource type="Script" uid="uid://1comlptbaejb" path="res://Main Game/Minigames/CoffeeMinigame/grandulated_sugar.gd" id="14_jydju"]
+[ext_resource type="Script" uid="uid://chix30svgq88t" path="res://Main Game/Minigames/CoffeeMinigame/chocolate_syrup.gd" id="16_acf8w"]
+[ext_resource type="Script" uid="uid://ds6madbvgh16o" path="res://Main Game/Minigames/CoffeeMinigame/vanilla_syrup.gd" id="18_5qlrh"]
+[ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="22_hsglp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_popno"]
+size = Vector2(183, 184)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_io87a"]
+size = Vector2(215, 43)
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
@@ -31,100 +47,137 @@ position = Vector2(579, 305)
 scale = Vector2(0.39, 0.32333332)
 texture = ExtResource("2_aujes")
 
-[node name="Note" type="Sprite2D" parent="."]
-
-[node name="NoteLabel" type="Label" parent="Note"]
-offset_right = 40.0
-offset_bottom = 23.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Cup" type="Sprite2D" parent="."]
-position = Vector2(564, 339)
-scale = Vector2(0.09136213, 0.09136213)
+[node name="Cup" type="Sprite2D" parent="." groups=["cup"]]
+position = Vector2(589, 439)
+scale = Vector2(0.11820981, 0.11820981)
 texture = ExtResource("3_vrkjd")
 
-[node name="CoffeePot" type="Sprite2D" parent="."]
+[node name="CoffeePot" type="Area2D" parent="."]
+script = ExtResource("5_popno")
 
-[node name="Spoon" type="Sprite2D" parent="."]
-position = Vector2(-584.8684, 396.35883)
-rotation = 0.77267045
-scale = Vector2(0.1382508, 0.12891896)
+[node name="Sprite2D" type="Sprite2D" parent="CoffeePot"]
+position = Vector2(458, 253.00002)
+scale = Vector2(0.18685214, 0.18685214)
+texture = ExtResource("4_2eyor")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeePot"]
+position = Vector2(457.5, 253)
+shape = SubResource("RectangleShape2D_popno")
+
+[node name="Spoon" type="Area2D" parent="."]
+script = ExtResource("8_io87a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spoon"]
+position = Vector2(794, 482.00003)
+rotation = 0.4539783
+scale = Vector2(0.12641914, 0.12641914)
 texture = ExtResource("4_06uck")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spoon"]
+position = Vector2(796, 487.5)
+shape = SubResource("RectangleShape2D_io87a")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Ingredients" type="Node2D" parent="."]
 
-[node name="CoconutMilk" type="TextureRect" parent="Ingredients"]
-offset_left = 85.0
-offset_top = 225.0
-offset_right = 3085.0
-offset_bottom = 3225.0
-scale = Vector2(0.07652597, 0.07259974)
+[node name="Milk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 212.0
+offset_top = 216.0
+offset_right = 3212.0
+offset_bottom = 3216.0
+scale = Vector2(0.05256255, 0.0562719)
+texture = ExtResource("11_7a0e1")
+script = ExtResource("8_7a0e1")
+metadata/_edit_use_anchors_ = true
+
+[node name="CoconutMilk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 98.000015
+offset_top = 236.0
+offset_right = 3098.0
+offset_bottom = 3236.0
+scale = Vector2(0.0532002, 0.056850705)
 texture = ExtResource("5_85m5v")
 script = ExtResource("6_2eyor")
 metadata/_edit_use_anchors_ = true
 
-[node name="CaramelSyrup" type="TextureRect" parent="Ingredients"]
-offset_left = 259.99997
-offset_top = 127.99999
-offset_right = 960.0
-offset_bottom = 1208.0
+[node name="Nutmeg" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 199.0
+offset_top = 356.99997
+offset_right = 3199.0
+offset_bottom = 3357.0
+scale = Vector2(0.047321852, 0.056072894)
+texture = ExtResource("9_fr2yx")
+script = ExtResource("12_popno")
+metadata/_edit_use_anchors_ = true
+
+[node name="GrandulatedSugar" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 61.000008
+offset_top = 357.99997
+offset_right = 3061.0
+offset_bottom = 3358.0
+scale = Vector2(0.049687985, 0.057371743)
+texture = ExtResource("10_1e628")
+script = ExtResource("14_jydju")
+metadata/_edit_use_anchors_ = true
+
+[node name="ChocolateSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 778.99994
+offset_top = 105.0
+offset_right = 3779.0
+offset_bottom = 3105.0
+scale = Vector2(0.045444995, 0.08652025)
+texture = ExtResource("13_popno")
+script = ExtResource("16_acf8w")
+metadata/_edit_use_anchors_ = true
+
+[node name="VanillaSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 668.0
+offset_top = 128.0
+offset_right = 3668.0
+offset_bottom = 3128.0
+scale = Vector2(0.047426205, 0.08595084)
+texture = ExtResource("12_13uyx")
+script = ExtResource("18_5qlrh")
+metadata/_edit_use_anchors_ = true
+
+[node name="CaramelSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 890.0
+offset_top = 146.00002
+offset_right = 1714.0
+offset_bottom = 1662.0
 scale = Vector2(0.15939277, 0.15939277)
 texture = ExtResource("7_33n6o")
 script = ExtResource("8_x8qau")
 metadata/_edit_use_anchors_ = true
 
-[node name="Nutmeg" type="TextureRect" parent="Ingredients"]
-offset_left = -2417.9998
-offset_top = -988.9999
-offset_right = 582.00024
-offset_bottom = 2011.0001
-scale = Vector2(0.3700965, 0.3700965)
-texture = ExtResource("9_fr2yx")
-metadata/_edit_use_anchors_ = true
-
-[node name="GrandulatedSugar" type="TextureRect" parent="Ingredients"]
-offset_left = 1915.0
-offset_top = -1460.0
-offset_right = 4915.0
-offset_bottom = 1540.0
-scale = Vector2(0.6150079, 0.6150079)
-texture = ExtResource("10_1e628")
-metadata/_edit_use_anchors_ = true
-
-[node name="Milk" type="TextureRect" parent="Ingredients"]
-offset_left = 7.0
-offset_top = 286.0
-offset_right = 3007.0
-offset_bottom = 3286.0
-scale = Vector2(0.07439159, 0.07558817)
-texture = ExtResource("11_7a0e1")
-metadata/_edit_use_anchors_ = true
-
-[node name="VanillaSyrup" type="TextureRect" parent="Ingredients"]
-offset_left = 520.0
-offset_top = 183.0
-offset_right = 3520.0
-offset_bottom = 3183.0
-scale = Vector2(0.1326842, 0.1326842)
-texture = ExtResource("12_13uyx")
-metadata/_edit_use_anchors_ = true
-
-[node name="ChocolateSyrup" type="TextureRect" parent="Ingredients"]
-offset_left = 685.0
-offset_top = 155.0
-offset_right = 3685.0
-offset_bottom = 3155.0
-scale = Vector2(0.12232663, 0.12232663)
-texture = ExtResource("13_popno")
-metadata/_edit_use_anchors_ = true
-
-[node name="Honey" type="TextureRect" parent="Ingredients"]
-offset_left = 780.99994
-offset_top = 115.999985
-offset_right = 3781.0
-offset_bottom = 3116.0
-scale = Vector2(0.1197944, 0.12197065)
+[node name="Honey" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 919.0
+offset_top = 285.0
+offset_right = 3919.0
+offset_bottom = 3285.0
+scale = Vector2(0.045542203, 0.05989856)
 texture = ExtResource("14_io87a")
+script = ExtResource("22_hsglp")
+metadata/_edit_use_anchors_ = true
+
+[node name="Note" type="Sprite2D" parent="."]
+position = Vector2(174, 573)
+scale = Vector2(0.07345613, 0.064398766)
+texture = ExtResource("4_85m5v")
+
+[node name="NoteLabel" type="Label" parent="Note"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -735.1326
+offset_top = -714.2993
+offset_right = -562.1326
+offset_bottom = -535.2993
+scale = Vector2(8.539341, 8.435379)
+text = "Taz's Favorite Drink:
+1- Add Coconut Milk
+2- Pour Caramel Syrup
+3- A pinch of Nutmeg
+4- Helping of Sugar
+5- Pour Coffee
+6- Stir"
 metadata/_edit_use_anchors_ = true
