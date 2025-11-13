@@ -107,7 +107,7 @@
 	]
   },
 
-  { "id": "Choice_None1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I'm not ready to marry any of you.'." },
+  { "id": "Choice_None1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I'm not ready to marry any of you." },
   { "id": "Choice_None2", "speaker": "Taz", "portrait": "PlayerTalk.png", "text": "Oh... yeah I guess we came on sort of strong." },
   { "id": "Choice_None3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe a bit." },
   { "id": "Choice_None4", "speaker": "Jimmy", "portrait": "PlayerTalk.png", "text": "Shame on us for thinking Nina needs to marry any of us in the first place! She's independent and doesn't feel the need to conform to heteronormative norms to impress anyone. Love yourself queen!" },
@@ -133,14 +133,15 @@
   { "id": "JimmyEnding3", "speaker": "", "portrait": "PlayerTalk.png", "text": "Over the course of your life, you tamed his fighting spirit. But, he never lost that fire inside." },
   { "id": "JimmyEnding4", "speaker": "", "portrait": "PlayerTalk.png", "text": "But most importantly, the two of you lived happily ever after." },
 
-{
+  {
 	"id": "Choice_EndJ",
 	"speaker": "",
 	"portrait": "PlayerTalk.png",
 	"text": "Are you sure you're not going to marry any of them?",
 	"choices": [
-	  { "text": "Yes", "scene": "END" },
-	
+	  { "text": "Yes", "scene": "END" }
+	]
+  },
 
   { "id": "CharraxEnding1", "speaker": "", "portrait": "PlayerTalk.png", "text": "You went on to marry Charrax the Fleshripper." },
   { "id": "CharraxEnding2", "speaker": "", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and you cried several times." },
@@ -158,4 +159,4 @@
   { "id": "NoneEnding4", "speaker": "", "portrait": "PlayerTalk.png", "text": "But most importantly, you lived happily ever after without the help of any dragons or knife-wielding muscleheads." },
 
   { "id": "END", "speaker": "", "portrait": "", "text": "" }
-],
+]
