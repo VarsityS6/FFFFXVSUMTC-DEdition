@@ -168,10 +168,10 @@ texture = ExtResource("4_85m5v")
 
 [node name="NoteLabel" type="Label" parent="Note"]
 modulate = Color(0, 0, 0, 1)
-offset_left = -735.1326
-offset_top = -714.2993
-offset_right = -562.1326
-offset_bottom = -535.2993
+offset_left = -81.681335
+offset_top = -698.77106
+offset_right = 91.318665
+offset_bottom = -519.77106
 scale = Vector2(8.539341, 8.435379)
 text = "Taz's Favorite Drink:
 1- Add Coconut Milk
@@ -181,3 +181,15 @@ text = "Taz's Favorite Drink:
 5- Pour Coffee
 6- Stir"
 metadata/_edit_use_anchors_ = true
+
+[node name="TimeLabel" type="Label" parent="Note"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -1524.7196
+offset_top = -512.4322
+offset_right = -1179.7196
+offset_bottom = -411.4322
+scale = Vector2(4.0019383, 9.261019)
+text = "You have 20 seconds before the table resets.
+When you put the wrong ingredient, then
+everything resets except the most recently
+used ingredient."

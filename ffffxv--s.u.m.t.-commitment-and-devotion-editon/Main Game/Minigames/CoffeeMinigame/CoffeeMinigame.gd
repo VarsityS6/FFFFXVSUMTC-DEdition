@@ -128,7 +128,7 @@ func _on_time_out() -> void:
 
 func _successful_coffee() -> void:
 	timer.stop()
-	print("[Minigame] ✅ Coffee completed successfully! (this is the success print you asked for)")
+	print("[Minigame] ✅ Coffee completed successfully!")
 	var full_path = "res://Assets/MinigameAssets/CoffeeMini/CoffeeFull.png"
 	if ResourceLoader.exists(full_path):
 		cup.texture = load(full_path)
