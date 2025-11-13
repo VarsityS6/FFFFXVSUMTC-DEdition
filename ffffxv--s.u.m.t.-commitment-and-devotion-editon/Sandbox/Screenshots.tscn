@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://x6jwqly27tuu" path="res://Sandbox/screenshots.gd" id="1_ul6vl"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="2_j0v8w"]
-[ext_resource type="Texture2D" uid="uid://dkoscxxnlfu0g" path="res://portraits/TazPlaceholder.png" id="3_48k13"]
-[ext_resource type="Texture2D" uid="uid://cfq8a7qyg3s05" path="res://portraits/PlayerTriumphant.png" id="3_qqx3f"]
-[ext_resource type="Texture2D" uid="uid://crffrjul0x07o" path="res://portraits/CTalk.png" id="4_tvbsc"]
-[ext_resource type="Texture2D" uid="uid://kbyd3wlbjgcb" path="res://portraits/JimmyPlaceholder.png" id="6_ul6vl"]
+[ext_resource type="Texture2D" uid="uid://dkoscxxnlfu0g" path="res://Portraits/TazPlaceholder.png" id="3_48k13"]
+[ext_resource type="Texture2D" uid="uid://ffmaifyh28fb" path="res://Portraits/NinaExcited.png" id="4_48k13"]
+[ext_resource type="Texture2D" uid="uid://dfx56m4qqdh4d" path="res://Portraits/Charrax01.png" id="5_ul6vl"]
+[ext_resource type="Texture2D" uid="uid://kbyd3wlbjgcb" path="res://Portraits/JimmyPlaceholder.png" id="6_ul6vl"]
 [ext_resource type="Texture2D" uid="uid://ckan4fh3cu0e6" path="res://Assets/ThankYou4Playing.png" id="7_kkd72"]
 
 [node name="Screenshot" type="Node2D"]
@@ -39,7 +39,7 @@ offset_left = 112.41893
 offset_top = 40.876083
 offset_right = 990.41895
 offset_bottom = 646.8761
-texture = ExtResource("3_qqx3f")
+texture = ExtResource("4_48k13")
 expand_mode = 1
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
@@ -49,7 +49,7 @@ offset_left = 368.09735
 offset_top = -8.972799
 offset_right = 1228.0974
 offset_bottom = 646.0272
-texture = ExtResource("4_tvbsc")
+texture = ExtResource("5_ul6vl")
 expand_mode = 1
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
