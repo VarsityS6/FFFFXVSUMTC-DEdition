@@ -8,8 +8,8 @@ var scene_transitioning = false
 # Preload portraits
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"PlayerSurprise.png": preload("res://portraits/PlayerSurprise.png"),
-	"PlayerTriumphant.png": preload("res://portraits/PlayerTriumphant.png"),
+	"NinaSurprised.png": preload("res://portraits/NinaSurprised.png"),
+	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
 	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png")
 }
 
@@ -20,7 +20,7 @@ var preload_portraits = {
 
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/JIMMYscene2.json")
+	dialogue = load_dialogue("res://Dialogue/JIMMYscene3.json")
 
 	if Global.resume_after_minigame:
 		Global.resume_after_minigame = false

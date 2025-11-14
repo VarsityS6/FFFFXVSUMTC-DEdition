@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxloxgrd5asu7"]
+
+[ext_resource type="Script" uid="uid://dki0g826q6f7s" path="res://Main Game/Scenes/choice_scene.gd" id="1_6igdd"]
+[ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="2_sbahn"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_60n1e"]
+[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_7167d"]
+
+[node name="ChoiceScene" type="Node2D"]
+script = ExtResource("1_6igdd")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1943.0085
+offset_bottom = 1087.8893
+texture = ExtResource("2_sbahn")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Portrait" type="TextureRect" parent="."]
+offset_left = 431.77966
+offset_right = 1524.7219
+offset_bottom = 1087.8893
+texture = ExtResource("3_60n1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="UIDialogueBox" type="TextureRect" parent="."]
+offset_left = 391.30032
+offset_top = 577.5215
+offset_right = 1594.3003
+offset_bottom = 1182.5215
+scale = Vector2(0.98118794, 1)
+texture = ExtResource("4_7167d")
+expand_mode = 1
+
+[node name="DialogueBox" type="Panel" parent="."]
+visible = false
+offset_left = 607.1902
+offset_top = 792.4132
+offset_right = 1360.1902
+offset_bottom = 982.4132
+
+[node name="NameLabel" type="Label" parent="."]
+modulate = Color(0.168627, 0.054902, 0.0431373, 1)
+offset_left = 620.6833
+offset_top = 738.6903
+offset_right = 683.6833
+offset_bottom = 761.6903
+scale = Vector2(2.01498, 2.06673)
+horizontal_alignment = 1
+
+[node name="TextLabel" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 627.4299
+offset_top = 790.7344
+offset_right = 1257.1086
+offset_bottom = 902.6571
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.68)
+fit_content = true
+tab_size = 15
+shortcut_keys_enabled = false
+
+[node name="Choices" type="VBoxContainer" parent="."]
+offset_left = 661.1626
+offset_top = 866.2823
+offset_right = 1265.1626
+offset_bottom = 968.2823
