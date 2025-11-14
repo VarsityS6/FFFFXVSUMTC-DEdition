@@ -30,7 +30,6 @@ func load_dialogue(path: String) -> Array:
 
 # Jump to a line by its ID
 func get_line_by_id(line_id: String) -> Dictionary:
-	# Special cases first
 	if line_id == "hair_minigame":
 		get_tree().change_scene_to_file("res://Main Game/Minigames/BrushMinigame/BrushMinigame.tscn")
 		return {}
@@ -43,8 +42,8 @@ func get_line_by_id(line_id: String) -> Dictionary:
 	return {}
 
 func show_line():
-	# Skip all consecutive comments first without recursion
-	while index < dialogue.size() and dialogue[index].has("type") and dialogue[index]["type"] == "comment":
+	# Skip comments
+	while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 		index += 1
 	
 	if index >= dialogue.size():
@@ -52,25 +51,32 @@ func show_line():
 		return
 
 	var line = dialogue[index]
-	
-	# Set speaker name and text
+
+	# ✅ NEW: If this line has "end": true or id == "END", stop dialogue.
+	if line.get("end", false) or line.get("id", "") == "END":
+		end_dialogue()
+		return
+
+	# Speaker and text
 	$NameLabel.text = line.get("speaker", "")
 	$TextLabel.text = line.get("text", "")
 
-	# Swap portrait
+	# Portrait
 	if line.has("portrait") and line["portrait"] != "":
 		$Portrait.texture = preload_portraits.get(line["portrait"], null)
 	else:
 		$Portrait.texture = null
 
-	# Show choices if present
+	# Choices
 	if line.has("choices"):
 		show_choices(line["choices"])
 	else:
 		clear_choices()
+
+	# Minigame check
 	if line.has("minigame"):
 		resume_line_id = line.get("resume_id", "")
-		Global.resume_line_id = resume_line_id  # Store globally for resuming
+		Global.resume_line_id = resume_line_id
 		get_tree().change_scene_to_file(line["minigame"])
 
 func show_choices(choices: Array):
@@ -78,7 +84,6 @@ func show_choices(choices: Array):
 	for choice in choices:
 		var btn = Button.new()
 		btn.text = choice["text"]
-		# Handle normal line jump vs. scene change
 		btn.pressed.connect(func():
 			if choice.has("scene_change"):
 				get_tree().change_scene_to_file(choice["scene_change"])
@@ -89,7 +94,6 @@ func show_choices(choices: Array):
 		)
 		$Choices.add_child(btn)
 
-
 func clear_choices():
 	for child in $Choices.get_children():
 		child.queue_free()
@@ -98,7 +102,6 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		if not dialogue[index].has("choices"):
 			index += 1
-			# Skip comment lines automatically without recursion
 			while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 				index += 1
 			show_line()

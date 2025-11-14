@@ -140,7 +140,6 @@ func _successful_coffee() -> void:
 	b.position = vp_size / 2 - b.get_minimum_size() / 2
 	add_child(b)
 	b.pressed.connect(_on_congrats_pressed)
-	# optional: stop further input or disable ingredients here
 	print("[Minigame] Congratulations button created.")
 
 func _finish_attempt() -> void:
@@ -150,5 +149,7 @@ func _finish_attempt() -> void:
 		_reset_attempt()
 
 func _on_congrats_pressed() -> void:
+	Global.resume_after_minigame = true 
+	Global.resume_line_id = "taztransition"
+	get_tree().change_scene_to_file("res://Main Game/Scenes/AcidLakeScene.tscn")
 	print("[Minigame] 🎊 Minigame complete! Emitting minigame_complete signal.")
-	emit_signal("minigame_complete")
