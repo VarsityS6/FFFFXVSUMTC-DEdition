@@ -151,5 +151,5 @@ func _finish_attempt() -> void:
 func _on_congrats_pressed() -> void:
 	Global.resume_after_minigame = true 
 	Global.resume_line_id = "taztransition"
-	get_tree().change_scene_to_file("res://Main Game/Scenes/AcidLakeScene(PRJ).tscn")
+	get_tree().change_scene_to_file("res://Main Game/Scenes/AcidLakeScene(PJ).tscn")
 	print("[Minigame] 🎊 Minigame complete! Emitting minigame_complete signal.")

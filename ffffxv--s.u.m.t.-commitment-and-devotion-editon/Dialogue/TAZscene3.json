@@ -1,59 +1,46 @@
-<<<<<<< HEAD
-TazScene3 (After Meeting Jimmy)
-=======
-
 [
-    { "id": "cave","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Hello? Is anyone here?" },                                                                                                               
-    { "id": "cave_2","speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Leave me be. This is my domain." },
-    { "id": "cave_3","speaker": "Nina", "portrait": "PlayerTalk.png", "text": " (Wow, they seem like a ray of sunshine.) Well, alright, I’ll just be going then." },
-    { "id": "cave_4","speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "…Wait." },
-    { "id": "cave_5","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes…?" },
-    { "id": "cave_6","speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Why art thou here?" },
-    { "id": "cave_7","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Huh?" },
-    { "id": "cave_8","speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "(Sigh) Who are you? Why are you here?" },
-    { "id": "cave_9","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Oh, I’m Nina. I just wanted to know what this mystical cave was all about. Who are you?" },
-    { "id": "cave_10","speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Hm. Tazanguis Draconis. Taz." },
-    { "id": "cave_11","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "(stunned) Wow. Fancy name. More importantly, are you a flipping dragon?" },
-    { "id": "cave_12","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "What makes you think that?" },
-    { "id": "cave_13","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "..." },
-    { "id": "cave_14","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "..." },
-    { "id": "cave_15","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Anyways." },
-    { "id": "cave_16","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Are you making fun of me?" },
-    { "id": "cave_17","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Oh, heavens no." },
-    { "id": "cave_17","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "And it’s a good thing you weren’t, or I would have had to breathe fire. My rage knows no bounds. Nothing can quell it once I am angered. Nothing but coffee." },
- { "id": "cave_18","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Are you asking me to make you coffee, Taz?" },
-{ "id": "cave_19","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "...NO. Well.." },
-{ "id": "cave_20","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Uh...well, no offense, but...can't you make it yourself?" },
-{ "id": "cave_21","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "OF COURSE I CAN! I...just..." },
-{ "id": "cave_22","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "You just...what?" },
-{ "id": "cave_23","speaker": "Taz", "portrait": "TazSulking.png", "text": "Well, since I'm half dragon-" },
-{ "id": "cave_23","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Which you have yet to confirm up to this point." },
-{ "id": "cave_24","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Right. Well, regardless, because of my...abilities...I tend to set all of the coffee on fire." },
-{ "id": "cave_25","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Fire?? But it's...a...liquid?" },
-{ "id": "cave_26","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "I fail to see why that's relevant." },
-{ "id": "cave_27","speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Right..." },
-{ "id": "cave_choice_28", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Anyways...do you think you could help me?", "choices": [
+  { "id": "cave", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Hello? Is anyone here?" },
+  { "id": "cave_2", "speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Leave me be. This is my domain." },
+  { "id": "cave_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "(Wow, they seem like a ray of sunshine.) Well, alright, I’ll just be going then." },
+  { "id": "cave_4", "speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "…Wait." },
+  { "id": "cave_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes…?" },
+  { "id": "cave_6", "speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Why art thou here?" },
+  { "id": "cave_7", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Huh?" },
+  { "id": "cave_8", "speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "(Sigh) Who are you? Why are you here?" },
+  { "id": "cave_9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Oh, I’m Nina. I just wanted to know what this mystical cave was all about. Who are you?" },
+  { "id": "cave_10", "speaker": "Mysterious Person", "portrait": "TazPlaceholder.png", "text": "Hm. Tazanguis Draconis. Taz." },
+  { "id": "cave_11", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "(stunned) Wow. Fancy name. More importantly, are you a flipping dragon?" },
+  { "id": "cave_12", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "What makes you think that?" },
+  { "id": "cave_13", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "..." },
+  { "id": "cave_14", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "..." },
+  { "id": "cave_15", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Anyways." },
+  { "id": "cave_16", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Are you making fun of me?" },
+  { "id": "cave_17a", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Oh, heavens no." },
+  { "id": "cave_17b", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "And it’s a good thing you weren’t, or I would have had to breathe fire. My rage knows no bounds. Nothing can quell it once I am angered. Nothing but coffee." },
+  { "id": "cave_18", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Are you asking me to make you coffee, Taz?" },
+  { "id": "cave_19", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "...NO. Well.." },
+  { "id": "cave_20", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Uh...well, no offense, but...can't you make it yourself?" },
+  { "id": "cave_21", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "OF COURSE I CAN! I...just..." },
+  { "id": "cave_22", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "You just...what?" },
+  { "id": "cave_23a", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Well, since I'm half dragon-" },
+  { "id": "cave_23b", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Which you have yet to confirm up to this point." },
+  { "id": "cave_24", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Right. Well, regardless, because of my...abilities...I tend to set all of the coffee on fire." },
+  { "id": "cave_25", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Fire?? But it's...a...liquid?" },
+  { "id": "cave_26", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "I fail to see why that's relevant." },
+  { "id": "cave_27", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Right..." },
+
+  {
+	"id": "cave_choice_28",
+	"speaker": "Taz",
+	"portrait": "TazPlaceholder.png",
+	"text": "Anyways...do you think you could help me?",
+	"choices": [
 	  { "text": "Hm...alright.", "scene": "nina_agree" },
-	  { "text": "Sorry, I gotta leave...", "scene": "leave_cave" }
-	] },
+	]
+  },
 
-[
-  
-  { "id": "nina_agree","minigame": “ ”, “resume_id”: ”taztransition” },
+  {"id": "nina_agree", "minigame": "res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn", "resume_id": "taztransition" },
 
-    { "id": "taztransition","speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Hm. I guess the coffee was okay. I suppose. You should meet me at the Perpetually Stormy Climactic Field.” },\
-
-{ "text": "Go there.", "scene_change": "res://Main Game/Scenes/ChoiceScene.tscn" },
-
-
+  { "id": "taztransition", "speaker": "Taz", "portrait": "TazPlaceholder.png", "text": "Hm. I guess the coffee was okay. I suppose. You should meet me at the Perpetually Stormy Climactic Field."
+  }
 ]
-
-[
-
-{ "id": "leave_cave","speaker": "Taz", "portrait": "TazSulking.png", "text": "Oh...alright. I guess I'll be here to sulk alone. In this cold cave. Alone forever. Me and my demons." },
-{ "id": "leave_cave_2","speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Sorry, man. I want to go explore the place." },
-
-{ "text": "Leave.", "scene_change": "res://Main Game/Scenes/ChoiceScene.tscn" },
-
-]
->>>>>>> parent of 2826161 (pls work)

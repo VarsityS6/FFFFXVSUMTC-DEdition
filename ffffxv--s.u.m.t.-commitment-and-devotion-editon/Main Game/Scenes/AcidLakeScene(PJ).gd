@@ -6,14 +6,14 @@ var resume_line_id = ""
 
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"NinaSurprise.png": preload("res://Portraits/NinaSurprised.png"),
+	"NinaSurprised.png": preload("res://Portraits/NinaSurprised.png"),
 	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
 	"TazSulking.png": preload("res://portraits/TazSulking.PNG"),
-	"TazTalk.png": preload("res://portraits/TazPlaceholder.png"),
+	"TazPlaceholder.png": preload("res://portraits/TazPlaceholder.png"),
 }
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/TAZscene2.json")
+	dialogue = load_dialogue("res://Dialogue/TAZscene3.json")
 
 #Check if we beat Brush minigame
 	if Global.resume_after_minigame:
