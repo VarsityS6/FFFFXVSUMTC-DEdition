@@ -107,7 +107,7 @@
 	{"id": "next_fighters_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "I think I saw Taz sulking off to the Acid Lake, and I want to say Johnny F is training in the Blood Temple " },
 	{"id": "next_fighters_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Thanks Charrax, I'll go introduce myself to them." },
 	{"id": "next_fighters_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
-{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PR).tscn" },
+{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PJ).tscn" },
 { "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene.tscn" }
 ]},
 
