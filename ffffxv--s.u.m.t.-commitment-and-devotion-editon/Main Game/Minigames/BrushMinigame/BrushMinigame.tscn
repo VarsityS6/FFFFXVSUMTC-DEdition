@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bca6s1678h7rh"]
+[gd_scene load_steps=10 format=3 uid="uid://bca6s1678h7rh"]
 
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="1_nxkri"]
 [ext_resource type="Script" uid="uid://8tel8vgjls58" path="res://Main Game/Minigames/BrushMinigame/BrushMinigame.gd" id="1_wcs30"]
@@ -6,6 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://cxc8ypirb88er" path="res://Assets/MinigameAssets/BrushMini/CharaxxPlaceholderComb.png" id="2_0w6hq"]
 [ext_resource type="Script" uid="uid://bfxmv3prn5li4" path="res://Main Game/Minigames/BrushMinigame/CharraxComb.gd" id="3_fdeek"]
 [ext_resource type="Texture2D" uid="uid://bocnwq0s27oro" path="res://Assets/MinigameAssets/BrushMini/CharraxLeftMessy.png" id="3_wcs30"]
+[ext_resource type="Texture2D" uid="uid://6q82uf0ha1a4" path="res://Assets/MinigameAssets/BrushMini/CharraxRighMessy.png" id="8_igwjk"]
+
+[sub_resource type="Gradient" id="Gradient_ye7wh"]
+offsets = PackedFloat32Array(0.0040983604, 0.19672132, 0.56557375, 0.8770492, 1)
+colors = PackedColorArray(0.87058824, 0.7647059, 0.18039216, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0.7647059, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gmhd3"]
+gradient = SubResource("Gradient_ye7wh")
+fill_from = Vector2(0.081196584, 0.14957266)
+fill_to = Vector2(0.9017094, 0.12820514)
 
 [node name="BrushMinigame" type="Node2D"]
 script = ExtResource("1_wcs30")
@@ -16,12 +26,12 @@ scale = Vector2(2.1561928, 1.8277777)
 texture = ExtResource("1_nxkri")
 
 [node name="Hair" type="Sprite2D" parent="."]
-position = Vector2(588, 324)
-scale = Vector2(0.14072502, 0.130925)
+position = Vector2(585, 360)
+scale = Vector2(0.1265625, 0.11774875)
 texture = ExtResource("3_wcs30")
 
 [node name="CharraxComb" parent="." instance=ExtResource("1_yon80")]
-position = Vector2(131, 275.00003)
+position = Vector2(161.00003, 275)
 rotation = 0.7592182
 scale = Vector2(0.42011136, 0.42011136)
 texture = ExtResource("2_0w6hq")
@@ -29,14 +39,48 @@ script = ExtResource("3_fdeek")
 
 [node name="Button" type="Button" parent="CharraxComb"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -110.67776
-offset_top = -209.99554
-offset_right = 125.13975
-offset_bottom = 206.2417
+offset_left = -108.86294
+offset_top = -214.99915
+offset_right = 126.95457
+offset_bottom = 201.2381
 
 [node name="WordContainer" type="Node2D" parent="."]
 
 [node name="Points" type="Sprite2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ProgressBackground" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 245.99998
+offset_top = 28.000006
+offset_right = 320.81262
+offset_bottom = 73.887665
+scale = Vector2(6.6833606, 0.8716939)
+texture = SubResource("GradientTexture2D_gmhd3")
+expand_mode = 1
+
+[node name="ProgressBar" type="TextureProgressBar" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 28.0
+offset_right = 746.0
+offset_bottom = 68.0
+
+[node name="CharraxFace" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 19.0
+offset_right = 5746.0
+offset_bottom = 5019.0
+scale = Vector2(0.011757863, 0.011757863)
+texture = ExtResource("8_igwjk")
 
 [connection signal="button_down" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_down"]
 [connection signal="button_up" from="CharraxComb/Button" to="CharraxComb" method="_on_button_button_up"]

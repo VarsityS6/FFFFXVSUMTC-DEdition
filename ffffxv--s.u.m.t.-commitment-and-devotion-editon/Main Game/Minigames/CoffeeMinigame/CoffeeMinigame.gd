@@ -26,7 +26,6 @@ func _ready():
 		timer.timeout.connect(_on_time_out)
 	timer.start()
 
-	# Connect CoffeePot and Spoon signals if they exist (they should emit 'poured' and 'stirred')
 	if coffee_pot and coffee_pot.has_signal("poured"):
 		coffee_pot.poured.connect(_on_coffee_poured)
 		print("[Minigame] connected coffee_pot.poured")
@@ -43,7 +42,6 @@ func _ready():
 	var ingredients = get_tree().get_nodes_in_group("ingredient")
 	if ingredients.size() == 0:
 		print("[Minigame] WARNING: No nodes found in group 'ingredient'. Falling back to Ingredients child.")
-		# fallback: try children under a node called "Ingredients"
 		if has_node("Ingredients"):
 			ingredients = $Ingredients.get_children()
 			print("[Minigame] found", ingredients.size(), "children under Ingredients")
@@ -106,14 +104,11 @@ func _reset_attempt() -> void:
 	print("[Minigame] 🔁 Resetting cup and ingredients.")
 	added_ingredients.clear()
 	timer.start()
-	# reset ingredient positions
 	var ingredients = get_tree().get_nodes_in_group("ingredient")
 	for ing in ingredients:
 		if ing and ing.has_method("reset_position"):
 			ing.reset_position()
-	# reset cup texture if you use a reset image
 	if cup and cup.texture:
-		# adjust the path to your empty cup asset if needed
 		var empty_path = "res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png"
 		if cup.texture.resource_path != empty_path:
 			if ResourceLoader.exists(empty_path):
