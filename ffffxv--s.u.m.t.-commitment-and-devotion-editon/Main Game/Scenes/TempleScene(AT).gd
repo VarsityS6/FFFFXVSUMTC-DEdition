@@ -20,7 +20,7 @@ var preload_portraits = {
 
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/JIMMYscene2.json")
+	dialogue = load_dialogue("res://Dialogue/JIMMYscene3.json")
 
 	if Global.resume_after_minigame:
 		Global.resume_after_minigame = false

@@ -11,24 +11,27 @@ script = ExtResource("1_6igdd")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1943.0085
 offset_bottom = 1087.8893
+scale = Vector2(0.59512734, 0.5966452)
 texture = ExtResource("2_sbahn")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Portrait" type="TextureRect" parent="."]
-offset_left = 431.77966
-offset_right = 1524.7219
-offset_bottom = 1087.8893
+offset_left = 259.0
+offset_top = -4.0
+offset_right = 1351.9423
+offset_bottom = 1083.8893
+scale = Vector2(0.60010594, 0.60010594)
 texture = ExtResource("3_60n1e")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="UIDialogueBox" type="TextureRect" parent="."]
-offset_left = 391.30032
-offset_top = 577.5215
-offset_right = 1594.3003
-offset_bottom = 1182.5215
-scale = Vector2(0.98118794, 1)
+offset_left = 172.99998
+offset_top = 308.00003
+offset_right = 1376.0
+offset_bottom = 913.0
+scale = Vector2(0.7224458, 0.7362971)
 texture = ExtResource("4_7167d")
 expand_mode = 1
 
@@ -41,11 +44,11 @@ offset_bottom = 982.4132
 
 [node name="NameLabel" type="Label" parent="."]
 modulate = Color(0.168627, 0.054902, 0.0431373, 1)
-offset_left = 620.6833
-offset_top = 738.6903
-offset_right = 683.6833
-offset_bottom = 761.6903
-scale = Vector2(2.01498, 2.06673)
+offset_left = 350.0
+offset_top = 428.00003
+offset_right = 413.0
+offset_bottom = 451.00003
+scale = Vector2(1.3268403, 1.3690591)
 horizontal_alignment = 1
 
 [node name="TextLabel" type="RichTextLabel" parent="."]
@@ -53,19 +56,20 @@ modulate = Color(0, 0, 0, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 627.4299
-offset_top = 790.7344
-offset_right = 1257.1086
-offset_bottom = 902.6571
+offset_left = 344.0
+offset_top = 465.00003
+offset_right = 973.6787
+offset_bottom = 576.9228
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.2, 1.68)
+scale = Vector2(0.8390861, 1.1708237)
 fit_content = true
 tab_size = 15
 shortcut_keys_enabled = false
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 661.1626
-offset_top = 866.2823
-offset_right = 1265.1626
-offset_bottom = 968.2823
+offset_left = 342.0
+offset_top = 547.00006
+offset_right = 946.0
+offset_bottom = 649.00006
+scale = Vector2(0.8551286, 0.6621016)
