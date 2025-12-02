@@ -20,8 +20,8 @@
   { "id": "jimmy_17", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Um...what was it again..?" },
   { "id": "jimmy_choice_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Was your name?", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
-	  { "text": "Jimmy", "scene": "jimmy_18" }
-      { "text": "Joey", "scene": "Joey_1" },
+	  { "text": "Jimmy", "scene": "jimmy_18" },
+	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
 
@@ -33,12 +33,12 @@
  { "id": "jimmy_choice_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was just kidding around, your name was...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" }
-      { "text": "Joey", "scene": "Joey_1" },
+	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
 
 
-    { "id": "Joey_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Joey Smackinaface!" },
+	{ "id": "Joey_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Joey Smackinaface!" },
   { "id": "Joey_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "That's an absurd name! Who would ever be named that!" },
   { "id": "Joey_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Definitely not you...probably." },
   { "id": "Joey_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "The truth bubbles to the top of the metaphorical soup!" },
@@ -46,12 +46,12 @@
  { "id": "jimmy_choice_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Of course I do, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" }
-      { "text": "Joey", "scene": "Joey_1" },
+	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
 
 
-    { "id": "Pablo_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "...Pablo..?" },
+	{ "id": "Pablo_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "...Pablo..?" },
   { "id": "Pablo_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Pablo?!" },
   { "id": "Pablo_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Your name's not pablo is it?" },
   { "id": "Pablo_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Who the hell is Pablo!?" },
@@ -59,12 +59,12 @@
  { "id": "jimmy_choice_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Right totally, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" }
-      { "text": "Joey", "scene": "Joey_1" },
+	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_6" }
   ] },
 
   
-    { "id": "Pablo_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Could it be...Pablo..?" },
+	{ "id": "Pablo_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Could it be...Pablo..?" },
   { "id": "Pablo_7", "speaker": "Pablo", "portrait": "NinaSurprised.png", "text": "NO ONE IS NAMED PABLO HERE! PLEASE DO NOT CALL ME PABLO!!!" },
   { "id": "Pablo_8", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "ok...not Pablo." },
   { "id": "Pablo_9", "speaker": "Pablo", "portrait": "JimmyPlaceholder.png", "text": "IT'S JIMMY! THAT DOESN'T SOUND ANYTHING LIKE PABLO!" },
@@ -87,7 +87,7 @@
 { "id": "grandma_choice_1", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "What do you think about my grandma!", "choices": [
 	  { "text": "Wow, she looks just like you.", "scene": "grammy_1" },
 	  { "text": "She looks really strong!", "scene": "grammy_1" }
-      { "text": "She's hot.", "scene": "hot_1" },
+	  { "text": "She's hot.", "scene": "hot_1" },
   ] },
 
   { "id": "hot_1", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Daaaaaaaamn, Your grammy is pretty hot Jimmy" },
@@ -99,7 +99,7 @@
 { "id": "grandma_choice_1", "speaker": "nina", "portrait": "NinaExcited.png", "text": "I mean I'm just saying...", "choices": [
 	  { "text": "Is your grandma an iPhone? Because I'd tap that!.", "scene": "end_1" },
 	  { "text": "Is your grandma a wooden structure forged by beavers? Because daaaaaaaaaaaaamn!", "scene": "end_1" }
-      { "text": "Is your grandma from Tennessee? Because...she's really hot.", "scene": "end_1" },
+	  { "text": "Is your grandma from Tennessee? Because...she's really hot.", "scene": "end_1" },
   ] },
   
 
@@ -122,4 +122,3 @@
   { "id": "end_2", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Wait no! Where are you going!?" },
    { "id": "end_3", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "The Perpetually Climactic Field at the top of the really tall hill! But don't follow me! I am eye sweating too much!!" },
 ]
-

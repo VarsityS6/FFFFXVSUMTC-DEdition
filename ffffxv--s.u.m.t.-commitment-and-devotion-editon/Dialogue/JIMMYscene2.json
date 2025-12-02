@@ -20,8 +20,8 @@
   { "id": "jimmy_17", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Um...what was it again..?" },
   { "id": "jimmy_choice_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Was your name?", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
-	  { "text": "Jimmy", "scene": "jimmy_18" }
-      { "text": "Joey", "scene": "Joey_1" },
+	  { "text": "Jimmy", "scene": "jimmy_18" },
+	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
 
