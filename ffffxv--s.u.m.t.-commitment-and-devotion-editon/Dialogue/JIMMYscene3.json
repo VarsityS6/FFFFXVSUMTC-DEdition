@@ -32,7 +32,7 @@
   { "id": "Johnny_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "How quaint!" },
  { "id": "jimmy_choice_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was just kidding around, your name was...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
-	  { "text": "Jimmy", "scene": "jimmy_18" }
+	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
@@ -45,7 +45,7 @@
   { "id": "Joey_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "You don't remember my name!" },
  { "id": "jimmy_choice_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Of course I do, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
-	  { "text": "Jimmy", "scene": "jimmy_18" }
+	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
@@ -58,7 +58,7 @@
   { "id": "Pablo_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Why would anyone ever be named Pablo! No my name isn't Pablo!!!" },
  { "id": "jimmy_choice_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Right totally, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
-	  { "text": "Jimmy", "scene": "jimmy_18" }
+	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_6" }
   ] },
@@ -86,7 +86,7 @@
   { "id": "jimmy_23", "speaker": " ", "portrait": " ", "text": "Jimmy pulls out a framed photograph of his elderly Grandmother. The frame is shaped like a fist." },
 { "id": "grandma_choice_1", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "What do you think about my grandma!", "choices": [
 	  { "text": "Wow, she looks just like you.", "scene": "grammy_1" },
-	  { "text": "She looks really strong!", "scene": "grammy_1" }
+	  { "text": "She looks really strong!", "scene": "grammy_1" },
 	  { "text": "She's hot.", "scene": "hot_1" },
   ] },
 
@@ -98,7 +98,7 @@
   { "id": "jimmy_23", "speaker": " ", "portrait": " ", "text": "Jimmy pulls out a framed photograph of his elderly Grandmother. The frame is shaped like a fist." },
 { "id": "grandma_choice_1", "speaker": "nina", "portrait": "NinaExcited.png", "text": "I mean I'm just saying...", "choices": [
 	  { "text": "Is your grandma an iPhone? Because I'd tap that!.", "scene": "end_1" },
-	  { "text": "Is your grandma a wooden structure forged by beavers? Because daaaaaaaaaaaaamn!", "scene": "end_1" }
+	  { "text": "Is your grandma a wooden structure forged by beavers? Because daaaaaaaaaaaaamn!", "scene": "end_1" },
 	  { "text": "Is your grandma from Tennessee? Because...she's really hot.", "scene": "end_1" },
   ] },
   

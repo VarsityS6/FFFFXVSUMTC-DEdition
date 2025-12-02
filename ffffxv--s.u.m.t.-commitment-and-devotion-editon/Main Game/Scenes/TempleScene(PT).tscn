@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpvq4in4x118p"]
 
 [ext_resource type="Texture2D" uid="uid://4hpc088a5xdo" path="res://Assets/Background/BloodTemple_Placeholder.jpg" id="1_plvty"]
-[ext_resource type="Script" uid="uid://cutg14q42g282" path="res://Main Game/Scenes/TempleScene.gd" id="1_vd0gl"]
+[ext_resource type="Script" uid="uid://cutg14q42g282" path="res://Main Game/Scenes/TempleScene(PT).gd" id="1_vd0gl"]
 [ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="2_enfyj"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_bs7ol"]
 

@@ -9,11 +9,11 @@ var preload_portraits = {
 	"NinaSurprised.png": preload("res://Portraits/NinaSurprised.png"),
 	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
 	"TazSulking.png": preload("res://portraits/TazSulking.PNG"),
-	"TazPlaceholder.png": preload("res://portraits/TazPlaceholder.png"),
+	"TazTalk.png": preload("res://portraits/TazPlaceholder.png"),
 }
 
 func _ready():
-	dialogue = load_dialogue("res://Dialogue/TAZscene3.json")
+	dialogue = load_dialogue("res://Dialogue/TAZscene2.json")
 
 #Check if we beat Brush minigame
 	if Global.resume_after_minigame:
