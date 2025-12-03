@@ -53,6 +53,10 @@
 	{ "id": "cave_24", "speaker": "Taz", "portrait": "TazTalk.png", "text": "All this talk of my dark past has made me tired and thirsty." },
 	{ "id": "cave_25", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Would you be a lamb and whip me up a coffee?"},
 	
-	{ "id": "cave_19", "minigame": "res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn", "resume_id": "taztransition" },
-	{ "id": "taztransition", "speaker": "Taz", "portrait": "TazTalk.png", "text": "MMMM YUMMY! I mean ugh that was fine or whatever. Shouldn't you go to the blood temple to watch Jimmy F train or something?" }
+	{ "id": "cave_26", "minigame": "res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn", "resume_id": "taztransition" },
+	{ "id": "taztransition", "speaker": "Taz", "portrait": "TazTalk.png", "text": "MMMM YUMMY! I mean ugh that was fine or whatever. Shouldn't you go to the blood temple to watch Jimmy F train or something?" },
+{"id": "taztransition_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I get the feeling he doesn't want me here right now...", "choices": 
+	[
+	  { "text": "To the Blood Temple.", "scene_change": "res://Main Game/Scenes/TempleScene(AT).tscn" },
+  ] },
 ]

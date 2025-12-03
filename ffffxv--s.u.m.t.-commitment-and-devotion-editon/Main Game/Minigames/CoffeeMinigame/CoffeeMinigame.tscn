@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b4kvplrdwt56r"]
+[gd_scene load_steps=26 format=3 uid="uid://b4kvplrdwt56r"]
 
 [ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_3uaiq"]
 [ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="2_aujes"]
@@ -26,12 +26,6 @@
 [ext_resource type="Script" uid="uid://ds6madbvgh16o" path="res://Main Game/Minigames/CoffeeMinigame/vanilla_syrup.gd" id="18_5qlrh"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="22_hsglp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_popno"]
-size = Vector2(183, 184)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_io87a"]
-size = Vector2(215, 43)
-
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
 
@@ -51,31 +45,6 @@ texture = ExtResource("2_aujes")
 position = Vector2(589, 439)
 scale = Vector2(0.11820981, 0.11820981)
 texture = ExtResource("3_vrkjd")
-
-[node name="CoffeePot" type="Area2D" parent="."]
-script = ExtResource("5_popno")
-
-[node name="Sprite2D" type="Sprite2D" parent="CoffeePot"]
-position = Vector2(458, 253.00002)
-scale = Vector2(0.18685214, 0.18685214)
-texture = ExtResource("4_2eyor")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeePot"]
-position = Vector2(457.5, 253)
-shape = SubResource("RectangleShape2D_popno")
-
-[node name="Spoon" type="Area2D" parent="."]
-script = ExtResource("8_io87a")
-
-[node name="Sprite2D" type="Sprite2D" parent="Spoon"]
-position = Vector2(794, 482.00003)
-rotation = 0.4539783
-scale = Vector2(0.12641914, 0.12641914)
-texture = ExtResource("4_06uck")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Spoon"]
-position = Vector2(796, 487.5)
-shape = SubResource("RectangleShape2D_io87a")
 
 [node name="Timer" type="Timer" parent="."]
 
@@ -160,6 +129,25 @@ scale = Vector2(0.045542203, 0.05989856)
 texture = ExtResource("14_io87a")
 script = ExtResource("22_hsglp")
 metadata/_edit_use_anchors_ = true
+
+[node name="Spoon" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 730.99994
+offset_top = 400.0
+offset_right = 2230.0
+offset_bottom = 1394.0
+rotation = 0.5581613
+scale = Vector2(0.10747266, 0.10747266)
+texture = ExtResource("4_06uck")
+script = ExtResource("8_io87a")
+
+[node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 378.99997
+offset_top = 110.0
+offset_right = 1359.0
+offset_bottom = 1090.0
+scale = Vector2(0.23878098, 0.23878098)
+texture = ExtResource("4_2eyor")
+script = ExtResource("5_popno")
 
 [node name="Note" type="Sprite2D" parent="."]
 position = Vector2(219, 571)

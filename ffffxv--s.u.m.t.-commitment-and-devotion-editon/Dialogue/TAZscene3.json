@@ -53,5 +53,9 @@
 	{ "id": "cave_25", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Would you be a lamb and whip me up a coffee?"},
 	
 	{ "id": "cave_19", "minigame": "res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn", "resume_id": "taztransition" },
-	{ "id": "taztransition", "speaker": "Taz", "portrait": "TazTalk.png", "text": "MMMM YUMMY! I mean ugh that was fine or whatever. Meet me at the Perpetually Climactic Field at the top of the really tall hill. We have much to discuss." }
+	{ "id": "taztransition", "speaker": "Taz", "portrait": "TazTalk.png", "text": "MMMM YUMMY! I mean ugh that was fine or whatever. Meet me at the Perpetually Climactic Field at the top of the really tall hill. We have much to discuss." },
+{"id": "taztransition_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Ah he ran off...I guess he wants me to chase him?", "choices": 
+	[
+	  { "text": "Give in and follow Taz?", "scene_change": "res://Main Game/Scenes/ChoiceScene.tscn" },
+  ] },
 ]

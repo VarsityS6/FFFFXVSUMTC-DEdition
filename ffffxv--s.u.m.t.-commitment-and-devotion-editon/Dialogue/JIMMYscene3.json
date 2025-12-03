@@ -1,6 +1,6 @@
 [
   { "id": "jimmy", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Finally, I made it to the temple!" },
-  { "id": "jimmy_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Word on the street is this is where that Johnny F guy trains." },
+  { "id": "jimmy_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Taz said this is where that Johnny F guy trains." },
   { "id": "jimmy_3", "speaker": "", "portrait": "", "text": "You hear a faint voice speaking to you from high up in the sky" },
   { "id": "jimmy_4", "speaker": "???", "portrait": "", "text": "It's Jimmy!" },
   { "id": "jimmy_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Huh??" },
@@ -120,5 +120,9 @@
 
   { "id": "end_1", "speaker": " ", "portrait": " ", "text": "Jimmy suddenly runs away, he looked like he was crying... like a lot." },
   { "id": "end_2", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Wait no! Where are you going!?" },
-   { "id": "end_3", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "The Perpetually Climactic Field at the top of the really tall hill! But don't follow me! I am eye sweating too much!!" },
+  { "id": "end_3", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "The Perpetually Climactic Field at the top of the really tall hill! But don't follow me! I am eye sweating too much!!" },
+{"id": "end_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I gotta go after him!", "choices": 
+	[
+	  { "text": "Chase Jimmy?", "scene_change": "res://Main Game/Scenes/ChoiceScene.tscn" },
+  ] },
 ]

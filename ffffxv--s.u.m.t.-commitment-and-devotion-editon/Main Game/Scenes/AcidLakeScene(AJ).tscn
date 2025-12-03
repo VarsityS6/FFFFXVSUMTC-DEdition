@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dco0q07x8k7g4"]
 
-[ext_resource type="Script" uid="uid://b4sa15n1xlpgw" path="res://Main Game/Scenes/AcidLakeScene(PJ).gd" id="1_l1pdh"]
+[ext_resource type="Script" uid="uid://bo5yr1tbsk6df" path="res://Main Game/Scenes/AcidLakeScene(AJ).gd" id="1_l1pdh"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_7gt8v"]
 [ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_icpvo"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_h16ft"]

@@ -31,7 +31,7 @@ func load_dialogue(path: String) -> Array:
 func get_line_by_id(line_id: String) -> Dictionary:
 	# Special cases first
 	if line_id == "coffee_minigame":
-		get_tree().change_scene_to_file("res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn")
+		get_tree().change_scene_to_file("res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame(AJ).tscn")
 		return {}
 
 	for i in range(dialogue.size()):

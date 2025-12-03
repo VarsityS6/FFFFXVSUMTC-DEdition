@@ -1,0 +1,183 @@
+[gd_scene load_steps=26 format=3 uid="uid://b5caxi0iafaym"]
+
+[ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_j32rv"]
+[ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_xfx6c"]
+[ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="3_bbbiy"]
+[ext_resource type="Texture2D" uid="uid://bvqahm632fj0e" path="res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png" id="4_784lq"]
+[ext_resource type="Script" uid="uid://dgp6ajttiajk7" path="res://Main Game/Minigames/CoffeeMinigame/coffee_pot.gd" id="5_5q88u"]
+[ext_resource type="Texture2D" uid="uid://pcha6fvs8k8t" path="res://Assets/MinigameAssets/CoffeeMini/CoffeePot.png" id="6_te4em"]
+[ext_resource type="Script" uid="uid://vox1c1akq2b7" path="res://Main Game/Minigames/CoffeeMinigame/spoon.gd" id="7_14c8u"]
+[ext_resource type="Texture2D" uid="uid://rc3xe2q2lq57" path="res://Assets/MinigameAssets/CoffeeMini/Spoon.png" id="8_dxjxi"]
+[ext_resource type="Texture2D" uid="uid://dpqafnq258mrb" path="res://Assets/MinigameAssets/CoffeeMini/Milk.png" id="9_7np8p"]
+[ext_resource type="Script" uid="uid://bxtt61pyi53ns" path="res://Main Game/Minigames/CoffeeMinigame/milk.gd" id="10_lgmxd"]
+[ext_resource type="Texture2D" uid="uid://c00fkadrvh3bm" path="res://Assets/MinigameAssets/CoffeeMini/CoconutMilk.png" id="11_1ggjo"]
+[ext_resource type="Script" uid="uid://uelop8trtcy6" path="res://Main Game/Minigames/CoffeeMinigame/coconut_milk.gd" id="12_73vhj"]
+[ext_resource type="Texture2D" uid="uid://gin4x16s1lp1" path="res://Assets/MinigameAssets/CoffeeMini/Nutmeg.png" id="13_2liyw"]
+[ext_resource type="Script" uid="uid://dt8dh2t7tyfqs" path="res://Main Game/Minigames/CoffeeMinigame/nutmeg.gd" id="14_l4i8w"]
+[ext_resource type="Texture2D" uid="uid://djji17ykaqyif" path="res://Assets/MinigameAssets/CoffeeMini/Sugar.png" id="15_wf5vj"]
+[ext_resource type="Script" uid="uid://1comlptbaejb" path="res://Main Game/Minigames/CoffeeMinigame/grandulated_sugar.gd" id="16_8n4e5"]
+[ext_resource type="Texture2D" uid="uid://jdqbac775kek" path="res://Assets/MinigameAssets/CoffeeMini/ChocolateSyrup.png" id="17_fec51"]
+[ext_resource type="Script" uid="uid://chix30svgq88t" path="res://Main Game/Minigames/CoffeeMinigame/chocolate_syrup.gd" id="18_d84mc"]
+[ext_resource type="Texture2D" uid="uid://cayu4532k472r" path="res://Assets/MinigameAssets/CoffeeMini/VanillaSyrup.png" id="19_gqaig"]
+[ext_resource type="Script" uid="uid://ds6madbvgh16o" path="res://Main Game/Minigames/CoffeeMinigame/vanilla_syrup.gd" id="20_jjhol"]
+[ext_resource type="Texture2D" uid="uid://iyc0ht62uibd" path="res://Assets/MinigameAssets/CoffeeMini/CaramelSyrup.png" id="21_t7b1n"]
+[ext_resource type="Script" uid="uid://c3uj0yw5y6s5w" path="res://Main Game/Minigames/CoffeeMinigame/caramel_syrup.gd" id="22_mn5gb"]
+[ext_resource type="Texture2D" uid="uid://d3ullrbqsq752" path="res://Assets/MinigameAssets/CoffeeMini/Honey.png" id="23_tolw1"]
+[ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="24_rookh"]
+[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="25_20x2o"]
+
+[node name="CoffeeMinigame" type="Node2D"]
+script = ExtResource("1_j32rv")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -8.0
+offset_top = -3.0
+offset_right = 1158.0
+offset_bottom = 659.0
+texture = ExtResource("2_xfx6c")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(579, 305)
+scale = Vector2(0.39, 0.32333332)
+texture = ExtResource("3_bbbiy")
+
+[node name="Cup" type="Sprite2D" parent="." groups=["cup"]]
+position = Vector2(589, 439)
+scale = Vector2(0.11820981, 0.11820981)
+texture = ExtResource("4_784lq")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Ingredients" type="Node2D" parent="."]
+
+[node name="Milk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 212.0
+offset_top = 216.0
+offset_right = 3212.0
+offset_bottom = 3216.0
+scale = Vector2(0.05256255, 0.0562719)
+texture = ExtResource("9_7np8p")
+script = ExtResource("10_lgmxd")
+metadata/_edit_use_anchors_ = true
+
+[node name="CoconutMilk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 98.000015
+offset_top = 236.0
+offset_right = 3098.0
+offset_bottom = 3236.0
+scale = Vector2(0.0532002, 0.056850705)
+texture = ExtResource("11_1ggjo")
+script = ExtResource("12_73vhj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Nutmeg" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 199.0
+offset_top = 356.99997
+offset_right = 3199.0
+offset_bottom = 3357.0
+scale = Vector2(0.047321852, 0.056072894)
+texture = ExtResource("13_2liyw")
+script = ExtResource("14_l4i8w")
+metadata/_edit_use_anchors_ = true
+
+[node name="GrandulatedSugar" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 61.000008
+offset_top = 357.99997
+offset_right = 3061.0
+offset_bottom = 3358.0
+scale = Vector2(0.049687985, 0.057371743)
+texture = ExtResource("15_wf5vj")
+script = ExtResource("16_8n4e5")
+metadata/_edit_use_anchors_ = true
+
+[node name="ChocolateSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 778.99994
+offset_top = 105.0
+offset_right = 3779.0
+offset_bottom = 3105.0
+scale = Vector2(0.045444995, 0.08652025)
+texture = ExtResource("17_fec51")
+script = ExtResource("18_d84mc")
+metadata/_edit_use_anchors_ = true
+
+[node name="VanillaSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 668.0
+offset_top = 128.0
+offset_right = 3668.0
+offset_bottom = 3128.0
+scale = Vector2(0.047426205, 0.08595084)
+texture = ExtResource("19_gqaig")
+script = ExtResource("20_jjhol")
+metadata/_edit_use_anchors_ = true
+
+[node name="CaramelSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 890.0
+offset_top = 146.00002
+offset_right = 1714.0
+offset_bottom = 1662.0
+scale = Vector2(0.15939277, 0.15939277)
+texture = ExtResource("21_t7b1n")
+script = ExtResource("22_mn5gb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Honey" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 919.0
+offset_top = 285.0
+offset_right = 3919.0
+offset_bottom = 3285.0
+scale = Vector2(0.045542203, 0.05989856)
+texture = ExtResource("23_tolw1")
+script = ExtResource("24_rookh")
+metadata/_edit_use_anchors_ = true
+
+[node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 348.0
+offset_top = 151.0
+offset_right = 1328.0
+offset_bottom = 1131.0
+scale = Vector2(0.19959895, 0.19959895)
+texture = ExtResource("6_te4em")
+script = ExtResource("5_5q88u")
+
+[node name="Spoon" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 728.0
+offset_top = 380.00003
+offset_right = 2227.0
+offset_bottom = 1374.0
+rotation = 0.47935313
+scale = Vector2(0.12350138, 0.12350138)
+texture = ExtResource("8_dxjxi")
+script = ExtResource("7_14c8u")
+
+[node name="Note" type="Sprite2D" parent="."]
+position = Vector2(219, 571)
+scale = Vector2(0.09172807, 0.07387598)
+texture = ExtResource("25_20x2o")
+
+[node name="NoteLabel" type="Label" parent="Note"]
+modulate = Color(0, 0, 0, 1)
+offset_left = 196.23209
+offset_top = -703.8826
+offset_right = 369.2321
+offset_bottom = -524.8826
+scale = Vector2(8.539341, 8.435379)
+text = "Taz's Favorite Drink:
+1- Add Coconut Milk (Drag)
+2- Pour Caramel Syrup (Drag)
+3- A pinch of Nutmeg (Drag)
+4- Helping of Sugar (Drag)
+5- Pour Coffee (Click)
+6- Stir (Click)"
+metadata/_edit_use_anchors_ = true
+
+[node name="TimeLabel" type="Label" parent="Note"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -1537.1521
+offset_top = -609.1288
+offset_right = -1192.1521
+offset_bottom = -508.12878
+scale = Vector2(5.0506625, 10.8836775)
+text = "You have 20 seconds before the table resets.
+When you put the wrong ingredient, then
+everything resets except the most recently
+used ingredient."
