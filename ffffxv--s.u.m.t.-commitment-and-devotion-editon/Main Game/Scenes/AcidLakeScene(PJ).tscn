@@ -11,17 +11,17 @@ script = ExtResource("1_b025y")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1136.0
 offset_bottom = 640.0
-scale = Vector2(1.0140924, 1.0130446)
+scale = Vector2(1.01409, 1.01304)
 texture = ExtResource("2_e8tet")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Portrait" type="TextureRect" parent="."]
 offset_left = 258.0
-offset_top = 3.0000076
+offset_top = 3.00001
 offset_right = 1154.0
 offset_bottom = 878.0
-scale = Vector2(0.7347671, 0.7353121)
+scale = Vector2(0.734767, 0.735312)
 texture = ExtResource("3_o7j3e")
 expand_mode = 1
 stretch_mode = 4
@@ -30,9 +30,9 @@ metadata/_edit_use_anchors_ = true
 [node name="UIDialogueBox" type="TextureRect" parent="."]
 offset_left = 229.0
 offset_top = 340.0
-offset_right = 918.9851
+offset_right = 918.985
 offset_bottom = 687.0
-scale = Vector2(1.0140924, 1.0130446)
+scale = Vector2(1.01409, 1.01304)
 texture = ExtResource("4_fpyrk")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
@@ -43,7 +43,7 @@ offset_left = 368.0
 offset_top = 432.0
 offset_right = 464.0
 offset_bottom = 456.0
-scale = Vector2(1.0140924, 1.0130446)
+scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
 
 [node name="TextLabel" type="RichTextLabel" parent="."]
@@ -52,13 +52,13 @@ offset_left = 368.0
 offset_top = 472.0
 offset_right = 787.0
 offset_bottom = 575.0
-scale = Vector2(1.0140924, 1.0130446)
+scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
 
 [node name="Choices" type="VBoxContainer" parent="."]
 offset_left = 416.0
-offset_top = 519.99994
+offset_top = 520.0
 offset_right = 722.0
-offset_bottom = 571.99994
-scale = Vector2(1.0140924, 1.0130446)
+offset_bottom = 572.0
+scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
