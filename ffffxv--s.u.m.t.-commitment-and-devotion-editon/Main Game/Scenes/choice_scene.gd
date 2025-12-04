@@ -13,7 +13,8 @@ var preload_portraits = {
 	"CharraxTalk.png": preload("res://Portraits/Charrax01.png"),
 	"CHair.png": preload("res://portraits/CHair.png"),
 	"JimmyPlaceholder.png": preload("res://Portraits/JimmyPlaceholder.png"),
-	"TazTalk.png": preload("res://Portraits/TazPlaceholder.png")
+	"TazTalk.png": preload("res://Portraits/TazPlaceholder.png"),
+	"TazSulking.png": preload("res://Portraits/TazSulking.PNG")
 }
 
 func _ready():
