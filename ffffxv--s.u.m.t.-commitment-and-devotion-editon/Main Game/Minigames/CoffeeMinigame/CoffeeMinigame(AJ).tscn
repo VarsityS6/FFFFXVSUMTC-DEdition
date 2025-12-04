@@ -24,7 +24,7 @@
 [ext_resource type="Script" uid="uid://c3uj0yw5y6s5w" path="res://Main Game/Minigames/CoffeeMinigame/caramel_syrup.gd" id="22_mn5gb"]
 [ext_resource type="Texture2D" uid="uid://d3ullrbqsq752" path="res://Assets/MinigameAssets/CoffeeMini/Honey.png" id="23_tolw1"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="24_rookh"]
-[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="25_20x2o"]
+[ext_resource type="Texture2D" uid="uid://dewimeiu4qe4e" path="res://Assets/StickyNote.png" id="25_npndr"]
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_j32rv")
@@ -150,6 +150,7 @@ texture = ExtResource("8_dxjxi")
 script = ExtResource("7_14c8u")
 
 [node name="Note" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(219, 571)
 scale = Vector2(0.0917281, 0.073876)
 texture = ExtResource("25_20x2o")
@@ -161,6 +162,19 @@ offset_top = -703.883
 offset_right = 369.232
 offset_bottom = -524.883
 scale = Vector2(8.53934, 8.43538)
+=======
+position = Vector2(161.96304, 123)
+scale = Vector2(0.1573302, 0.12429333)
+texture = ExtResource("25_npndr")
+
+[node name="NoteLabel" type="Label" parent="Note"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -889.61334
+offset_top = -547.09283
+offset_right = -665.54834
+offset_bottom = -368.09283
+scale = Vector2(7.794, 7.699)
+>>>>>>> Stashed changes
 text = "Taz's Favorite Drink:
 1- Add Coconut Milk (Drag)
 2- Pour Caramel Syrup (Drag)
@@ -169,6 +183,7 @@ text = "Taz's Favorite Drink:
 5- Pour Coffee (Click)
 6- Stir (Click)"
 metadata/_edit_use_anchors_ = true
+<<<<<<< Updated upstream
 
 [node name="TimeLabel" type="Label" parent="Note"]
 modulate = Color(0, 0, 0, 1)
@@ -181,3 +196,5 @@ text = "You have 20 seconds before the table resets.
 When you put the wrong ingredient, then
 everything resets except the most recently
 used ingredient."
+=======
+>>>>>>> Stashed changes
