@@ -24,13 +24,13 @@
   
 { "id": "scene_charrax_comment", "type": "comment", "text": "=== Scene 2: Charrax Introduction ===" },
   { "id": "charrax_intro", "speaker": " ", "portrait": "", "text": "A tall figure exits a nearby building." },
-  { "id": "charrax_intro_2", "speaker": "???", "portrait": "CharraxTalk.png", "text": "Mhhmmmmhm mmhm" },
+  { "id": "charrax_intro_2", "speaker": "???", "portrait": "Charrax01.png", "text": "Mhhmmmmhm mmhm" },
   { "id": "charrax_intro_3", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "I’m sorry?" },
-  { "id": "charrax_intro_4", "speaker": "???", "portrait": "CharraxTalk.png", "text": "Mhhhhm Mhhm mhhhhhmmm" },
+  { "id": "charrax_intro_4", "speaker": "???", "portrait": "Charrax01.png", "text": "Mhhhhm Mhhm mhhhhhmmm" },
   { "id": "charrax_intro_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I can’t understand you." },
   { "id": "charrax_intro_6", "speaker": "???", "portrait": "CConfused.png", "text": "Mhhm mm" },
   { "id": "charrax_intro_7", "speaker": "Charrax", "portrait": "CHair.png", "text": "Sorry about that. It’s hard for people to hear me through my helmet. I said 'I am Charrax the Fleshripper, Conquerer of Realms, Scourge of Babies, Twelve-time Rock Paper Scissors Champion.'" },
-  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "I…howsa.. Yurrr…" },
+  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "NinaWorried.png", "text": "I…howsa.. Yurrr…" },
   { "id": "charrax_intro_9", "speaker": "Charrax", "portrait": "CHair.png", "text": "Huh? It’s hard to understand you even without my helmet." },
   { "id": "charrax_intro_10", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "HAHAHAHAHA!" },
   { "id": "charrax_intro_11", "speaker": "Charrax", "portrait": "CHair.png", "text": "You’re funny lady." },
@@ -46,7 +46,7 @@
 	{"id": "hair_compliment_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "Yeah, it’d get in my way while I’m fighting." },
 	{"id": "hair_compliment_4", "speaker": "Charrax", "portrait": "CHair.png", "text": "Besides, the other guys would make fun of me for it." },
 	{"id": "hair_compliment_5", "speaker": "Charrax", "portrait": "CHair.png", "text": "They think I’m only into tearing the limbs off of my enemies. But, truth be told: I spend 45 minutes every day brushing out my illustrious hair." },
-	{"id": "hair_compliment_6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "…" },
+	{"id": "hair_compliment_6", "speaker": "Nina", "portrait": "NinaWorried.png", "text": "…" },
 	{"id": "hair_compliment_7", "speaker": "Charrax", "portrait": "CHair.png", "text": "And it isn’t easy either, my hair is mostly just knots because all four of my hands are knives." },
 	{"id": "hair_compliment_8", "speaker": "Charrax", "portrait": "CHair.png", "text": "Do you know how hard it is to hold a hairbrush between two knives?" },
 	{"id": "hair_compliment_9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I don’t know why I would know something like that." },
@@ -76,7 +76,7 @@
 	  { "text": "COMPLIMENT HAIR", "scene": "hair_compliment" },
 	  { "text": "Sell your soul to the devil, you spineless worm.", "scene": "lose_end" }
   ] },
-	{"id": "lose_end", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "Are you crying?" },
+	{"id": "lose_end", "speaker": "Nina", "portrait": "NinaWorried.png", "text": "Are you crying?" },
 	{"id": "lose_end_2", "speaker": "Charrax", "portrait": "CHair.png", "text": "NO! Fight Fighters don’t cry. This is sweat… from my eyes." },
 	{"id": "lose_end_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "YOU MADE CHARRAX SWEAT FROM HIS EYES!" },
 
@@ -84,15 +84,15 @@
 	{"id": "lose_end_5", "speaker": " ", "portrait": "", "text": "You are a bad person." },
 	{"id": "lose_end_6", "speaker": " ", "portrait": "", "text": "Everyone thinks so." },
 	{"id": "lose_end_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was weird. I feel like he really wanted me to compliment his hair." },
-	{"id": "lose_end_8", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "And I feel like the narrator is mad at me now." },
+	{"id": "lose_end_8", "speaker": "Nina", "portrait": "NinaWorried.png", "text": "And I feel like the narrator is mad at me now." },
 	{"id": "lose_end_9", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Whatever, I’m sure that won’t have long-lasting consequences that impact the game further down the line." },
 	
 	{"id": "lose_end_10", "speaker": " ", "portrait": "", "text": "Charrax was going to tell you that there are two more fighters down the road." },
 	{"id": "lose_end_11", "speaker": " ", "portrait": "", "text": "Before you shattered his still-beating heart into a billion and one pieces." },
 	{"id": "lose_end_12", "speaker": " ", "portrait": "", "text": "You can go to either Johnny F at the Blood Temple, or Taz at the Acid Lake." },
 		{"id": "lose_next_fighters", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
-{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PJ).tscn" },
-{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene(PT).tscn" }
+{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene.tscn" },
+{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene.tscn" }
 ] },
 
 
@@ -107,8 +107,8 @@
 	{"id": "next_fighters_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "I think I saw Taz sulking off to the Acid Lake, and I want to say Johnny F is training in the Blood Temple " },
 	{"id": "next_fighters_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Thanks Charrax, I'll go introduce myself to them." },
 	{"id": "next_fighters_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
-{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PJ).tscn" },
-{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene(PT).tscn" }
+{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene.tscn" },
+{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene.tscn" }
 ]},
 
 
