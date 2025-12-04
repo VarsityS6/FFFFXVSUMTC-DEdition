@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://b5caxi0iafaym"]
 
-[ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_j32rv"]
+[ext_resource type="Script" uid="uid://d3ivmaxkc7nki" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame(AJ).gd" id="1_npndr"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_xfx6c"]
 [ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="3_bbbiy"]
 [ext_resource type="Texture2D" uid="uid://bvqahm632fj0e" path="res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png" id="4_784lq"]
@@ -24,10 +24,10 @@
 [ext_resource type="Script" uid="uid://c3uj0yw5y6s5w" path="res://Main Game/Minigames/CoffeeMinigame/caramel_syrup.gd" id="22_mn5gb"]
 [ext_resource type="Texture2D" uid="uid://d3ullrbqsq752" path="res://Assets/MinigameAssets/CoffeeMini/Honey.png" id="23_tolw1"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="24_rookh"]
-[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="25_20x2o"]
+[ext_resource type="Texture2D" uid="uid://dewimeiu4qe4e" path="res://Assets/StickyNote.png" id="25_wh7st"]
 
 [node name="CoffeeMinigame" type="Node2D"]
-script = ExtResource("1_j32rv")
+script = ExtResource("1_npndr")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_left = -8.0
@@ -150,17 +150,22 @@ texture = ExtResource("8_dxjxi")
 script = ExtResource("7_14c8u")
 
 [node name="Note" type="Sprite2D" parent="."]
-position = Vector2(219, 571)
-scale = Vector2(0.0917281, 0.073876)
-texture = ExtResource("25_20x2o")
+position = Vector2(137.971, 114.834)
+scale = Vector2(0.141697, 0.115254)
+texture = ExtResource("25_wh7st")
 
 [node name="NoteLabel" type="Label" parent="Note"]
 modulate = Color(0, 0, 0, 1)
-offset_left = 196.232
-offset_top = -703.883
-offset_right = 369.232
-offset_bottom = -524.883
-scale = Vector2(8.53934, 8.43538)
+anchors_preset = -1
+anchor_left = 0.000143687
+anchor_top = 0.000265732
+anchor_right = 0.00118535
+anchor_bottom = 0.000265732
+offset_left = -870.206
+offset_top = -526.61
+offset_right = -646.206
+offset_bottom = -347.61
+scale = Vector2(7.684, 7.59)
 text = "Taz's Favorite Drink:
 1- Add Coconut Milk (Drag)
 2- Pour Caramel Syrup (Drag)
@@ -169,15 +174,3 @@ text = "Taz's Favorite Drink:
 5- Pour Coffee (Click)
 6- Stir (Click)"
 metadata/_edit_use_anchors_ = true
-
-[node name="TimeLabel" type="Label" parent="Note"]
-modulate = Color(0, 0, 0, 1)
-offset_left = -1537.15
-offset_top = -609.129
-offset_right = -1192.15
-offset_bottom = -508.129
-scale = Vector2(5.05066, 10.8837)
-text = "You have 20 seconds before the table resets.
-When you put the wrong ingredient, then
-everything resets except the most recently
-used ingredient."
