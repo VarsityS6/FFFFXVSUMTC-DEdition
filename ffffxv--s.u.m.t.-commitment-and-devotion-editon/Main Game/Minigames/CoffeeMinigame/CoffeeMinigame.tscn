@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://bvqahm632fj0e" path="res://Assets/MinigameAssets/CoffeeMini/EmptyMug.png" id="3_vrkjd"]
 [ext_resource type="Texture2D" uid="uid://pcha6fvs8k8t" path="res://Assets/MinigameAssets/CoffeeMini/CoffeePot.png" id="4_2eyor"]
 [ext_resource type="Texture2D" uid="uid://rc3xe2q2lq57" path="res://Assets/MinigameAssets/CoffeeMini/Spoon.png" id="4_06uck"]
-[ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_85m5v"]
 [ext_resource type="Texture2D" uid="uid://c00fkadrvh3bm" path="res://Assets/MinigameAssets/CoffeeMini/CoconutMilk.png" id="5_85m5v"]
 [ext_resource type="Script" uid="uid://dgp6ajttiajk7" path="res://Main Game/Minigames/CoffeeMinigame/coffee_pot.gd" id="5_popno"]
 [ext_resource type="Script" uid="uid://uelop8trtcy6" path="res://Main Game/Minigames/CoffeeMinigame/coconut_milk.gd" id="6_2eyor"]
@@ -25,6 +24,7 @@
 [ext_resource type="Script" uid="uid://chix30svgq88t" path="res://Main Game/Minigames/CoffeeMinigame/chocolate_syrup.gd" id="16_acf8w"]
 [ext_resource type="Script" uid="uid://ds6madbvgh16o" path="res://Main Game/Minigames/CoffeeMinigame/vanilla_syrup.gd" id="18_5qlrh"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="22_hsglp"]
+[ext_resource type="Texture2D" uid="uid://dewimeiu4qe4e" path="res://Assets/StickyNote.png" id="25_popno"]
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
@@ -150,34 +150,22 @@ texture = ExtResource("4_2eyor")
 script = ExtResource("5_popno")
 
 [node name="Note" type="Sprite2D" parent="."]
-position = Vector2(219, 571)
-scale = Vector2(0.09172807, 0.07387598)
-texture = ExtResource("4_85m5v")
+position = Vector2(155.98529, 116.91684)
+scale = Vector2(0.1427237, 0.12155904)
+texture = ExtResource("25_popno")
 
 [node name="NoteLabel" type="Label" parent="Note"]
 modulate = Color(0, 0, 0, 1)
-offset_left = 196.23209
-offset_top = -703.8826
-offset_right = 369.2321
-offset_bottom = -524.8826
-scale = Vector2(8.539341, 8.435379)
+offset_left = -875.7151
+offset_top = -534.0355
+offset_right = -651.7151
+offset_bottom = -355.03552
+scale = Vector2(7.678, 7.585)
 text = "Taz's Favorite Drink:
 1- Add Coconut Milk (Drag)
 2- Pour Caramel Syrup (Drag)
 3- A pinch of Nutmeg (Drag)
 4- Helping of Sugar (Drag)
-5- Pour Coffee (Click)
-6- Stir (Click)"
+5- Pour Coffee (Drag)
+6- Stir (Drag)"
 metadata/_edit_use_anchors_ = true
-
-[node name="TimeLabel" type="Label" parent="Note"]
-modulate = Color(0, 0, 0, 1)
-offset_left = -1537.1521
-offset_top = -609.1288
-offset_right = -1192.1521
-offset_bottom = -508.12878
-scale = Vector2(5.0506625, 10.8836775)
-text = "You have 20 seconds before the table resets.
-When you put the wrong ingredient, then
-everything resets except the most recently
-used ingredient."
