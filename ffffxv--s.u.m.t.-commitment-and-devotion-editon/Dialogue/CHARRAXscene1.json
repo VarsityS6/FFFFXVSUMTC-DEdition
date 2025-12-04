@@ -30,7 +30,7 @@
   { "id": "charrax_intro_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I can’t understand you." },
   { "id": "charrax_intro_6", "speaker": "???", "portrait": "CConfused.png", "text": "Mhhm mm" },
   { "id": "charrax_intro_7", "speaker": "Charrax", "portrait": "CHair.png", "text": "Sorry about that. It’s hard for people to hear me through my helmet. I said 'I am Charrax the Fleshripper, Conquerer of Realms, Scourge of Babies, Twelve-time Rock Paper Scissors Champion.'" },
-  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "NinaWorried.png", "text": "I…howsa.. Yurrr…" },
+  { "id": "charrax_intro_8", "speaker": "Nina", "portrait": "NinaSurprise.png", "text": "I…howsa.. Yurrr…" },
   { "id": "charrax_intro_9", "speaker": "Charrax", "portrait": "CHair.png", "text": "Huh? It’s hard to understand you even without my helmet." },
   { "id": "charrax_intro_10", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "HAHAHAHAHA!" },
   { "id": "charrax_intro_11", "speaker": "Charrax", "portrait": "CHair.png", "text": "You’re funny lady." },

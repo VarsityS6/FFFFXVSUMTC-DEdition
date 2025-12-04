@@ -9,6 +9,7 @@ var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"NinaSurprise.png": preload("res://Portraits/NinaSurprised.png"),
 	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
+	"NinaWorried.png": preload("res://Portraits/NinaWorried.png"),
 	"CConfused.png": preload("res://portraits/CConfused.png"),
 	"CharraxTalk.png": preload("res://Portraits/Charrax01.png"),
 	"CHair.png": preload("res://portraits/CHair.png"),
