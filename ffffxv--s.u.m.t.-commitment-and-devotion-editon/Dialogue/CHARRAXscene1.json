@@ -91,8 +91,8 @@
 	{"id": "lose_end_11", "speaker": " ", "portrait": "", "text": "Before you shattered his still-beating heart into a billion and one pieces." },
 	{"id": "lose_end_12", "speaker": " ", "portrait": "", "text": "You can go to either Johnny F at the Blood Temple, or Taz at the Acid Lake." },
 		{"id": "lose_next_fighters", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
-{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene.tscn" },
-{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene.tscn" }
+{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PJ).tscn" },
+{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene(PT).tscn" }
 ] },
 
 
@@ -107,8 +107,8 @@
 	{"id": "next_fighters_3", "speaker": "Charrax", "portrait": "CHair.png", "text": "I think I saw Taz sulking off to the Acid Lake, and I want to say Johnny F is training in the Blood Temple " },
 	{"id": "next_fighters_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Thanks Charrax, I'll go introduce myself to them." },
 	{"id": "next_fighters_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Who should I go see first?", "choices": [
-{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene.tscn" },
-{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene.tscn" }
+{ "text": "Taz.", "scene_change": "res://Main Game/Scenes/AcidLakeScene(PJ).tscn" },
+{ "text": "Jimmy F.", "scene_change": "res://Main Game/Scenes/TempleScene(PT).tscn" }
 ]},
 
 
