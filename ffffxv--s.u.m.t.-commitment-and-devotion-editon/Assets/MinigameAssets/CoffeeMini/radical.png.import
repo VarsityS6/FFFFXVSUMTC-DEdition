@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jdqbac775kek"
-path="res://.godot/imported/ChocolateSyrup.png-f2a0b8f51585c295af0ab47c2703dfb1.ctex"
+uid="uid://cx8724npryyre"
+path="res://.godot/imported/radical.png-9eae7b092826aa74506bdb30f78bb700.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MinigameAssets/CoffeeMini/ChocolateSyrup.png"
-dest_files=["res://.godot/imported/ChocolateSyrup.png-f2a0b8f51585c295af0ab47c2703dfb1.ctex"]
+source_file="res://Assets/MinigameAssets/CoffeeMini/radical.png"
+dest_files=["res://.godot/imported/radical.png-9eae7b092826aa74506bdb30f78bb700.ctex"]
 
 [params]
 
