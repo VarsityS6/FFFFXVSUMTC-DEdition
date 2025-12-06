@@ -51,8 +51,8 @@ offset_bottom = 575.0
 scale = Vector2(1.01409, 1.01304)
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 409.0
-offset_top = 529.0
-offset_right = 715.0
-offset_bottom = 581.0
+offset_left = 416.0
+offset_top = 496.0
+offset_right = 722.0
+offset_bottom = 548.0
 scale = Vector2(1.01409, 1.01304)
