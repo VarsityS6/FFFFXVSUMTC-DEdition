@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b5caxi0iafaym"]
+[gd_scene load_steps=26 format=3 uid="uid://cxuritiwuj8gb"]
 
 [ext_resource type="Script" uid="uid://d3ivmaxkc7nki" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame(AJ).gd" id="1_npndr"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_xfx6c"]
@@ -38,12 +38,12 @@ texture = ExtResource("2_xfx6c")
 
 [node name="Table" type="Sprite2D" parent="."]
 position = Vector2(579, 305)
-scale = Vector2(0.39, 0.323333)
+scale = Vector2(0.39, 0.32333332)
 texture = ExtResource("3_bbbiy")
 
 [node name="Cup" type="Sprite2D" parent="." groups=["cup"]]
 position = Vector2(589, 439)
-scale = Vector2(0.11821, 0.11821)
+scale = Vector2(0.11820981, 0.11820981)
 texture = ExtResource("4_784lq")
 
 [node name="Timer" type="Timer" parent="."]
@@ -55,47 +55,47 @@ offset_left = 212.0
 offset_top = 216.0
 offset_right = 3212.0
 offset_bottom = 3216.0
-scale = Vector2(0.0525625, 0.0562719)
+scale = Vector2(0.05256255, 0.0562719)
 texture = ExtResource("9_7np8p")
 script = ExtResource("10_lgmxd")
 metadata/_edit_use_anchors_ = true
 
 [node name="CoconutMilk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 98.0
+offset_left = 98.000015
 offset_top = 236.0
 offset_right = 3098.0
 offset_bottom = 3236.0
-scale = Vector2(0.0532002, 0.0568507)
+scale = Vector2(0.0532002, 0.056850705)
 texture = ExtResource("11_1ggjo")
 script = ExtResource("12_73vhj")
 metadata/_edit_use_anchors_ = true
 
 [node name="Nutmeg" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
 offset_left = 199.0
-offset_top = 357.0
+offset_top = 356.99997
 offset_right = 3199.0
 offset_bottom = 3357.0
-scale = Vector2(0.0473219, 0.0560729)
+scale = Vector2(0.047321852, 0.056072894)
 texture = ExtResource("13_2liyw")
 script = ExtResource("14_l4i8w")
 metadata/_edit_use_anchors_ = true
 
 [node name="GrandulatedSugar" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 61.0
-offset_top = 358.0
+offset_left = 61.000008
+offset_top = 357.99997
 offset_right = 3061.0
 offset_bottom = 3358.0
-scale = Vector2(0.049688, 0.0573717)
+scale = Vector2(0.049687985, 0.057371743)
 texture = ExtResource("15_wf5vj")
 script = ExtResource("16_8n4e5")
 metadata/_edit_use_anchors_ = true
 
 [node name="ChocolateSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 779.0
+offset_left = 778.99994
 offset_top = 105.0
 offset_right = 3779.0
 offset_bottom = 3105.0
-scale = Vector2(0.045445, 0.0865202)
+scale = Vector2(0.045444995, 0.08652025)
 texture = ExtResource("17_fec51")
 script = ExtResource("18_d84mc")
 metadata/_edit_use_anchors_ = true
@@ -105,17 +105,17 @@ offset_left = 668.0
 offset_top = 128.0
 offset_right = 3668.0
 offset_bottom = 3128.0
-scale = Vector2(0.0474262, 0.0859508)
+scale = Vector2(0.047426205, 0.08595084)
 texture = ExtResource("19_gqaig")
 script = ExtResource("20_jjhol")
 metadata/_edit_use_anchors_ = true
 
 [node name="CaramelSyrup" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
 offset_left = 890.0
-offset_top = 146.0
+offset_top = 146.00002
 offset_right = 1714.0
 offset_bottom = 1662.0
-scale = Vector2(0.159393, 0.159393)
+scale = Vector2(0.15939277, 0.15939277)
 texture = ExtResource("21_t7b1n")
 script = ExtResource("22_mn5gb")
 metadata/_edit_use_anchors_ = true
@@ -125,52 +125,122 @@ offset_left = 919.0
 offset_top = 285.0
 offset_right = 3919.0
 offset_bottom = 3285.0
-scale = Vector2(0.0455422, 0.0598986)
+scale = Vector2(0.045542203, 0.05989856)
 texture = ExtResource("23_tolw1")
 script = ExtResource("24_rookh")
 metadata/_edit_use_anchors_ = true
 
-[node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 348.0
-offset_top = 151.0
-offset_right = 1328.0
-offset_bottom = 1131.0
-scale = Vector2(0.199599, 0.199599)
-texture = ExtResource("6_te4em")
-script = ExtResource("5_5q88u")
-
 [node name="Spoon" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 728.0
-offset_top = 380.0
-offset_right = 2227.0
-offset_bottom = 1374.0
-rotation = 0.479353
-scale = Vector2(0.123501, 0.123501)
+offset_left = 730.99994
+offset_top = 400.0
+offset_right = 2230.0
+offset_bottom = 1394.0
+rotation = 0.5581613
+scale = Vector2(0.10747266, 0.10747266)
 texture = ExtResource("8_dxjxi")
 script = ExtResource("7_14c8u")
 
-[node name="Note" type="Sprite2D" parent="."]
-position = Vector2(137.971, 114.834)
-scale = Vector2(0.141697, 0.115254)
+[node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
+offset_left = 378.99997
+offset_top = 110.0
+offset_right = 1359.0
+offset_bottom = 1090.0
+scale = Vector2(0.23878098, 0.23878098)
+texture = ExtResource("6_te4em")
+script = ExtResource("5_5q88u")
+
+[node name="IngredientList" type="Sprite2D" parent="."]
+position = Vector2(155.98529, 116.91684)
+scale = Vector2(0.1427237, 0.12155904)
 texture = ExtResource("25_wh7st")
 
-[node name="NoteLabel" type="Label" parent="Note"]
+[node name="FavoriteDrink" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
-anchor_left = 0.000143687
-anchor_top = 0.000265732
-anchor_right = 0.00118535
-anchor_bottom = 0.000265732
-offset_left = -870.206
-offset_top = -526.61
-offset_right = -646.206
-offset_bottom = -347.61
-scale = Vector2(7.684, 7.59)
-text = "Taz's Favorite Drink:
-1- Add Coconut Milk (Drag)
-2- Pour Caramel Syrup (Drag)
-3- A pinch of Nutmeg (Drag)
-4- Helping of Sugar (Drag)
-5- Pour Coffee (Click)
-6- Stir (Click)"
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = -385.9593
+offset_right = -651.7151
+offset_bottom = -206.95929
+scale = Vector2(7.678, 7.585)
+text = "Taz's Favorite Drink:"
+metadata/_edit_use_anchors_ = true
+
+[node name="CoconutMilkLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -868.70856
+offset_top = -188.5243
+offset_right = -644.70856
+offset_bottom = -9.524307
+scale = Vector2(7.678, 7.585)
+text = "1- Add Coconut Milk (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="CaramelSyrupLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = -15.768875
+offset_right = -651.7151
+offset_bottom = 163.23112
+scale = Vector2(7.678, 7.585)
+text = "2- Pour Caramel Syrup (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="NutmegLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 173.4397
+offset_right = -651.7151
+offset_bottom = 352.4397
+scale = Vector2(7.678, 7.585)
+text = "3- A pinch of Nutmeg (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="GrandulatedSugarLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 346.1952
+offset_right = -651.7151
+offset_bottom = 525.1952
+scale = Vector2(7.678, 7.585)
+text = "4- Helping of Sugar (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="CoffeePotLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111346
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 543.6301
+offset_right = -651.7151
+offset_bottom = 722.6301
+scale = Vector2(7.678, 7.585)
+text = "5- Pour Coffee (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="SpoonLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.083111286
+anchor_bottom = -0.083111286
+offset_left = -875.7151
+offset_top = 724.6122
+offset_right = -651.7151
+offset_bottom = 903.61206
+scale = Vector2(7.678, 7.585)
+text = "6- Stir (Drag)"
 metadata/_edit_use_anchors_ = true

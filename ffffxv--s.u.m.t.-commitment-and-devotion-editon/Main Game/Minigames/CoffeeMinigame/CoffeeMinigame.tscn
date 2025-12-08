@@ -149,23 +149,91 @@ scale = Vector2(0.23878098, 0.23878098)
 texture = ExtResource("4_2eyor")
 script = ExtResource("5_popno")
 
-[node name="Note" type="Sprite2D" parent="."]
+[node name="IngredientList" type="Sprite2D" parent="."]
 position = Vector2(155.98529, 116.91684)
 scale = Vector2(0.1427237, 0.12155904)
 texture = ExtResource("25_popno")
 
-[node name="NoteLabel" type="Label" parent="Note"]
+[node name="FavoriteDrink" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
 offset_left = -875.7151
-offset_top = -534.0355
+offset_top = -385.9593
 offset_right = -651.7151
-offset_bottom = -355.03552
+offset_bottom = -206.95929
 scale = Vector2(7.678, 7.585)
-text = "Taz's Favorite Drink:
-1- Add Coconut Milk (Drag)
-2- Pour Caramel Syrup (Drag)
-3- A pinch of Nutmeg (Drag)
-4- Helping of Sugar (Drag)
-5- Pour Coffee (Drag)
-6- Stir (Drag)"
+text = "Taz's Favorite Drink:"
+metadata/_edit_use_anchors_ = true
+
+[node name="CoconutMilkLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
+offset_left = -868.70856
+offset_top = -188.5243
+offset_right = -644.70856
+offset_bottom = -9.524307
+scale = Vector2(7.678, 7.585)
+text = "1- Add Coconut Milk (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="CaramelSyrupLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = -15.768875
+offset_right = -651.7151
+offset_bottom = 163.23112
+scale = Vector2(7.678, 7.585)
+text = "2- Pour Caramel Syrup (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="NutmegLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 173.4397
+offset_right = -651.7151
+offset_bottom = 352.4397
+scale = Vector2(7.678, 7.585)
+text = "3- A pinch of Nutmeg (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="GrandulatedSugarLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 346.1952
+offset_right = -651.7151
+offset_bottom = 525.1952
+scale = Vector2(7.678, 7.585)
+text = "4- Helping of Sugar (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="CoffeePotLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111346
+offset_left = -875.7151
+offset_top = 543.6301
+offset_right = -651.7151
+offset_bottom = 722.6301
+scale = Vector2(7.678, 7.585)
+text = "5- Pour Coffee (Drag)"
+metadata/_edit_use_anchors_ = true
+
+[node name="SpoonLabel" type="Label" parent="IngredientList"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_bottom = -0.083111286
+offset_left = -875.7151
+offset_top = 724.6122
+offset_right = -651.7151
+offset_bottom = 903.61206
+scale = Vector2(7.678, 7.585)
+text = "6- Stir (Drag)"
 metadata/_edit_use_anchors_ = true

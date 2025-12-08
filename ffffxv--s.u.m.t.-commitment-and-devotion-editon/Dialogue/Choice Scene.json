@@ -3,7 +3,7 @@
   { "id": "Choice_intro_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Aptly named." },
   { "id": "Choice_intro_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe something climactic will happen here:" },
   { "id": "Choice_intro_4", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "Nina! we need to talk to you!" },
-  { "id": "Choice_intro_5", "speaker": "Charrax", "portrait": "CHair.png", "text": "We all want to marry you but we can't decide who gets to." },
+  { "id": "Choice_intro_5", "speaker": "Charrax", "portrait": "CHair", "text": "We all want to marry you but we can't decide who gets to." },
   { "id": "Choice_intro_6", "speaker": "Taz", "portrait": "TazSulking.png", "text": "They've been arguing about it for minutes." },
   { "id": "Choice_intro_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow that's..." },
   { "id": "Choice_intro_8", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "When did you guys have time to talk about this about this?" },
@@ -163,7 +163,7 @@
   { "id": "TazEnding1", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You went on to marry Taz the Dragonborn." },
   { "id": "TazEnding2", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and you cried several times. And so did he." },
   { "id": "TazEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Over the course of your life, you met Taz's dad who is a dragon. He's actually a really normal dad. Except he's a dragon." },
-    { "id": "TazEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "The two of you eventually had kids. For some reason they were just lizards. No one knows why." },
+	{ "id": "TazEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "The two of you eventually had kids. For some reason they were just lizards. No one knows why." },
   { "id": "TazEnding4", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "But most importantly, the two of you lived happily ever after." },
   {
 	"id": "Choice_EndJ",
