@@ -3,7 +3,7 @@ extends Node2D
 @onready var cup: Sprite2D = $Cup
 @onready var coffee_pot: TextureRect = $Ingredients/CoffeePot
 @onready var spoon: TextureRect = $Ingredients/Spoon
-
+@onready var countdown: Timer = $CountdownTimer
 @onready var label_coconut: Label = $IngredientList/CoconutMilkLabel
 @onready var label_caramel: Label = $IngredientList/CaramelSyrupLabel
 @onready var label_nutmeg: Label = $IngredientList/NutmegLabel
@@ -20,6 +20,11 @@ var correct_order: Array = [
 	"Spoon"
 ]
 
+var time_left = 20
+var timer_label
+var game_timer: Timer
+
+
 var added_ingredients: Array = []
 var try_again_popup: Sprite2D
 var struck_lines := {}
@@ -30,6 +35,11 @@ func _ready():
 		if ing and ing.has_signal("dropped_into_cup"):
 			ing.dropped_into_cup.connect(_on_ingredient_dropped)
 	_reset_labels()
+	timer_label = $TimerLabel
+	timer_label.text = str(time_left)
+	timer_label.self_modulate = Color(1,1,1,1)
+	_start_timer()
+
 
 func _on_ingredient_dropped(ingredient_name: String):
 	added_ingredients.append(ingredient_name)
@@ -141,6 +151,8 @@ func _show_try_again():
 		try_again_popup.queue_free()
 
 func _successful_coffee():
+	if game_timer:
+		game_timer.stop()
 	var full_path = "res://Assets/MinigameAssets/CoffeeMini/CoffeeFull.png"
 	if ResourceLoader.exists(full_path):
 		cup.texture = load(full_path)
@@ -159,3 +171,20 @@ func _on_congrats_pressed():
 	Global.resume_after_minigame = true
 	Global.resume_line_id = "taztransition"
 	get_tree().change_scene_to_file("res://Main Game/Scenes/AcidLakeScene(AJ).tscn")
+
+func _start_timer():
+	game_timer = Timer.new()
+	game_timer.wait_time = 1
+	game_timer.one_shot = false
+	add_child(game_timer)
+	game_timer.timeout.connect(_tick)
+	game_timer.start()
+
+func _tick():
+	time_left -= 1
+	timer_label.text = str(time_left)
+
+	if time_left <= 0:
+		time_left = 20
+		timer_label.text = str(time_left)
+		_reset_attempt()

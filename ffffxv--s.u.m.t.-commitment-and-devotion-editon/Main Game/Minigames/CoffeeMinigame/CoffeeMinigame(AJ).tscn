@@ -46,8 +46,6 @@ position = Vector2(589, 439)
 scale = Vector2(0.11820981, 0.11820981)
 texture = ExtResource("4_784lq")
 
-[node name="Timer" type="Timer" parent="."]
-
 [node name="Ingredients" type="Node2D" parent="."]
 
 [node name="Milk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
@@ -244,3 +242,20 @@ offset_bottom = 903.61206
 scale = Vector2(7.678, 7.585)
 text = "6- Stir (Drag)"
 metadata/_edit_use_anchors_ = true
+
+[node name="TimerLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 531.0
+offset_top = -23.0
+offset_right = 643.0
+offset_bottom = 111.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 98
+text = "30"
+horizontal_alignment = 1
+
+[node name="CountdownTimer" type="Timer" parent="."]
+autostart = true

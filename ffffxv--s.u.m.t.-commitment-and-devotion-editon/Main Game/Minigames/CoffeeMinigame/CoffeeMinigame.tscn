@@ -46,8 +46,6 @@ position = Vector2(589, 439)
 scale = Vector2(0.11820981, 0.11820981)
 texture = ExtResource("3_vrkjd")
 
-[node name="Timer" type="Timer" parent="."]
-
 [node name="Ingredients" type="Node2D" parent="."]
 
 [node name="Milk" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
@@ -157,6 +155,7 @@ texture = ExtResource("25_popno")
 [node name="FavoriteDrink" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -875.7151
 offset_top = -385.9593
@@ -169,6 +168,7 @@ metadata/_edit_use_anchors_ = true
 [node name="CoconutMilkLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -868.70856
 offset_top = -188.5243
@@ -181,6 +181,7 @@ metadata/_edit_use_anchors_ = true
 [node name="CaramelSyrupLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -875.7151
 offset_top = -15.768875
@@ -193,6 +194,7 @@ metadata/_edit_use_anchors_ = true
 [node name="NutmegLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -875.7151
 offset_top = 173.4397
@@ -205,6 +207,7 @@ metadata/_edit_use_anchors_ = true
 [node name="GrandulatedSugarLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -875.7151
 offset_top = 346.1952
@@ -217,6 +220,7 @@ metadata/_edit_use_anchors_ = true
 [node name="CoffeePotLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111346
 anchor_bottom = -0.083111346
 offset_left = -875.7151
 offset_top = 543.6301
@@ -229,6 +233,7 @@ metadata/_edit_use_anchors_ = true
 [node name="SpoonLabel" type="Label" parent="IngredientList"]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
+anchor_top = -0.083111286
 anchor_bottom = -0.083111286
 offset_left = -875.7151
 offset_top = 724.6122
@@ -237,3 +242,20 @@ offset_bottom = 903.61206
 scale = Vector2(7.678, 7.585)
 text = "6- Stir (Drag)"
 metadata/_edit_use_anchors_ = true
+
+[node name="TimerLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 512.0
+offset_top = -22.0
+offset_right = 624.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 98
+text = "30"
+horizontal_alignment = 1
+
+[node name="CountdownTimer" type="Timer" parent="."]
+autostart = true
