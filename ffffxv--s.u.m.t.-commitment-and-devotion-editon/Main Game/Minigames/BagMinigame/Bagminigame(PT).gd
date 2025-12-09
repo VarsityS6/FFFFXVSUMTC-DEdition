@@ -96,13 +96,10 @@ func _finish_punch_minigame():
 	b.text = "Your punches were... something"
 	b.scale = Vector2(1.5, 1.5)
 	add_child(b)
-
 	await get_tree().process_frame
-
 	var vp = get_viewport_rect().size
 	var bs = b.size
-	b.position = vp / 2 - bs / 2 + Vector2(-50, 0)
-
+	b.position = vp / 2 - bs / 2 + Vector2(-50, -100)
 	b.pressed.connect(_on_finish_pressed)
 
 

@@ -4,7 +4,6 @@ var dialogue = []
 var index = 0
 var resume_line_id = ""
 
-# Preload portraits so they are bundled in the export
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"NinaSurprise.png": preload("res://Portraits/NinaSurprised.png"),
@@ -32,7 +31,6 @@ func load_dialogue(path: String) -> Array:
 	var file = FileAccess.open(path, FileAccess.READ)
 	return JSON.parse_string(file.get_as_text())
 
-# Jump to a line by its ID
 func get_line_by_id(line_id: String) -> Dictionary:
 	if line_id == "hair_minigame":
 		get_tree().change_scene_to_file("res://Main Game/Minigames/BrushMinigame/BrushMinigame.tscn")
@@ -46,38 +44,35 @@ func get_line_by_id(line_id: String) -> Dictionary:
 	return {}
 
 func show_line():
-	# Skip comments
 	while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 		index += 1
-	
+
 	if index >= dialogue.size():
 		end_dialogue()
 		return
 
 	var line = dialogue[index]
 
-	# ✅ NEW: If this line has "end": true or id == "END", stop dialogue.
 	if line.get("end", false) or line.get("id", "") == "END":
 		end_dialogue()
 		return
 
-	# Speaker and text
 	$NameLabel.text = line.get("speaker", "")
 	$TextLabel.text = line.get("text", "")
 
-	# Portrait
 	if line.has("portrait") and line["portrait"] != "":
 		$Portrait.texture = preload_portraits.get(line["portrait"], null)
 	else:
 		$Portrait.texture = null
 
-	# Choices
+	if line.has("sfx") and line["sfx"] != "":
+		Global.play_sfx(line["sfx"])
+
 	if line.has("choices"):
 		show_choices(line["choices"])
 	else:
 		clear_choices()
 
-	# Minigame check
 	if line.has("minigame"):
 		resume_line_id = line.get("resume_id", "")
 		Global.resume_line_id = resume_line_id

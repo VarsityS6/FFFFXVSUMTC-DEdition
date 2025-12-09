@@ -101,8 +101,7 @@ func _finish_punch_minigame():
 
 	var vp = get_viewport_rect().size
 	var bs = b.size
-	b.position = vp / 2 - bs / 2 + Vector2(-50, 0)
-
+	b.position = vp / 2 - bs / 2 + Vector2(-50, -100)
 	b.pressed.connect(_on_finish_pressed)
 
 
