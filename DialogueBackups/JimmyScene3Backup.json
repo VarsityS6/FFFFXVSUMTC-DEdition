@@ -3,17 +3,19 @@
   { "id": "jimmy_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Taz said this is where that Johnny F guy trains." },
   { "id": "jimmy_3", "speaker": "", "portrait": "", "text": "You hear a faint voice speaking to you from high up in the sky" },
   { "id": "jimmy_4", "speaker": "???", "portrait": "", "text": "It's Jimmy!" },
-  { "id": "jimmy_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Huh??", "sfx": "Nina_Shocked_Gasp.mp3" },
-  { "id": "jimmy_6", "speaker": "Narrator", "portrait": "", "text": "A man suddenly drops from the sky, somehow making a crater in the shape of a fist on the floor beneath him", "sfx": "Jimmy_Landing.mp3" },
+  { "id": "jimmy_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Huh??" },
+
+  { "id": "jimmy_6", "speaker": " ", "portrait": " ", "text": "A man suddenly drops from the sky, somehow making a crater in the shape of a fist on the floor beneath him" },
+
   { "id": "jimmy_7", "speaker": "???", "portrait": "JimmyPlaceholder.png", "text": "I said 'its Jimmy' as in Jimmy Fistenyorfeyce!" },
   { "id": "jimmy_8", "speaker": "???", "portrait": "JimmyPlaceholder.png", "text": "Fistenyorfeyce is the name and putting fists in faces is my game! HAHA!" },
-  { "id": "jimmy_9", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Goodness, that looked like a long fall!", "sfx": "Nina_Shocked_Wow.mp3" },
+  { "id": "jimmy_9", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Goodness, that looked like a long fall!" },
   { "id": "jimmy_10", "speaker": "???", "portrait": "JimmyPlaceholder.png", "text": "It was!" },
   { "id": "jimmy_11", "speaker": "???", "portrait": "JimmyPlaceholder.png", "text": "I broke every bone in my body!" },
   { "id": "jimmy_12", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "..." },
-  { "id": "jimmy_13", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Then how are you alive?", "sfx": "Nina_Shocked_Gasp.mp3" },
+  { "id": "jimmy_13", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Then how are you alive?" },
   { "id": "jimmy_14", "speaker": "???", "portrait": "JimmyPlaceholder.png", "text": "I got better!" },
-  { "id": "jimmy_15", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Of course you did!", "sfx": "Nina_Excited_Yes.mp3" },
+  { "id": "jimmy_15", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Of course you did!" },
   { "id": "jimmy_16", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "So mister..." },
   { "id": "jimmy_17", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Um...what was it again..?" },
   { "id": "jimmy_choice_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Was your name?", "choices": [
@@ -22,86 +24,100 @@
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
+
   { "id": "Johnny_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Johnny Punchinyaface!" },
   { "id": "Johnny_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Ah! You know my cousin!" },
-  { "id": "Johnny_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Haha..I...yep.", "sfx": "Nina_Laugh.mp3" },
+  { "id": "Johnny_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Haha..I...yep." },
   { "id": "Johnny_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Alas! A Ruse! You were trying to guess my name and mistook it for my cousin's!" },
   { "id": "Johnny_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "How quaint!" },
-  { "id": "jimmy_choice_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was just kidding around, your name was...", "choices": [
+ { "id": "jimmy_choice_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I was just kidding around, your name was...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
-  { "id": "Joey_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Joey Smackinaface!" },
+
+
+	{ "id": "Joey_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Joey Smackinaface!" },
   { "id": "Joey_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "That's an absurd name! Who would ever be named that!" },
   { "id": "Joey_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Definitely not you...probably." },
   { "id": "Joey_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "The truth bubbles to the top of the metaphorical soup!" },
   { "id": "Joey_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "You don't remember my name!" },
-  { "id": "jimmy_choice_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Of course I do, your name is...", "choices": [
+ { "id": "jimmy_choice_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Of course I do, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_1" }
   ] },
-  { "id": "Pablo_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "...Pablo..?" },
+
+
+	{ "id": "Pablo_1", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "...Pablo..?" },
   { "id": "Pablo_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Pablo?!" },
   { "id": "Pablo_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Your name's not pablo is it?" },
   { "id": "Pablo_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Who the hell is Pablo!?" },
   { "id": "Pablo_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Why would anyone ever be named Pablo! No my name isn't Pablo!!!" },
-  { "id": "jimmy_choice_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Right totally, your name is...", "choices": [
+ { "id": "jimmy_choice_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Right totally, your name is...", "choices": [
 	  { "text": "Johnny", "scene": "Johnny_1" },
 	  { "text": "Jimmy", "scene": "jimmy_18" },
 	  { "text": "Joey", "scene": "Joey_1" },
 	  { "text": "...Pablo?", "scene": "Pablo_6" }
   ] },
-  { "id": "Pablo_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Could it be...Pablo..?" },
-  { "id": "Pablo_7", "speaker": "Pablo", "portrait": "JimmyPlaceholder.png", "text": "NO ONE IS NAMED PABLO HERE! PLEASE DO NOT CALL ME PABLO!!!" },
+
+  
+	{ "id": "Pablo_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Could it be...Pablo..?" },
+  { "id": "Pablo_7", "speaker": "Pablo", "portrait": "NinaSurprised.png", "text": "NO ONE IS NAMED PABLO HERE! PLEASE DO NOT CALL ME PABLO!!!" },
   { "id": "Pablo_8", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "ok...not Pablo." },
   { "id": "Pablo_9", "speaker": "Pablo", "portrait": "JimmyPlaceholder.png", "text": "IT'S JIMMY! THAT DOESN'T SOUND ANYTHING LIKE PABLO!" },
   { "id": "Pablo_10", "speaker": "Pablo", "portrait": "JimmyPlaceholder.png", "text": "I'M SICK OF PEOPLE CALLING ME PABLO!!!" },
-  { "id": "jimmy_choice_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Seems like I touched a nerve.", "choices": [
+ { "id": "jimmy_choice_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Seems like I touched a nerve.", "choices": [
 	  { "text": "Bye, Pablo!", "scene": "end_1" },
 	  { "text": "Sorry about that, Pablo!", "scene": "end_1" }
   ] },
-  { "id": "jimmy_18", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "I remember! It's Jimmy Fistenyorfeyce!" },
-  { "id": "jimmy_18.5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Thank you for remembering that my name is Jimmy Fistenyorfeyce on the first try! As a reward, watch this!!" },
-  { "id": "jimmy_19", "speaker": "Narrator", "portrait": "", "text": "Jimmy suddenly punches a punching bag that appears out of nowhere." },
-  { "id": "jimmy_20", "speaker": "Narrator", "portrait": "", "text": "The bag is sent flying through a wall, leaving a flaming hole in the shape of a fist." },
-  { "id": "jimmy_21", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was pretty awesome! So mister fist in your face, Is that a surname or..?", "sfx": "Nina_Excited_Yeah.mp3" },
-  { "id": "jimmy_22", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "It is! My Grandmother Came up with it!" },
-  { "id": "jimmy_23", "speaker": "Narrator", "portrait": "", "text": "Jimmy pulls out a framed photograph of his elderly Grandmother. The frame is shaped like a fist." },
 
-  { "id": "grandma_choice_1", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "What do you think about my grandma!", "choices": [
+
+ { "id": "jimmy_18", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "I remember! It's Jimmy Fistenyorfeyce!" },
+  { "id": "jimmy_18.5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Thank you for remembering that my name is Jimmy Fistenyorfeyce on the first try! As a reward, watch this!!" },
+  { "id": "jimmy_19", "speaker": " ", "portrait": " ", "text": "Jimmy suddenly punches a punching bag that apears out of nowhere." },
+  { "id": "jimmy_20", "speaker": " ", "portrait": " ", "text": "The bag is sent flying through a wall, leaving a flaming hole in the shape of a fist." },
+
+  { "id": "jimmy_21", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was pretty awesome! So mister fist in your face, Is that a surname or..?" },
+  { "id": "jimmy_22", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "It is! My Grandmother Came up with it!" },
+
+  { "id": "jimmy_23", "speaker": " ", "portrait": " ", "text": "Jimmy pulls out a framed photograph of his elderly Grandmother. The frame is shaped like a fist." },
+{ "id": "grandma_choice_1", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "What do you think about my grandma!", "choices": [
 	  { "text": "Wow, she looks just like you.", "scene": "grammy_1" },
 	  { "text": "She looks really strong!", "scene": "grammy_1" },
-	  { "text": "She's hot.", "scene": "hot_1" }
+	  { "text": "She's hot.", "scene": "hot_1" },
   ] },
 
-  { "id": "hot_1", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Daaaaaaaamn, Your grammy is pretty hot Jimmy", "sfx": "Nina_Excited_Yeah.mp3" },
+  { "id": "hot_1", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "Daaaaaaaamn, Your grammy is pretty hot Jimmy" },
   { "id": "hot_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "..." },
-  { "id": "hot_3", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "That's my grammy you're talking about." },
-  { "id": "hot_4", "speaker": "Narrator", "portrait": "", "text": "Jimmy peers into the very depths of your soul with his Ash Ketchum eyes." },
+  { "id": "hot_3", "speaker": "Jimmy Fistenyorfeyce ", "portrait": "JimmyPlaceholder.png", "text": "That's my grammy you're talking about." },
+  { "id": "hot_4", "speaker": " ", "portrait": " ", "text": "Jimmy peers into the very depths of your soul with his Ash Ketchum eyes." },
 
-  { "id": "grandma_choice_2", "speaker": "Nina", "portrait": "NinaExcited.png", "text": "I mean I'm just saying...", "choices": [
+  { "id": "jimmy_23", "speaker": " ", "portrait": " ", "text": "Jimmy pulls out a framed photograph of his elderly Grandmother. The frame is shaped like a fist." },
+{ "id": "grandma_choice_1", "speaker": "nina", "portrait": "NinaExcited.png", "text": "I mean I'm just saying...", "choices": [
 	  { "text": "Is your grandma an iPhone? Because I'd tap that!.", "scene": "end_1" },
 	  { "text": "Is your grandma a wooden structure forged by beavers? Because daaaaaaaaaaaaamn!", "scene": "end_1" },
-	  { "text": "Is your grandma from Tennessee? Because...she's really hot.", "scene": "end_1" }
+	  { "text": "Is your grandma from Tennessee? Because...she's really hot.", "scene": "end_1" },
   ] },
+  
 
-  { "id": "grammy_1", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Thank you for saying that about Grammy Fistenyorfeyce!" },
-  { "id": "grammy_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "She was the toughest fight fighting fight fighter to ever set foot on fight fighting fight fighters island!" },
-  { "id": "grammy_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "You end all your sentences with exclamation marks?", "sfx": "Nina_Shocked_Wow.mp3" },
+  { "id": "grammy_1", "speaker": "Jimmy Fistenyorfeyce ", "portrait": "JimmyPlaceholder.png", "text": "Thank you for saying that about Grammy Fistenyorfeyce!" },
+  { "id": "grammy_2", "speaker": "Jimmy Fistenyorfeyce ", "portrait": "JimmyPlaceholder.png", "text": "She was the toughest fight fighting fight fighter to ever set foot on fight fighting fight fighters island!" },
+  { "id": "grammy_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "You end all your sentences with exclamation marks?" },
   { "id": "grammy_4", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "I do! I also end every traing session by punching this bag as hard as I can!" },
   { "id": "grammy_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Now your turn, hit that bag as hard as you can tiny lady!" },
-  { "id": "grammy_6", "minigame": "res://Main Game/Minigames/BagMinigame/BagMinigame(PT).tscn", "resume_id": "punch_1" },
+{"id": "grammy_6", "minigame": "res://Main Game/Minigames/BagMinigame/BagMinigame(AT).tscn", "resume_id": "punch_1"},
 
-  { "id": "punch_1", "speaker": "Narrator", "portrait": "", "text": "Wow..." },
-  { "id": "punch_2", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Grammy would be dissapointed! That was really weak!" },
-  { "id": "punch_3", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "You punch like a sick baby kitten with no arms!" },
-  { "id": "punch_4", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Well that's not kind!", "sfx": "Nina_Sigh.mp3" },
+{ "id": "punch_1", "speaker": "Narrator", "portrait": "", "text": "Wow..." },
+ { "id": "punch_2", "speaker": "Jimmy Fistenyorfeyce ", "portrait": "JimmyPlaceholder.png", "text": "Grammy would be dissapointed! That was really weak!" },
+  { "id": "punch_3", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "You punch like a sick baby kitten with no arms!" },
+  { "id": "punch_4", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Well that's not kind!" },
   { "id": "punch_5", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Just the truth tiny lady!" },
   { "id": "punch_6", "speaker": "Jimmy Fistenyorfeyce", "portrait": "JimmyPlaceholder.png", "text": "Here's some truth for you! I totally forgot your name earlier! And your obsession with your grammy is a little weird!" },
+
+
 
   { "id": "end_1", "speaker": " ", "portrait": " ", "text": "Jimmy suddenly runs away, he looked like he was crying... like a lot." },
   { "id": "end_2", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Wait no! Where are you going!?" },

@@ -1,0 +1,62 @@
+[
+	{ "id": "cave", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Hello? Is anyone here?" },
+	{ "id": "cave_2", "speaker": "Mysterious Person", "portrait": "TazTalk.png", "text": "Leave this place. This is my domain." },
+	{ "id": "cave_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "oooookay...Well goodbye then." },
+	{ "id": "cave_4", "speaker": "Mysterious Person", "portrait": "TazTalk.png", "text": "No!…Wait." },
+	{ "id": "cave_5", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes…?" },
+	{ "id": "cave_6", "speaker": "Mysterious Person", "portrait": "TazTalk.png", "text": "Uhm...Why art thou here?" },
+	{ "id": "cave_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "English? Please?" },
+	{ "id": "cave_8", "speaker": "Mysterious Person", "portrait": "TazTalk.png", "text": "(Sigh) Who are you? Why are you here?" },
+	{ "id": "cave_9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Oh, I’m Nina. I just wanted to know what this mystical cave was all about. Who are you?" },
+	{ "id": "cave_10", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Hm. Tazanguis Draconis. But My friends call me Taz. At least they would if I had any. *sniffle*" },
+	{ "id": "cave_11", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Everyone's so emotional on this island." },
+{ "id": "taz_choice_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What should I ask?", "choices": [
+	  { "text": "Are you a dragon?", "scene": "dragon_1" },
+	  { "text": "Why do you hang out in a cave?", "scene": "cave_12" }
+  ] },
+
+{ "id": "dragon_1", "speaker": "Taz", "portrait": "TazTalk.png", "text": "WHAT!? NO!" },
+	{ "id": "dragon_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Well you kinda look like a dragon." },
+	{ "id": "dragon_3", "speaker": "Taz", "portrait": "TazTalk.png", "text": "..." },
+	{ "id": "dragon_4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "..." },
+	{ "id": "dragon_5", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Are you making fun of me?" },
+	{ "id": "dragon_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Oh, heavens no." },
+	{ "id": "dragon_7", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Good. If you made fun of me for being a dragon I would be so enraged." },
+	
+
+	{ "id": "cave_12", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Because I'm half Dragon!" },
+	{ "id": "cave_13", "speaker": "Taz", "portrait": "TazTalk.png", "text": "That's why I live in a cave." },
+	{ "id": "cave_14", "speaker": "Taz", "portrait": "TazTalk.png", "text": "My father was a dragon...And a deadbeat." },
+	{ "id": "cave_15", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "So then why aren't you a dragon?" },
+	{ "id": "cave_16", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Because my mother was a normal lizard. Not a dragon." },
+	{ "id": "cave_17", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "What! So why do you look kind of human?" },
+	{ "id": "cave_18", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Because I'm only half dragon"},
+{ "id": "taz_choice_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "What should I ask?", "choices": 
+	[
+	  { "text": "Are you half human?", "scene": "cave_19" },
+	  { "text": "How was your dad a deadbeat?", "scene": "dad_1" }
+  ] },
+
+{ "id": "dad_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Sooooo...did you say earlier that your dad was a deadbeat?" },
+	{ "id": "dad_2", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Yeah he was the worst man I've ever met. Except he wasn't a man. He was a dragon." },
+	{ "id": "dad_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "You mentioned that." },
+	{ "id": "dAD_4", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Every time I think of him it makes my skin and scales crawl!" },
+	{ "id": "Dad_5", "speaker": "Taz", "portrait": "TazTalk.png", "text": "I have both because I'm half dragon." },
+	{ "id": "dad_6", "speaker": "Nina", "portrait": "NinaSurprised.png", "text": "Look I feel like this conversation is getting maybe a little repetitive." },
+	{ "id": "dad_7", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Huh, mundane repetition. That must be the human in me."},
+	
+	{ "id": "cave_19", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I'm confused. If you're half dragon and half lizard, where does the human part come from?" },
+	{ "id": "cave_20", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Well all dragons are lizards but not all lizards are dragons." },
+	{ "id": "cave_21", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Ok yeah, that much I understand. How is that relevant?" },
+	{ "id": "cave_22", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Because my father was a dragon" },
+	{ "id": "cave_23", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "YES I KNOW!" },
+	{ "id": "cave_24", "speaker": "Taz", "portrait": "TazTalk.png", "text": "All this talk of my dark past has made me tired and thirsty." },
+	{ "id": "cave_25", "speaker": "Taz", "portrait": "TazTalk.png", "text": "Would you be a lamb and whip me up a coffee?"},
+	
+	{ "id": "cave_26", "minigame": "res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.tscn", "resume_id": "taztransition" },
+	{ "id": "taztransition", "speaker": "Taz", "portrait": "TazTalk.png", "text": "MMMM YUMMY! I mean ugh that was fine or whatever. Shouldn't you go to the blood temple to watch Jimmy F train or something?" },
+{"id": "taztransition_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I get the feeling he doesn't want me here right now...", "choices": 
+	[
+	  { "text": "To the Blood Temple.", "scene_change": "res://Main Game/Scenes/TempleScene(AT).tscn" },
+  ] },
+]

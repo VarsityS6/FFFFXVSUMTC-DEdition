@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://djh5tx5fquynf"]
+
+[ext_resource type="Script" uid="uid://1llf65sfviwi" path="res://Main Game/Minigames/BagMinigame/Bagminigame(AT).gd" id="1_xt2q5"]
+[ext_resource type="Texture2D" uid="uid://4hpc088a5xdo" path="res://Assets/Background/BloodTemple_Placeholder.jpg" id="2_nw0ki"]
+[ext_resource type="Texture2D" uid="uid://kbyd3wlbjgcb" path="res://portraits/JimmyPlaceholder.png" id="3_3s7fw"]
+[ext_resource type="Texture2D" uid="uid://cn5f5kt8a13ol" path="res://Assets/MinigameAssets/BrushMini/harder.png" id="4_7k5hh"]
+[ext_resource type="Texture2D" uid="uid://502owty6ne8o" path="res://Assets/MinigameAssets/BagMini/BagClean.png" id="5_pfv16"]
+
+[node name="BagMinigame" type="Node2D"]
+script = ExtResource("1_xt2q5")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1136.0
+offset_bottom = 640.0
+scale = Vector2(1.01409, 1.01304)
+texture = ExtResource("2_nw0ki")
+expand_mode = 1
+
+[node name="Jimmy" type="TextureRect" parent="."]
+offset_left = 406.0
+offset_top = 17.0
+offset_right = 769.76117
+offset_bottom = 657.0
+scale = Vector2(1.01409, 1.01304)
+texture = ExtResource("3_3s7fw")
+expand_mode = 1
+
+[node name="PunchPopup" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(578, 258)
+texture = ExtResource("4_7k5hh")
+
+[node name="BagSprite" type="Sprite2D" parent="."]
+position = Vector2(232.00002, 0)
+scale = Vector2(0.23433335, 0.23433335)
+texture = ExtResource("5_pfv16")
+centered = false
+
+[node name="PunchTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="LabelPrompt" type="Label" parent="."]
+offset_left = 380.0
+offset_top = 135.0
+offset_right = 556.0
+offset_bottom = 203.0
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 461.0
+offset_top = 373.0
+offset_right = 708.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 53
+text = "I'm ready"
+
+[connection signal="timeout" from="PunchTimer" to="." method="_on_punch_timer_timeout"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

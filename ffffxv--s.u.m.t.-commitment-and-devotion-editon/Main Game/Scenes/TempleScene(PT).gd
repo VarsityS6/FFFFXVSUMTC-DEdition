@@ -52,53 +52,37 @@ func get_line_by_id(line_id: String) -> Dictionary:
 
 
 func show_line():
-	# Skip all consecutive comments first without recursion
-	while index < dialogue.size() and dialogue[index].has("type") and dialogue[index]["type"] == "comment":
+	while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 		index += 1
-	
+
 	if index >= dialogue.size():
 		end_dialogue()
 		return
 
 	var line = dialogue[index]
 
-	name_label.text = line.get("speaker", "")
-	text_label.text = line.get("text", "")
-
-	# Handle portrait
-	if line.has("portrait") and line["portrait"] != " ":
-		portrait.texture = preload_portraits.get(line["portrait"], null)
-	else:
-		portrait.texture = null
-
-	# Handle choices
-	if line.has("choices"):
-		show_choices(line["choices"])
-	else:
-		clear_choices()
-
-
-	# Skip comments
-	if line.has("type") and line["type"] == "comment":
-		index += 1
-		show_line()
+	if line.get("end", false) or line.get("id", "") == "END":
+		end_dialogue()
 		return
 
-	name_label.text = line.get("speaker", "")
-	text_label.text = line.get("text", "")
+	$NameLabel.text = line.get("speaker", "")
+	$TextLabel.text = line.get("text", "")
 
-	# Handle portrait
-	if line.has("portrait") and line["portrait"] != " ":
-		portrait.texture = preload_portraits.get(line["portrait"], null)
+	if line.has("portrait") and line["portrait"] != "":
+		$Portrait.texture = preload_portraits.get(line["portrait"], null)
 	else:
-		portrait.texture = null
+		$Portrait.texture = null
 
-	# Handle choices
+	if line.has("sfx") and line["sfx"] != "":
+		Global.play_sfx(line["sfx"])
+
 	if line.has("choices"):
 		show_choices(line["choices"])
 	else:
 		clear_choices()
 
+	if line.has("minigame"):
+		get_tree().change_scene_to_file(line["minigame"])
 
 func show_choices(choices: Array):
 	clear_choices()
@@ -114,7 +98,6 @@ func show_choices(choices: Array):
 			if choice.has("scene_change"):
 				var target = choice["scene_change"]
 
-				# ✅ Prevent reloading the same scene accidentally
 				if target == get_tree().current_scene.scene_file_path:
 					print("⚠️ Ignoring self-reload request for:", target)
 					scene_transitioning = false
@@ -144,14 +127,12 @@ func _input(event):
 	if scene_transitioning:
 		return
 	if event.is_action_pressed("ui_accept"):
-		# Make sure dialogue exists and index is valid
 		if dialogue.is_empty() or index >= dialogue.size():
 			return
 
 		if not dialogue[index].has("choices"):
 			index += 1
 
-			# Skip comment lines safely without recursion
 			while index < dialogue.size() and dialogue[index].get("type", "") == "comment":
 				index += 1
 
