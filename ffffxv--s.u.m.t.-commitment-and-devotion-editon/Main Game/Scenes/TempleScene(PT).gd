@@ -10,7 +10,8 @@ var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"NinaSurprised.png": preload("res://portraits/NinaSurprised.png"),
 	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
-	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png")
+	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png"),
+	"grammy.png": preload ("res://Portraits/grammy.png")
 }
 
 @onready var name_label = $NameLabel

@@ -10,7 +10,7 @@
   { "id": "Choice_intro_9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I started walking up the hill to this field right after my last conversation." },
   { "id": "Choice_intro_10", "speaker": "Taz", "portrait": "TazSulking.png", "text": "We took the elevator." },
   { "id": "Choice_intro_11", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "You really walked up that entire hill??" },
-  { "id": "Choice_intro_12", "speaker": "Nina", "portrait": "PlayerTalking", "text": "Yeah my feet are killing me." },
+  { "id": "Choice_intro_12", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yeah my feet are killing me." },
   { "id": "Choice_intro_13", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Should've taken the elevator." },
   { "id": "Choice_intro_14", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Why the hell would there be an elevator to get to a field." },
   { "id": "Choice_intro_15", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Because the hill is really steep." },
