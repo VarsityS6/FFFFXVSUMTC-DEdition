@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuosdajnuowg1"]
+
+[ext_resource type="Texture2D" uid="uid://chjqay78dpog5" path="res://Assets/Background/PerpetuallyClimatic.jpg" id="1_swwcb"]
+[ext_resource type="Texture2D" uid="uid://dkoscxxnlfu0g" path="res://portraits/TazPlaceholder.png" id="3_k0nok"]
+[ext_resource type="Texture2D" uid="uid://dfx56m4qqdh4d" path="res://portraits/Charrax01.png" id="5_h28nh"]
+
+[node name="Screenshot" type="Node2D"]
+position = Vector2(-7.1525574e-07, 0)
+scale = Vector2(1.0051688, 1.0030315)
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1146.0
+offset_bottom = 646.0
+scale = Vector2(0.2037082, 0.17114383)
+texture = ExtResource("1_swwcb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Taz" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = -0.39658344
+anchor_top = -0.06745231
+anchor_right = -0.39658344
+anchor_bottom = -0.06745231
+offset_left = -100.48063
+offset_top = 46.857952
+offset_right = 777.51935
+offset_bottom = 652.858
+texture = ExtResource("3_k0nok")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Charrax" type="TextureRect" parent="."]
+offset_left = 684.46216
+offset_top = 3.9879103
+offset_right = 1544.4622
+offset_bottom = 658.9879
+texture = ExtResource("5_h28nh")
+expand_mode = 1
+stretch_mode = 4
+flip_h = true
+metadata/_edit_use_anchors_ = true
