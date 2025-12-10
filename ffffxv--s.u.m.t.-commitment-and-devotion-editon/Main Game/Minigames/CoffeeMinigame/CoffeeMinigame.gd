@@ -10,6 +10,8 @@ extends Node2D
 @onready var label_sugar: Label = $IngredientList/GrandulatedSugarLabel
 @onready var label_pour: Label = $IngredientList/CoffeePotLabel
 @onready var label_stir: Label = $IngredientList/SpoonLabel
+@onready var pour_sfx: AudioStreamPlayer = $PourSFX
+
 
 var correct_order: Array = [
 	"CoconutMilk",
@@ -42,6 +44,9 @@ func _ready():
 
 
 func _on_ingredient_dropped(ingredient_name: String):
+	if ingredient_name == "CoffeePot":
+		if pour_sfx:
+			pour_sfx.play()
 	added_ingredients.append(ingredient_name)
 	var step = added_ingredients.size() - 1
 	if step < 0:
@@ -122,6 +127,8 @@ func _show_floating_popup(path: String):
 	popup.queue_free()
 
 func _reset_attempt():
+	if pour_sfx and pour_sfx.playing:
+		pour_sfx.stop()
 	added_ingredients.clear()
 	var ingredients = get_tree().get_nodes_in_group("ingredient")
 	for ing in ingredients:

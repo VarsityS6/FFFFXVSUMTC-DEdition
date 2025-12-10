@@ -11,8 +11,12 @@ var preload_portraits = {
 	"TazSulking.png": preload("res://portraits/TazSulking.PNG"),
 	"TazTalk.png": preload("res://portraits/TazPlaceholder.png"),
 }
+@onready var sfx: AudioStreamPlayer = $"BG Music"
 
 func _ready():
+	if sfx.stream:
+		sfx.stream.loop = true
+		sfx.play()
 	dialogue = load_dialogue("res://Dialogue/TAZscene3.json")
 	if Global.resume_after_minigame:
 		Global.resume_after_minigame = false

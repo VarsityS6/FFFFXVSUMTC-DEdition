@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxloxgrd5asu7"]
+[gd_scene load_steps=6 format=3 uid="uid://bxloxgrd5asu7"]
 
 [ext_resource type="Script" uid="uid://dki0g826q6f7s" path="res://Main Game/Scenes/choice_scene.gd" id="1_6igdd"]
 [ext_resource type="Texture2D" uid="uid://chjqay78dpog5" path="res://Assets/Background/PerpetuallyClimatic.jpg" id="2_6igdd"]
-[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_60n1e"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://portraits/PlayerTalk.png" id="3_60n1e"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_7167d"]
+[ext_resource type="AudioStream" uid="uid://byixyrfqse2mr" path="res://Sounds/Perpetually_Stormy_Climactic_Field_Background.ogg" id="5_sbahn"]
 
 [node name="ChoiceScene" type="Node2D"]
 script = ExtResource("1_6igdd")
@@ -17,21 +18,21 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="Portrait" type="TextureRect" parent="."]
-offset_left = 259.0
-offset_top = -4.0
-offset_right = 1351.9423
-offset_bottom = 1083.8893
+offset_left = 258.0
+offset_top = 1.0
+offset_right = 1350.9423
+offset_bottom = 1088.8893
 scale = Vector2(0.60010594, 0.60010594)
 texture = ExtResource("3_60n1e")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="UIDialogueBox" type="TextureRect" parent="."]
-offset_left = 172.99998
-offset_top = 308.00003
-offset_right = 1376.0
-offset_bottom = 913.0
-scale = Vector2(0.7224458, 0.7362971)
+offset_left = 147.0
+offset_top = 311.0
+offset_right = 1350.0
+offset_bottom = 916.0
+scale = Vector2(0.7050793, 0.7142082)
 texture = ExtResource("4_7167d")
 expand_mode = 1
 
@@ -44,10 +45,10 @@ offset_bottom = 982.4132
 
 [node name="NameLabel" type="Label" parent="."]
 modulate = Color(0.168627, 0.054902, 0.0431373, 1)
-offset_left = 350.0
-offset_top = 428.00003
-offset_right = 413.0
-offset_bottom = 451.00003
+offset_left = 316.0
+offset_top = 418.00003
+offset_right = 379.0
+offset_bottom = 441.00003
 scale = Vector2(1.3268403, 1.3690591)
 horizontal_alignment = 1
 
@@ -56,10 +57,10 @@ modulate = Color(0, 0, 0, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 344.0
-offset_top = 465.00003
-offset_right = 973.6787
-offset_bottom = 576.9228
+offset_left = 315.0
+offset_top = 464.00003
+offset_right = 944.6787
+offset_bottom = 575.9228
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.8390861, 1.1708237)
@@ -68,8 +69,14 @@ tab_size = 15
 shortcut_keys_enabled = false
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 418.99997
-offset_top = 549.0
-offset_right = 837.063
-offset_bottom = 651.0
-scale = Vector2(0.8551286, 0.6621016)
+offset_left = 410.0
+offset_top = 534.0
+offset_right = 828.063
+offset_bottom = 636.0
+scale = Vector2(0.7514765, 0.6621016)
+
+[node name="BG Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_sbahn")
+volume_db = -19.276
+pitch_scale = 2.45
+autoplay = true

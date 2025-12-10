@@ -5,6 +5,7 @@ extends Node2D
 @onready var timer: Timer = $PunchTimer
 @onready var prompt: Label = $LabelPrompt
 @onready var start_button: Button = $StartButton
+@onready var punch_sfx: AudioStreamPlayer = $PunchSFX
 
 
 var game_finished := false
@@ -55,12 +56,13 @@ func _input(event):
 				register_punch()
 
 func register_punch():
+	if not game_active:
+		return
+	punch_sfx.play()
 	punch_count += 1
-
 	bag.texture = BAG_PUNCH
 	await get_tree().create_timer(0.08).timeout
 	bag.texture = BAG_CLEAN
-
 	show_popup()
 
 func show_popup():

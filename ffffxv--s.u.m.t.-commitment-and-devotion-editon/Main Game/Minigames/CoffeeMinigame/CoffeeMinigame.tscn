@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b4kvplrdwt56r"]
+[gd_scene load_steps=27 format=3 uid="uid://b4kvplrdwt56r"]
 
 [ext_resource type="Script" uid="uid://c8v6ycgj80q31" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame.gd" id="1_3uaiq"]
 [ext_resource type="Texture2D" uid="uid://w536h55lvdn7" path="res://Assets/MinigameAssets/CoffeeMini/Table.png" id="2_aujes"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://ds6madbvgh16o" path="res://Main Game/Minigames/CoffeeMinigame/vanilla_syrup.gd" id="18_5qlrh"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="22_hsglp"]
 [ext_resource type="Texture2D" uid="uid://dewimeiu4qe4e" path="res://Assets/StickyNote.png" id="25_popno"]
+[ext_resource type="AudioStream" uid="uid://cukl2ernwemru" path="res://Sounds/Pour_Coffee.mp3" id="26_io87a"]
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_3uaiq")
@@ -119,10 +120,10 @@ script = ExtResource("8_x8qau")
 metadata/_edit_use_anchors_ = true
 
 [node name="Honey" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 919.0
-offset_top = 285.0
-offset_right = 3919.0
-offset_bottom = 3285.0
+offset_left = 929.99994
+offset_top = 329.0
+offset_right = 3930.0
+offset_bottom = 3329.0
 scale = Vector2(0.045542203, 0.05989856)
 texture = ExtResource("14_io87a")
 script = ExtResource("22_hsglp")
@@ -139,11 +140,11 @@ texture = ExtResource("4_06uck")
 script = ExtResource("8_io87a")
 
 [node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 378.99997
-offset_top = 110.0
-offset_right = 1359.0
-offset_bottom = 1090.0
-scale = Vector2(0.23878098, 0.23878098)
+offset_left = 347.0
+offset_top = 142.0
+offset_right = 3347.0
+offset_bottom = 3142.0
+scale = Vector2(0.093, 0.082)
 texture = ExtResource("4_2eyor")
 script = ExtResource("5_popno")
 
@@ -234,7 +235,7 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(0, 0, 0, 1)
 anchors_preset = -1
 anchor_top = -0.083111286
-anchor_bottom = -0.083111286
+anchor_bottom = -0.14382823
 offset_left = -875.7151
 offset_top = 724.6122
 offset_right = -651.7151
@@ -259,3 +260,8 @@ horizontal_alignment = 1
 
 [node name="CountdownTimer" type="Timer" parent="."]
 autostart = true
+
+[node name="PourSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_io87a")
+volume_db = 3.816
+pitch_scale = 2.32

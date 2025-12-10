@@ -1,23 +1,23 @@
 [
-  { "id": "Choice_intro_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Well, I finally made it to the Perpetually Stormy Climactic Field." },
+  { "id": "Choice_intro_1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Well, I finally made it to the Perpetually Stormy Climactic Field.", "sfx": "Nina_Sigh.mp3" },
   { "id": "Choice_intro_2", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Aptly named." },
   { "id": "Choice_intro_3", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Maybe something climactic will happen here:" },
-  { "id": "Choice_intro_4", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "Nina! we need to talk to you!" },
-  { "id": "Choice_intro_5", "speaker": "Charrax", "portrait": "CHair", "text": "We all want to marry you but we can't decide who gets to." },
+  { "id": "Choice_intro_4", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "Nina! we need to talk to you!", "sfx": "Jimmy_Landing.mp3" },
+  { "id": "Choice_intro_5", "speaker": "Charrax", "portrait": "CHair", "text": "We all want to marry you but we can't decide who gets to.", "sfx": "Charrax_Cry.mp3" },
   { "id": "Choice_intro_6", "speaker": "Taz", "portrait": "TazSulking.png", "text": "They've been arguing about it for minutes. It's been so long I'm not even blue anymore" },
-  { "id": "Choice_intro_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow that's..." },
+  { "id": "Choice_intro_7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow that's...", "sfx": "Nina_Shocked_Wow.mp3" },
   { "id": "Choice_intro_8", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "When did you guys have time to talk about this about this?" },
   { "id": "Choice_intro_9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I started walking up the hill to this field right after my last conversation." },
   { "id": "Choice_intro_10", "speaker": "Taz", "portrait": "TazSulking.png", "text": "We took the elevator." },
   { "id": "Choice_intro_11", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "You really walked up that entire hill??" },
-  { "id": "Choice_intro_12", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yeah my feet are killing me." },
+  { "id": "Choice_intro_12", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yeah my feet are killing me.", "sfx": "Nina_Sigh.mp3" },
   { "id": "Choice_intro_13", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Should've taken the elevator." },
   { "id": "Choice_intro_14", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Why the hell would there be an elevator to get to a field." },
   { "id": "Choice_intro_15", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Because the hill is really steep." },
   { "id": "Choice_intro_16", "speaker": "Charrax", "portrait": "CHair", "text": "Hey! We're getting distracted!." },
   { "id": "Choice_intro_17", "speaker": "Charrax", "portrait": "CHair", "text": "We need to figure out who Nina is going to marry! And whether or not it's me!" },
-  { "id": "Choice_intro_18", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "This is crazy! This seems really soon to talk about marrying any of you." },
-  { "id": "Choice_intro_19", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Of course she doesn't want to marry us. No one could ever love me. Not even my dad who is a dragon." },
+  { "id": "Choice_intro_18", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "This is crazy! This seems really soon to talk about marrying any of you.", "sfx": "Nina_Shocked_Gasp.mp3" },
+  { "id": "Choice_intro_19", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Of course she doesn't want to marry us. No one could ever love me. Not even my dad who is a dragon.", "sfx": "Taz_Cry.mp3" },
   { "id": "Choice_intro_20", "speaker": "Charrax", "portrait": "CHair", "text": "Enough about your dad already." },
   { "id": "Choice_intro_21", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "We are SO sick of hearing about it." },
   { "id": "Choice_intro_22", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Come on guys play nice." },
@@ -27,9 +27,10 @@
   { "id": "Choice_intro_26", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "I think we should let Nina pick who she wants to marry." },
   { "id": "Choice_intro_27", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "As long as she picks me." },
   { "id": "Choice_intro_28", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Ok this is ridiculous. I'm not marrying any of you so soon." },
-  { "id": "Choice_intro_29", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "The game developers don't have time to make another scene so you should probably marry one of them right now." },
+  { "id": "Choice_intro_29", "speaker": "Narrator", "portrait": "", "text": "The game developers don't have time to make another scene so you should probably marry one of them right now." },
   { "id": "Choice_intro_30", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "You guys even got the narrator in on this!" },
-  { "id": "Choice_intro_31", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "What? I love to see love blossom." },
+  { "id": "Choice_intro_31", "speaker": "Narrator", "portrait": "", "text": "What? I love to see love blossom." },
+
   {
 	"id": "Choice_intro_32",
 	"speaker": "Narrator",
@@ -43,20 +44,21 @@
 	]
   },
 
-  { "id": "Choice_Taz1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz." },
+  { "id": "Choice_Taz1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Taz.", "sfx": "Nina_Excited_Yeah.mp3" },
   { "id": "Choice_Taz2", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Really?" },
   { "id": "Choice_Taz3", "speaker": "Charrax", "portrait": "CHair", "text": "Really??" },
   { "id": "Choice_Taz4", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "Really!" },
-  { "id": "Choice_Taz5", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Damn, really?." },
-  { "id": "Choice_Taz6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him." },
+  { "id": "Choice_Taz5", "speaker": "Narrator", "portrait": "", "text": "Damn, really?." },
+  { "id": "Choice_Taz6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Yes really! He's all emotionally damaged and stuff. I feel like I can fix him.", "sfx": "Nina_Excited_Yes.mp3" },
   { "id": "Choice_Taz7", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Wow, no one's ever understood me at an emotional level like this ." },
   { "id": "Choice_Taz8", "speaker": "Taz", "portrait": "TazSulking.png", "text": "I'm like a broken, shattered pot. And you're the glue that can put me back together." },
   { "id": "Choice_Taz9", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "I just gagged in my mouth several times!" },
-  { "id": "Choice_Taz10", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Taz lifts up his shirt and unclips his belly button ring. He then drops to one knee and offers it to you." },
+  { "id": "Choice_Taz10", "speaker": "Narrator", "portrait": "", "text": "Taz lifts up his shirt and unclips his belly button ring. He then drops to one knee and offers it to you." },
+
   {
 	"id": "Choice_Taz11",
 	"speaker": "Taz",
-	"portrait": "PlayerTalk.png",
+	"portrait": "TazTalk.png",
 	"text": "Nina Beckner, you provide light into the dark abyss that is my soul. Will you marry me?",
 	"choices": [
 	  { "text": "Yes!", "scene": "TazEnding1" },
@@ -64,7 +66,7 @@
 	]
   },
 
-  { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Charrax." },
+  { "id": "Choice_Charrax1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Charrax.", "sfx": "Nina_Excited_Yes.mp3" },
   { "id": "Choice_Charrax2", "speaker": "Charrax", "portrait": "CHair", "text": "Hooray!" },
   { "id": "Choice_Charrax3", "speaker": "Taz", "portrait": "TazSulking.png", "text": "Did he just say hooray??" },
   { "id": "Choice_Charrax4", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Even if you can't hold me at night because all four of your arms are knives, my love for you will keep me warm." },
@@ -73,12 +75,13 @@
   { "id": "Choice_Charrax7", "speaker": "Charrax", "portrait": "CHair", "text": "Is the other 10% genuine human connection." },
   { "id": "Choice_Charrax8", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "No." },
   { "id": "Choice_Charrax9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "It's your muscles." },
-  { "id": "Choice_Charrax10a", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Charrax reaches in his pocket for a ring. he fumbles around there for a while but is unable to grab it because all four of his arms are knives." },
-  { "id": "Choice_Charrax10b", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "He stares at you awkwardly until you reach in his pocket and grab the ring for him." },
+  { "id": "Choice_Charrax10a", "speaker": "Narrator", "portrait": "", "text": "Charrax reaches in his pocket for a ring. he fumbles around there for a while but is unable to grab it because all four of his arms are knives." },
+  { "id": "Choice_Charrax10b", "speaker": "Narrator", "portrait": "", "text": "He stares at you awkwardly until you reach in his pocket and grab the ring for him." },
+
   {
 	"id": "Choice_Charrax11",
 	"speaker": "Charrax",
-	"portrait": "PlayerTalk.png",
+	"portrait": "CHair",
 	"text": "Thanks. Sorry. Nina, you make my hear feel strange. Like how the hearts of my enemies feel before I rip them out of their chest. But... in a good way. Could you marry me already?",
 	"choices": [
 	  { "text": "Yes!", "scene": "CharraxEnding1" },
@@ -86,20 +89,21 @@
 	]
   },
 
-  { "id": "Choice_Jimmy1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Jimmy." },
-  { "id": "Choice_Jimmy2", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "YEEEEEEEEEEEEEEEEEEEEEEEEEEEESS!!!!" },
+  { "id": "Choice_Jimmy1", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I choose Jimmy.", "sfx": "Nina_Excited_Yeah.mp3" },
+  { "id": "Choice_Jimmy2", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "YEEEEEEEEEEEEEEEEEEEEEEEEEEEESS!!!!", "sfx": "Jimmy_Cry.mp3" },
   { "id": "Choice_Jimmy3", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "I KNEW SHE'D PICK ME!!" },
   { "id": "Choice_Jimmy4", "speaker": "Jimmy", "portrait": "JimmyPlaceholder.png", "text": "SUCK IT NERDS!" },
   { "id": "Choice_Jimmy5", "speaker": "Charrax", "portrait": "CHair", "text": "Damn, she picked Jimmy." },
-  { "id": "Choice_Jimmy6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Jimmy! I really like your energy and your excitement." },
+  { "id": "Choice_Jimmy6", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Jimmy! I really like your energy and your excitement.", "sfx": "Nina_Laugh.mp3" },
   { "id": "Choice_Jimmy7", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "I can't wait to be Nina Fistenyorfeyce." },
-  { "id": "Choice_Jimmy8", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Jimmy thrust his fist in the air. He opens his hand to reveal a wedding ring in the shape of a fist." },
-  { "id": "Choice_Jimmy9", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "It's sick as hell." },
-  { "id": "Choice_Jimmy10", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow! How long have you been holding that in your fist?!" },
+  { "id": "Choice_Jimmy8", "speaker": "Narrator", "portrait": "", "text": "Jimmy thrust his fist in the air. He opens his hand to reveal a wedding ring in the shape of a fist." },
+  { "id": "Choice_Jimmy9", "speaker": "Narrator", "portrait": "", "text": "It's sick as hell." },
+  { "id": "Choice_Jimmy10", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "Wow! How long have you been holding that in your fist?!", "sfx": "Nina_Shocked_Wow.mp3" },
+
   {
 	"id": "Choice_Jimmy11",
 	"speaker": "Jimmy",
-	"portrait": "PlayerTalk.png",
+	"portrait": "JimmyPlaceholder.png",
 	"text": "Nina! You pretty lady! You will make me the strongest man alive! Even though I am already! Marry me now please!",
 	"choices": [
 	  { "text": "Yes!", "scene": "JimmyEnding1" },
@@ -117,10 +121,11 @@
   { "id": "Choice_None8", "speaker": "Charrax", "portrait": "CHair", "text": "Everyone's looking for love. Some people just aren't looking as hard as others. And that can feel scary." },
   { "id": "Choice_None9", "speaker": "Nina", "portrait": "PlayerTalk.png", "text": "That was weirdly profound, Charrax." },
   { "id": "Choice_None10", "speaker": "Charrax", "portrait": "CHair", "text": "It was on a T shirt I saw once." },
+
   {
 	"id": "Choice_None11",
 	"speaker": "Narrator",
-	"portrait": "PlayerTalk.png",
+	"portrait": "",
 	"text": "Are you sure you're not going to marry any of them?",
 	"choices": [
 	  { "text": "Yes", "scene": "NoneEnding1" },
@@ -128,11 +133,11 @@
 	]
   },
 
-  { "id": "JimmyEnding1", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You went on to marry Jimmy Fistenyorfeyce." },
-  { "id": "JimmyEnding2", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and Jimmy's Grandma cried several times." },
-  { "id": "JimmyEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "For your anniversery you bought Jimmy flowers in the shape of fists." },
-  { "id": "JimmyEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "He was so happy he jumped 1000 feet in the air and broke every bone in his body... but he got better." },
-  { "id": "JimmyEnding4", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "But most importantly, the two of you lived happily ever after." },
+  { "id": "JimmyEnding1", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "You went on to marry Jimmy Fistenyorfeyce." },
+  { "id": "JimmyEnding2", "speaker": "Narrator", "portrait": "JimmyPlaceholder.png", "text": "You had a beautiful wedding and Jimmy's Grandma cried several times." },
+  { "id": "JimmyEnding3", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "For your anniversery you bought Jimmy flowers in the shape of fists." },
+  { "id": "JimmyEnding3", "speaker": "Narrator", "portrait": "JimmyPlaceholder.png", "text": "He was so happy he jumped 1000 feet in the air and broke every bone in his body... but he got better." },
+  { "id": "JimmyEnding4", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "But most importantly, the two of you lived happily ever after." },
 
   {
 	"id": "Choice_EndJ",
@@ -144,11 +149,12 @@
 	]
   },
 
-  { "id": "CharraxEnding1", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You went on to marry Charrax the Fleshripper." },
-  { "id": "CharraxEnding2", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and you cried several times. Especially near the end, when you held hands with him." },
-  { "id": "CharraxEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Over the course of your life, you figured out cuddling positions that didn't involve getting stabbed." },
-   { "id": "CharraxEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You spend 45 minutes every night brushing out his gorgeous hair." },
-  { "id": "CharraxEnding4", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "But most importantly, the two of you lived happily ever after." },
+  { "id": "CharraxEnding1", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "You went on to marry Charrax the Fleshripper." },
+  { "id": "CharraxEnding2", "speaker": "Narrator", "portrait": "CHair", "text": "You had a beautiful wedding and you cried several times. Especially near the end, when you held hands with him." },
+  { "id": "CharraxEnding3", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "Over the course of your life, you figured out cuddling positions that didn't involve getting stabbed." },
+  { "id": "CharraxEnding3", "speaker": "Narrator", "portrait": "CHair", "text": "You spend 45 minutes every night brushing out his gorgeous hair." },
+  { "id": "CharraxEnding4", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "But most importantly, the two of you lived happily ever after." },
+
   {
 	"id": "Choice_EndJ",
 	"speaker": "Narrator",
@@ -159,12 +165,12 @@
 	]
   },
 
+  { "id": "TazEnding1", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "You went on to marry Taz the Dragonborn." },
+  { "id": "TazEnding2", "speaker": "Narrator", "portrait": "TazTalk.png", "text": "You had a beautiful wedding and you cried several times. And so did he." },
+  { "id": "TazEnding3", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "Over the course of your life, you met Taz's dad who is a dragon. He's actually a really normal dad. Except he's a dragon." },
+  { "id": "TazEnding3", "speaker": "Narrator", "portrait": "TazTalk.png", "text": "The two of you eventually had kids. For some reason they were just lizards. No one knows why." },
+  { "id": "TazEnding4", "speaker": "Narrator", "portrait": "NinaExcited.png", "text": "But most importantly, the two of you lived happily ever after." },
 
-  { "id": "TazEnding1", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You went on to marry Taz the Dragonborn." },
-  { "id": "TazEnding2", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and you cried several times. And so did he." },
-  { "id": "TazEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Over the course of your life, you met Taz's dad who is a dragon. He's actually a really normal dad. Except he's a dragon." },
-	{ "id": "TazEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "The two of you eventually had kids. For some reason they were just lizards. No one knows why." },
-  { "id": "TazEnding4", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "But most importantly, the two of you lived happily ever after." },
   {
 	"id": "Choice_EndJ",
 	"speaker": "Narrator",
@@ -175,10 +181,11 @@
 	]
   },
 
-  { "id": "NoneEnding1", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You went on to marry a completely normal guy who had never even heard of the Fight Fighting Fight Fighters Tournament." },
-  { "id": "NoneEnding2", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "You had a beautiful wedding and you cried several times." },
-  { "id": "NoneEnding3", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "Over the course of your life, you thought about the fight fighters nostalgically. The way you think about High School or your first job." },
-  { "id": "NoneEnding4", "speaker": "Narrator", "portrait": "PlayerTalk.png", "text": "But most importantly, you lived happily ever after without the help of any dragons or knife-wielding muscleheads." },
+  { "id": "NoneEnding1", "speaker": "Narrator", "portrait": "", "text": "You went on to marry a completely normal guy who had never even heard of the Fight Fighting Fight Fighters Tournament." },
+  { "id": "NoneEnding2", "speaker": "Narrator", "portrait": "", "text": "You had a beautiful wedding and you cried several times." },
+  { "id": "NoneEnding3", "speaker": "Narrator", "portrait": "", "text": "Over the course of your life, you thought about the fight fighters nostalgically. The way you think about High School or your first job." },
+  { "id": "NoneEnding4", "speaker": "Narrator", "portrait": "", "text": "But most importantly, you lived happily ever after without the help of any dragons or knife-wielding muscleheads." },
+
   {
 	"id": "Choice_EndJ",
 	"speaker": "Narrator",

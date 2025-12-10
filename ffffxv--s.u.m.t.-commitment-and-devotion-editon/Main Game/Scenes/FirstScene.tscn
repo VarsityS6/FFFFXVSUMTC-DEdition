@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctcvpvfuxemp6"]
+[gd_scene load_steps=6 format=3 uid="uid://ctcvpvfuxemp6"]
 
 [ext_resource type="Script" uid="uid://cdmajckxknaw5" path="res://Main Game/Scenes/FirstScene.gd" id="1_bsj0a"]
 [ext_resource type="Texture2D" uid="uid://e1jepwfgtat8" path="res://Assets/Background/placeholder.jpg" id="2_bq4c1"]
 [ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://portraits/PlayerTalk.png" id="3_srqll"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_iol2w"]
+[ext_resource type="AudioStream" uid="uid://2ylr7b6gowra" path="res://Sounds/FO_RFMusic/volcano-71156.mp3" id="5_30p8d"]
 
 [node name="VisualNovel" type="Node2D"]
 scale = Vector2(0.592895, 0.5956488)
@@ -17,19 +18,20 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="Portrait" type="TextureRect" parent="."]
-offset_left = 431.77966
-offset_right = 1524.7219
-offset_bottom = 1087.8893
+offset_left = 425.03314
+offset_top = 6.715366
+offset_right = 1517.9753
+offset_bottom = 1094.6046
 texture = ExtResource("3_srqll")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="UIDialogueBox" type="TextureRect" parent="."]
-offset_left = 391.30032
-offset_top = 577.5215
-offset_right = 1594.3003
-offset_bottom = 1182.5215
-scale = Vector2(0.98118794, 1)
+offset_left = 369.37402
+offset_top = 567.4484
+offset_right = 1572.374
+offset_bottom = 1172.4485
+scale = Vector2(1.0250654, 1.068415)
 texture = ExtResource("4_iol2w")
 expand_mode = 1
 
@@ -43,9 +45,9 @@ offset_bottom = 982.4132
 [node name="NameLabel" type="Label" parent="."]
 modulate = Color(0.168627, 0.054902, 0.0431373, 1)
 offset_left = 620.6833
-offset_top = 738.6903
+offset_top = 728.61725
 offset_right = 683.6833
-offset_bottom = 761.6903
+offset_bottom = 751.61725
 scale = Vector2(2.01498, 2.06673)
 horizontal_alignment = 1
 
@@ -54,10 +56,10 @@ modulate = Color(0, 0, 0, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 627.4299
-offset_top = 790.7344
-offset_right = 1257.1086
-offset_bottom = 902.6571
+offset_left = 612.2501
+offset_top = 799.12866
+offset_right = 1241.929
+offset_bottom = 911.0514
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.2, 1.68)
@@ -70,3 +72,9 @@ offset_left = 661.1626
 offset_top = 866.2823
 offset_right = 1265.1626
 offset_bottom = 968.2823
+
+[node name="BG Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_30p8d")
+volume_db = -5.986
+pitch_scale = 1.39
+autoplay = true

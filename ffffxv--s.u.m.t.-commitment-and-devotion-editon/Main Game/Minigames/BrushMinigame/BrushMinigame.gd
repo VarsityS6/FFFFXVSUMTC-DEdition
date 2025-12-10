@@ -3,7 +3,6 @@ extends Node2D
 @onready var comb = $CharraxComb
 @onready var hair = $Hair
 @onready var word_container = $WordContainer
-
 @onready var score_label = $CanvasLayer/UI/ScoreLabel
 @onready var charrax_face = $CanvasLayer/UI/CharraxFace
 
@@ -36,6 +35,21 @@ var word_textures = [
 
 var points_texture = load("res://Assets/MinigameAssets/BrushMini/PointPlaceholder.png")
 
+var sfx_combo = load("res://Sounds/HeagneyVoiceovers/10HitCombo_Heag.wav")
+var sfx_still_brushing = load("res://Sounds/HeagneyVoiceovers/Yourestillbrushing_Heag.wav")
+
+var sfx_word_list = [
+	load("res://Sounds/HeagneyVoiceovers/Amazeballs_Heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/180popshoveit_heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/Breathtaking_Heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/Cool_Heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/Fingerlicking_Heagney.wav"),
+	load("res://Sounds/HeagneyVoiceovers/Formidible_Heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/Mindboggling_heag.wav"),
+	load("res://Sounds/HeagneyVoiceovers/yeahhh_Heag.wav"),
+]
+
+
 var stage := 1
 var is_clean := false
 var points := 0
@@ -44,21 +58,24 @@ var can_earn_points := true
 
 var previous_comb_y := 0.0
 var brushing_cooldown := 0.0
-
 var active_point_sprites: Array = []
-
 
 func _ready():
 	randomize()
 	_set_hair_texture()
 	previous_comb_y = comb.global_position.y
-
 	score_label.text = "Score: %d / %d" % [points, next_stage_points]
 	charrax_face.texture = face_neutral
+
+	var audio = AudioStreamPlayer.new()
+	audio.name = "SFX"
+	add_child(audio)
+
 
 func _process(delta):
 	if comb.dragging:
 		_check_brushing(delta)
+
 	previous_comb_y = comb.global_position.y
 
 	for sprite in active_point_sprites.duplicate():
@@ -83,22 +100,36 @@ func _process(delta):
 			sprite.queue_free()
 			active_point_sprites.erase(sprite)
 
+
 func _check_brushing(delta):
+	if stage > 3:
+		var audio = get_node("SFX")
+		audio.stream = sfx_still_brushing
+		audio.play()
+		return
+
 	if not can_earn_points:
 		return
+
 	if brushing_cooldown > 0:
 		brushing_cooldown -= delta
 		return
 
 	if _is_brushing_on_head():
 		var moving_down = comb.global_position.y > previous_comb_y + 2
+
 		if moving_down:
 			points += 1
 			brushing_cooldown = 0.05
-			_spawn_points_follow()
 
+			_spawn_points_follow()
 			_update_score_label()
 			_update_charrax_face()
+
+			if points % 10 == 0:
+				var audio = get_node("SFX")
+				audio.stream = sfx_combo
+				audio.play()
 
 			var ratio = float(points) / next_stage_points
 			if ratio < 0.3 and points % 8 == 0:
@@ -112,19 +143,24 @@ func _check_brushing(delta):
 			if points >= next_stage_points:
 				_advance_stage()
 
+
 func _advance_stage():
 	points = 0
 	_update_score_label()
 	charrax_face.texture = face_neutral
+
 	can_earn_points = false
 	is_clean = not is_clean
+
 	if is_clean:
 		_set_hair_texture()
 		await get_tree().create_timer(1.0).timeout
+
 		stage += 1
 		if stage > 3:
 			_show_win_button()
 			return
+
 		is_clean = false
 		_set_hair_texture()
 		can_earn_points = true
@@ -132,18 +168,16 @@ func _advance_stage():
 		_set_hair_texture()
 		can_earn_points = true
 
+
 func _set_hair_texture():
 	match stage:
-		1:
-			hair.texture = stage1_clean if is_clean else stage1_messy
-		2:
-			hair.texture = stage2_clean if is_clean else stage2_messy
-		3:
-			hair.texture = stage3_clean if is_clean else stage3_messy
+		1: hair.texture = stage1_clean if is_clean else stage1_messy
+		2: hair.texture = stage2_clean if is_clean else stage2_messy
+		3: hair.texture = stage3_clean if is_clean else stage3_messy
+
 
 func _update_charrax_face():
 	var ratio = float(points) / next_stage_points
-
 	if ratio < 0.33:
 		charrax_face.texture = face_neutral
 	elif ratio < 0.75:
@@ -151,13 +185,22 @@ func _update_charrax_face():
 	else:
 		charrax_face.texture = face_amazed
 
+
 func _update_score_label():
 	score_label.text = "Score: %d / %d" % [points, next_stage_points]
 
+
 func _is_brushing_on_head() -> bool:
-	var comb_rect = Rect2(comb.global_position - comb.texture.get_size() * comb.scale * 0.5, comb.texture.get_size() * comb.scale)
-	var hair_rect = Rect2(hair.global_position - hair.texture.get_size() * hair.scale * 0.5, hair.texture.get_size() * hair.scale)
+	var comb_rect = Rect2(
+		comb.global_position - comb.texture.get_size() * comb.scale * 0.5,
+		comb.texture.get_size() * comb.scale
+	)
+	var hair_rect = Rect2(
+		hair.global_position - hair.texture.get_size() * hair.scale * 0.5,
+		hair.texture.get_size() * hair.scale
+	)
 	return comb_rect.intersects(hair_rect)
+
 
 func _spawn_word():
 	if word_textures.is_empty():
@@ -166,21 +209,23 @@ func _spawn_word():
 	var texture = word_textures.pick_random()
 	var word_sprite = Sprite2D.new()
 	word_sprite.texture = texture
-
 	word_container.add_child(word_sprite)
 
 	var offset = Vector2(randf_range(-30, 30), -60)
 	word_sprite.global_position = comb.global_position + offset
-
 	word_sprite.scale = Vector2(0.15, 0.15)
 
-	var tween = create_tween()
+	if not sfx_word_list.is_empty():
+		var audio = get_node("SFX")
+		audio.stream = sfx_word_list.pick_random()
+		audio.play()
 
+	var tween = create_tween()
 	tween.tween_property(word_sprite, "scale", Vector2(0.25, 0.25), 0.12).set_trans(Tween.TRANS_BOUNCE)
 	tween.parallel().tween_property(word_sprite, "position:y", word_sprite.position.y - 70, 0.7)
 	tween.parallel().tween_property(word_sprite, "modulate:a", 0.0, 0.7)
-
 	tween.connect("finished", Callable(word_sprite, "queue_free"))
+
 
 func _spawn_points_follow():
 	if points_texture == null:
@@ -194,7 +239,6 @@ func _spawn_points_follow():
 
 	var random_x := randf_range(-50, 100)
 	var offset := Vector2(random_x, -100)
-
 	sprite.global_position = comb.global_position + offset
 
 	sprite.set_meta("offset", offset)
@@ -204,19 +248,21 @@ func _spawn_points_follow():
 
 	active_point_sprites.append(sprite)
 
+
 func _show_win_button():
 	var button := Button.new()
 	button.text = "Brushalicious! His hair looks amazing! Press here to continue...or keep brushing his hair."
 	button.scale = Vector2(1, 1)
 	button.position = get_viewport_rect().size / 2 - Vector2(350, 50)
 	button.set_anchors_preset(Control.PRESET_CENTER)
-
 	add_child(button)
+
 	button.connect("pressed", Callable(self, "_on_win_button_pressed"))
 
 	button.modulate = Color(1, 1, 1, 0)
 	var tween = create_tween()
 	tween.tween_property(button, "modulate:a", 1.0, 0.5)
+
 
 func _on_win_button_pressed():
 	Global.resume_after_minigame = true

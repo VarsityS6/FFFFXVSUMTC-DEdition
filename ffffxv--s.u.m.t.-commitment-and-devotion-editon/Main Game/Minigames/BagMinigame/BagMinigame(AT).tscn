@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://djh5tx5fquynf"]
+[gd_scene load_steps=7 format=3 uid="uid://djh5tx5fquynf"]
 
 [ext_resource type="Script" uid="uid://1llf65sfviwi" path="res://Main Game/Minigames/BagMinigame/Bagminigame(AT).gd" id="1_xt2q5"]
 [ext_resource type="Texture2D" uid="uid://4hpc088a5xdo" path="res://Assets/Background/BloodTemple_Placeholder.jpg" id="2_nw0ki"]
 [ext_resource type="Texture2D" uid="uid://kbyd3wlbjgcb" path="res://portraits/JimmyPlaceholder.png" id="3_3s7fw"]
 [ext_resource type="Texture2D" uid="uid://cn5f5kt8a13ol" path="res://Assets/MinigameAssets/BrushMini/harder.png" id="4_7k5hh"]
 [ext_resource type="Texture2D" uid="uid://502owty6ne8o" path="res://Assets/MinigameAssets/BagMini/BagClean.png" id="5_pfv16"]
+[ext_resource type="AudioStream" uid="uid://d0uk8ip7ij2x3" path="res://Sounds/FO_Punch.ogg" id="6_nw0ki"]
 
 [node name="BagMinigame" type="Node2D"]
 script = ExtResource("1_xt2q5")
@@ -53,6 +54,10 @@ offset_right = 708.0
 offset_bottom = 454.0
 theme_override_font_sizes/font_size = 53
 text = "I'm ready"
+
+[node name="PunchSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_nw0ki")
+volume_db = -10.496
 
 [connection signal="timeout" from="PunchTimer" to="." method="_on_punch_timer_timeout"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cxuritiwuj8gb"]
+[gd_scene load_steps=27 format=3 uid="uid://cxuritiwuj8gb"]
 
 [ext_resource type="Script" uid="uid://d3ivmaxkc7nki" path="res://Main Game/Minigames/CoffeeMinigame/CoffeeMinigame(AJ).gd" id="1_npndr"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_xfx6c"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://d3ullrbqsq752" path="res://Assets/MinigameAssets/CoffeeMini/Honey.png" id="23_tolw1"]
 [ext_resource type="Script" uid="uid://dj8yjdv5uflna" path="res://Main Game/Minigames/CoffeeMinigame/honey.gd" id="24_rookh"]
 [ext_resource type="Texture2D" uid="uid://dewimeiu4qe4e" path="res://Assets/StickyNote.png" id="25_wh7st"]
+[ext_resource type="AudioStream" uid="uid://cukl2ernwemru" path="res://Sounds/Pour_Coffee.mp3" id="26_wh7st"]
 
 [node name="CoffeeMinigame" type="Node2D"]
 script = ExtResource("1_npndr")
@@ -119,10 +120,10 @@ script = ExtResource("22_mn5gb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Honey" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 919.0
-offset_top = 285.0
-offset_right = 3919.0
-offset_bottom = 3285.0
+offset_left = 938.99994
+offset_top = 343.0
+offset_right = 3939.0
+offset_bottom = 3343.0
 scale = Vector2(0.0455422, 0.0598986)
 texture = ExtResource("23_tolw1")
 script = ExtResource("24_rookh")
@@ -139,11 +140,11 @@ texture = ExtResource("8_dxjxi")
 script = ExtResource("7_14c8u")
 
 [node name="CoffeePot" type="TextureRect" parent="Ingredients" groups=["ingredient"]]
-offset_left = 379.0
-offset_top = 110.0
-offset_right = 1359.0
-offset_bottom = 1090.0
-scale = Vector2(0.238781, 0.238781)
+offset_left = 350.0
+offset_top = 135.0
+offset_right = 3350.0
+offset_bottom = 3135.0
+scale = Vector2(0.09336576, 0.081709385)
 texture = ExtResource("6_te4em")
 script = ExtResource("5_5q88u")
 
@@ -259,3 +260,8 @@ horizontal_alignment = 1
 
 [node name="CountdownTimer" type="Timer" parent="."]
 autostart = true
+
+[node name="PourSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_wh7st")
+volume_db = 3.816
+pitch_scale = 2.32

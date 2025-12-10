@@ -19,8 +19,12 @@ var preload_portraits = {
 @onready var portrait = $Portrait
 @onready var choices_container = $Choices
 
+@onready var sfx: AudioStreamPlayer = $"BG Music"
 
 func _ready():
+	if sfx.stream:
+		sfx.stream.loop = true
+		sfx.play()
 	dialogue = load_dialogue("res://Dialogue/JIMMYscene2.json")
 
 	if Global.resume_after_minigame:

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dco0q07x8k7g4"]
+[gd_scene load_steps=6 format=3 uid="uid://dco0q07x8k7g4"]
 
 [ext_resource type="Script" uid="uid://bo5yr1tbsk6df" path="res://Main Game/Scenes/AcidLakeScene(AJ).gd" id="1_l1pdh"]
 [ext_resource type="Texture2D" uid="uid://ds0d1vh3kslsu" path="res://Assets/Background/AcidLake_Placeholder.jpg" id="2_7gt8v"]
-[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://Portraits/PlayerTalk.png" id="3_icpvo"]
+[ext_resource type="Texture2D" uid="uid://bv67i2ijubhec" path="res://portraits/PlayerTalk.png" id="3_icpvo"]
 [ext_resource type="Texture2D" uid="uid://bnndf5ajd5ex0" path="res://Assets/MenuUI.png" id="4_h16ft"]
+[ext_resource type="AudioStream" uid="uid://fam4pcgsdet0" path="res://Sounds/FO_RFMusic/acid-bubbling-105397.mp3" id="5_7gt8v"]
 
 [node name="AcidLakeScene" type="Node2D"]
 script = ExtResource("1_l1pdh")
@@ -17,10 +18,10 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Portrait" type="TextureRect" parent="."]
-offset_left = 258.0
-offset_top = 3.00001
-offset_right = 1154.0
-offset_bottom = 878.0
+offset_left = 254.0
+offset_top = 12.0
+offset_right = 1150.0
+offset_bottom = 887.0
 scale = Vector2(0.734767, 0.735312)
 texture = ExtResource("3_icpvo")
 expand_mode = 1
@@ -28,37 +29,43 @@ stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="UIDialogueBox" type="TextureRect" parent="."]
-offset_left = 229.0
-offset_top = 340.0
-offset_right = 918.985
-offset_bottom = 687.0
-scale = Vector2(1.01409, 1.01304)
+offset_left = 251.0
+offset_top = 331.99997
+offset_right = 940.985
+offset_bottom = 679.0
+scale = Vector2(1.014, 1.143)
 texture = ExtResource("4_h16ft")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="NameLabel" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
-offset_left = 368.0
-offset_top = 432.0
-offset_right = 464.0
-offset_bottom = 456.0
+offset_left = 395.00003
+offset_top = 432.00003
+offset_right = 491.00003
+offset_bottom = 456.00003
 scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
 
 [node name="TextLabel" type="RichTextLabel" parent="."]
 modulate = Color(0, 0, 0, 1)
-offset_left = 368.0
-offset_top = 472.0
-offset_right = 787.0
+offset_left = 390.00003
+offset_top = 472.00003
+offset_right = 809.0
 offset_bottom = 575.0
 scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
 
 [node name="Choices" type="VBoxContainer" parent="."]
-offset_left = 416.0
-offset_top = 520.0
-offset_right = 722.0
-offset_bottom = 572.0
+offset_left = 450.0
+offset_top = 526.0
+offset_right = 756.0
+offset_bottom = 578.0
 scale = Vector2(1.01409, 1.01304)
 metadata/_edit_use_anchors_ = true
+
+[node name="BG Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_7gt8v")
+volume_db = -11.134
+pitch_scale = 0.94
+autoplay = true
