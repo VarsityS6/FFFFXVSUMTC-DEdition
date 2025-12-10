@@ -6,8 +6,8 @@ var resume_line_id = ""
 
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"NinaSurprised.png": preload("res://Portraits/NinaSurprised.png"),
-	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
+	"NinaSurprised.png": preload("res://portraits/NinaSurprised.png"),
+	"NinaExcited.png": preload("res://portraits/NinaExcited.png"),
 	"TazSulking.png": preload("res://portraits/TazSulking.PNG"),
 	"TazTalk.png": preload("res://portraits/TazPlaceholder.png"),
 }

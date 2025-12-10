@@ -7,9 +7,9 @@ var scene_transitioning = false
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"NinaSurprised.png": preload("res://portraits/NinaSurprised.png"),
-	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
+	"NinaExcited.png": preload("res://portraits/NinaExcited.png"),
 	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png"),
-	"grammy.png": preload ("res://Portraits/grammy.png")
+	"grammy.png": preload ("res://portraits/grammy.png")
 }
 
 @onready var name_label = $NameLabel

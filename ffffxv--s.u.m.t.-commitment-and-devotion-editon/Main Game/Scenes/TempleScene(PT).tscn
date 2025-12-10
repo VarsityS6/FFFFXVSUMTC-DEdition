@@ -53,9 +53,9 @@ scale = Vector2(1.01409, 1.01304)
 
 [node name="Choices" type="VBoxContainer" parent="."]
 offset_left = 381.0
-offset_top = 493.0
+offset_top = 516.0
 offset_right = 687.0
-offset_bottom = 545.0
+offset_bottom = 568.0
 scale = Vector2(1.01409, 1.01304)
 
 [node name="BG Music" type="AudioStreamPlayer" parent="."]

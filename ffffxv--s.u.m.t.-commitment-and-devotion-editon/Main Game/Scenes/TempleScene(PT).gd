@@ -3,15 +3,13 @@ extends Node2D
 var dialogue = []
 var index = 0
 var scene_transitioning = false
-# REMOVED: static var scene_loaded_once = false  # This was causing the issue!
 
-# Preload portraits
 var preload_portraits = {
 	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
 	"NinaSurprised.png": preload("res://portraits/NinaSurprised.png"),
-	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
+	"NinaExcited.png": preload("res://portraits/NinaExcited.png"),
 	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png"),
-	"grammy.png": preload ("res://Portraits/grammy.png")
+	"grammy.png": preload ("res://portraits/grammy.png")
 }
 
 @onready var name_label = $NameLabel
