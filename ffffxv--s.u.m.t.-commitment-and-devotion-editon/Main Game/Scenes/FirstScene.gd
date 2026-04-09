@@ -6,28 +6,35 @@ var dialogue: Array = []
 var index: int = 0
 var resume_line_id: String = ""
 
-var preload_portraits = {
-	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"NinaSurprise.png": preload("res://portraits/NinaSurprised.png"),
-	"NinaExcited.png": preload("res://portraits/NinaExcited.png"),
-	"NinaWorried.png": preload("res://portraits/NinaWorried.png"),
-	"CConfused.png": preload("res://portraits/CConfused.png"),
-	"Charrax01.png": preload("res://portraits/Charrax01.png"),
-	"CHair.png": preload("res://portraits/CHair.png")
+var _dummy_preload = [
+	preload("res://Portraits/PlayerTalk.png"),
+	preload("res://Portraits/NinaSurprised.png"),
+	preload("res://Portraits/NinaExcited.png"),
+	preload("res://Portraits/NinaWorried.png"),
+	preload("res://Portraits/CConfused.png"),
+	preload("res://Portraits/Charrax01.png"),
+	preload("res://Portraits/CHair.png"),
+	preload("res://Dialogue/CHARRAXscene1.tres")
+]
+var portrait_paths = {
+	"PlayerTalk.png": "res://Portraits/PlayerTalk.png",
+	"NinaSurprise.png": "res://Portraits/NinaSurprised.png",
+	"NinaExcited.png": "res://Portraits/NinaExcited.png",
+	"NinaWorried.png": "res://Portraits/NinaWorried.png",
+	"CConfused.png": "res://Portraits/CConfused.png",
+	"Charrax01.png": "res://Portraits/Charrax01.png",
+	"CHair.png": "res://Portraits/CHair.png"
 }
 
 @onready var sfx: AudioStreamPlayer = $"BG Music"
 
 func _ready() -> void:
-	# Start BG music
 	if sfx.stream:
 		sfx.stream.loop = true
 		sfx.play()
 
-	# Load dialogue from preloaded .tres
 	dialogue = load_dialogue_from_tres()
 
-	# If something went wrong and dialogue is empty, don't crash
 	if dialogue.is_empty():
 		push_error("Dialogue array is empty in FirstScene.gd")
 		return
@@ -44,7 +51,6 @@ func load_dialogue_from_tres() -> Array:
 		push_error("DIALOGUE_RES is null. Check path: res://Dialogue/CHARRAXscene1.tres")
 		return []
 
-	# DIALOGUE_RES is your DialogueResource with a 'text' property
 	var text := DIALOGUE_RES.text
 	if typeof(text) != TYPE_STRING or text.is_empty():
 		push_error("Dialogue resource has no valid text")
@@ -52,7 +58,6 @@ func load_dialogue_from_tres() -> Array:
 
 	var parsed = JSON.parse_string(text)
 
-	# In Godot 4, parse_string returns the parsed value directly (Array/Dictionary) or null on error
 	if parsed == null:
 		push_error("JSON.parse_string failed for CHARRAXscene1.tres")
 		return []
@@ -76,7 +81,6 @@ func get_line_by_id(line_id: String) -> Dictionary:
 	return {}
 
 func show_line() -> void:
-	# Safety: don't do anything if dialogue is empty
 	if dialogue.is_empty():
 		push_error("show_line() called with empty dialogue")
 		return
@@ -97,10 +101,20 @@ func show_line() -> void:
 	$NameLabel.text = line.get("speaker", "")
 	$TextLabel.text = line.get("text", "")
 
-	if line.has("portrait") and line["portrait"] != "":
-		$Portrait.texture = preload_portraits.get(line["portrait"], null)
+	var key = line.get("portrait", "")
+	var path = portrait_paths.get(key, "")
+	if path != "":
+		var tex = load(path)
+		if tex != null:
+			$Portrait.texture = tex
+		else:
+			print("WARNING: Portrait failed to load:", path)
+			$Portrait.texture = null
 	else:
 		$Portrait.texture = null
+
+	print("Checking portrait path: ", path)
+	print("Exists?: ", FileAccess.file_exists(path))
 
 	if line.has("sfx") and line["sfx"] != "":
 		Global.play_sfx(line["sfx"])
@@ -136,7 +150,6 @@ func clear_choices() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
-		# Safety: don't touch dialogue if it's empty
 		if dialogue.is_empty():
 			return
 

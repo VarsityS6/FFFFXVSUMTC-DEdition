@@ -5,16 +5,16 @@ var index = 0
 var resume_line_id = ""
 
 var preload_portraits = {
-	"PlayerTalk.png": preload("res://portraits/PlayerTalk.png"),
-	"NinaSurprise.png": preload("res://portraits/NinaSurprised.png"),
-	"NinaExcited.png": preload("res://portraits/NinaExcited.png"),
-	"NinaWorried.png": preload("res://portraits/NinaWorried.png"),
-	"CConfused.png": preload("res://portraits/CConfused.png"),
-	"CharraxTalk.png": preload("res://portraits/Charrax01.png"),
-	"CHair": preload("res://portraits/CHair.png"),
-	"JimmyPlaceholder.png": preload("res://portraits/JimmyPlaceholder.png"),
-	"TazTalk.png": preload("res://portraits/TazPlaceholder.png"),
-	"TazSulking.png": preload("res://portraits/TazSulking.PNG")
+	"PlayerTalk.png": preload("res://Portraits/PlayerTalk.png"),
+	"NinaSurprise.png": preload("res://Portraits/NinaSurprised.png"),
+	"NinaExcited.png": preload("res://Portraits/NinaExcited.png"),
+	"NinaWorried.png": preload("res://Portraits/NinaWorried.png"),
+	"CConfused.png": preload("res://Portraits/CConfused.png"),
+	"CharraxTalk.png": preload("res://Portraits/Charrax01.png"),
+	"CHair": preload("res://Portraits/CHair.png"),
+	"JimmyPlaceholder.png": preload("res://Portraits/JimmyPlaceholder.png"),
+	"TazTalk.png": preload("res://Portraits/TazPlaceholder.png"),
+	"TazSulking.png": preload("res://Portraits/TazSulking.PNG")
 }
 
 @onready var sfx: AudioStreamPlayer = $"BG Music"
