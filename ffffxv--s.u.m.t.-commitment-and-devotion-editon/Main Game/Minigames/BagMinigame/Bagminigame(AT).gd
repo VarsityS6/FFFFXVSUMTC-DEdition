@@ -112,4 +112,4 @@ func _finish_punch_minigame():
 func _on_finish_pressed():
 	Global.resume_after_minigame = true
 	Global.resume_line_id = "punch_1"
-	get_tree().change_scene_to_file("res://Main Game/Scenes/TempleScene(PT).tscn")
+	get_tree().change_scene_to_file("res://Main Game/Scenes/TempleScene(AT).tscn")
